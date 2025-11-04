@@ -41,4 +41,4 @@ jobs:
         uses: stefanzweifel/git-auto-commit-action@v5
         with:
           commit_message: "basalam.com JS updated"
-          file_pattern: basalam
+          file_pattern: chunks
