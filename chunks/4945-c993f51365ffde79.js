@@ -2505,6 +2505,7 @@ function _ts_generator(e, t) {
                     switch (e) {
                         case "productDetail":
                             return void
+
                             function(e) {
                                 for (var t, n, i, a, u, s = {
                                         category: [],
