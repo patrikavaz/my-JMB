@@ -1283,10 +1283,10 @@ function _ts_generator(e, t) {
                     W = e.quantityInCart,
                     F = void 0 === W ? 0 : W,
                     G = e.hasVariation,
-                    H = void 0 !== G && G,
-                    K = e.variationErrorHandler,
-                    Q = (e.checkShippingLimit, e.isShowSuccessToast),
-                    Y = void 0 !== Q && Q,
+                    Q = void 0 !== G && G,
+                    H = e.variationErrorHandler,
+                    K = (e.checkShippingLimit, e.isShowSuccessToast),
+                    Y = void 0 !== K && K,
                     J = (0, _.t)(),
                     X = (0, u.Z)(),
                     $ = (0, a.useSnackbar)().showSuccessSnackbar,
@@ -1382,7 +1382,7 @@ function _ts_generator(e, t) {
                                         if (a.sent(), P) return [2];
                                         (0, c.Wt)(e), ae(!0), t = I || {
                                             id: E,
-                                            hasVariation: H
+                                            hasVariation: Q
                                         }, a.label = 2;
                                     case 2:
                                         return a.trys.push([2, 4, 5, 6]), [4, J.addToCart({
@@ -1398,7 +1398,7 @@ function _ts_generator(e, t) {
                                             mode: "result"
                                         }), [3, 6];
                                     case 4:
-                                        return r = a.sent(), (0, f.NS)(r) ? K ? K(r) : J.showModal({
+                                        return r = a.sent(), (0, f.NS)(r) ? H ? H(r) : J.showModal({
                                             onChange: v,
                                             mode: "add",
                                             product: t
@@ -1910,7 +1910,7 @@ function _ts_generator(e, t) {
                         })
                     })()
                 });
-                var H = (0, v.useMemo)(function() {
+                var Q = (0, v.useMemo)(function() {
                     return {
                         addToCart: V,
                         showModal: R,
@@ -1924,7 +1924,7 @@ function _ts_generator(e, t) {
                     }
                 }, [V, Z, B, F, G, R, U, O]);
                 return (0, r.jsx)(j.Provider, {
-                    value: H,
+                    value: Q,
                     children: t
                 })
             }
@@ -1947,7 +1947,6 @@ function _ts_generator(e, t) {
                     switch (e) {
                         case "productDetail":
                             return void
-
                             function(e) {
                                 for (var t, n, a, i, s, u = {
                                         category: [],
@@ -2721,10 +2720,10 @@ function _ts_generator(e, t) {
                         enabled: j && !!S
                     }),
                     G = F.data,
-                    H = F.isLoading,
-                    K = F.isFetched,
-                    Q = U && W && !!S && K,
-                    Y = j && (R || B || !!S && H),
+                    Q = F.isLoading,
+                    H = F.isFetched,
+                    K = U && W && !!S && H,
+                    Y = j && (R || B || !!S && Q),
                     J = (0, _.useMemo)(function() {
                         return {
                             OrderTracking: L,
@@ -2757,7 +2756,7 @@ function _ts_generator(e, t) {
                         function() {}
                 }, []), (0, _.useEffect)(function() {
                     var e, n, r;
-                    if (!Y && s && Q) {
+                    if (!Y && s && K) {
                         var o = [];
                         w && (null == O || null === (n = O.data) || void 0 === n ? void 0 : n.length) && o.push({
                             ui: "order_tracking",
@@ -2767,7 +2766,7 @@ function _ts_generator(e, t) {
                             review: V
                         }), u(!1), g.bsLocalStorage.setItem(Z, o, 86400), f(I(o))
                     }
-                }, [s, Y, w, Q, O, G, V, t, I]), X && (0, a.jsx)(X, {
+                }, [s, Y, w, K, O, G, V, t, I]), X && (0, a.jsx)(X, {
                     items: p[0],
                     clearItem: function() {
                         var e;
@@ -2846,7 +2845,7 @@ function _ts_generator(e, t) {
                     },
                     ssr: !1
                 }),
-                H = s()(function() {
+                Q = s()(function() {
                     return Promise.all([n.e(2998), n.e(5376)]).then(n.bind(n, 65376))
                 }, {
                     loadableGenerated: {
@@ -2856,7 +2855,7 @@ function _ts_generator(e, t) {
                     },
                     ssr: !1
                 }),
-                K = s()(function() {
+                H = s()(function() {
                     return Promise.all([n.e(7314), n.e(3431)]).then(n.bind(n, 62481))
                 }, {
                     loadableGenerated: {
@@ -2866,7 +2865,7 @@ function _ts_generator(e, t) {
                     },
                     ssr: !1
                 }),
-                Q = s()(function() {
+                K = s()(function() {
                     return n.e(9430).then(n.bind(n, 99430))
                 }, {
                     loadableGenerated: {
@@ -2986,16 +2985,16 @@ function _ts_generator(e, t) {
                             }), j && (0, a.jsx)(G, {
                                 data: j,
                                 onClose: ee
-                            }), T && (0, a.jsx)(H, {
+                            }), T && (0, a.jsx)(Q, {
                                 data: T,
                                 onClose: te
-                            }), b && (0, a.jsx)(Q, {
+                            }), b && (0, a.jsx)(K, {
                                 data: b,
                                 onClose: ne
                             }), D && (0, a.jsx)(W, {
                                 data: D,
                                 onClose: re
-                            }), !n.isPc && !t && (0, a.jsx)(K, {}), (0, a.jsx)(d(), {
+                            }), !n.isPc && !t && (0, a.jsx)(H, {}), (0, a.jsx)(d(), {
                                 position: n.isPc ? "top-right" : "top-center"
                             }), (0, a.jsx)(x, {})]
                         })
@@ -3601,9 +3600,9 @@ function _ts_generator(e, t) {
                     var e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : {};
                     return (0, C.aM)(["current-user-credit"], Fe, e)
                 },
-                He = n(29747),
-                Ke = n(76255),
-                Qe = function(e, t) {
+                Qe = n(29747),
+                He = n(76255),
+                Ke = function(e, t) {
                     (0, Ae.D)({
                         event: "f_".concat(e),
                         f_data: _object_spread_props(_object_spread({}, t), {
@@ -3631,7 +3630,7 @@ function _ts_generator(e, t) {
                     p = Ge({
                         enabled: !!(null === (n = d.data) || void 0 === n ? void 0 : n.id)
                     }),
-                    f = (0, He.Z)(null == d || null === (r = d.data) || void 0 === r ? void 0 : r.id, {
+                    f = (0, Qe.Z)(null == d || null === (r = d.data) || void 0 === r ? void 0 : r.id, {
                         retry: 1,
                         enabled: !!(null === (o = d.data) || void 0 === o ? void 0 : o.id)
                     }),
@@ -3670,24 +3669,19 @@ function _ts_generator(e, t) {
                     void 0 !== e && M(e)
                 }, [f.data]), (0, _.useEffect)(function() {
                     f.isError && (0, U.S_)(f.error)
-                }, [f.isError]);
-                var q = (0, _.useMemo)(function() {
-                    var e;
-                    return (0, g.isClientSide)() && "Mozilla/5.0 (Linux; Android 14; Redmi 12C Build/UP1A.231005.007) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.6312.118 Mobile Safari/537.36 XiaoMi/MiuiBrowser/14.44.1-gn" === (null === (e = navigator) || void 0 === e ? void 0 : e.userAgent)
-                }, []);
-                (0, _.useEffect)(function() {
+                }, [f.isError]), (0, _.useEffect)(function() {
                     var e = function() {
                         return {
                             getComesFrom: Re.rj,
                             serviceName: "charsou",
                             isDev: (0, g.isDevelopment)(),
+                            errorSamplingRate: .1,
                             ga4Id: (0, Le.getCookie)("_ga"),
                             clientInfo: (0, ze.n)(),
                             maxQueueIterationDelay: 2e3,
-                            getSessionId: Ke.I,
-                            enableDebugTracking: q,
+                            getSessionId: He.I,
                             tools: {
-                                webengage: Qe
+                                webengage: Ke
                             },
                             organizationEnvironmentSecret: h.organizationEnvironmentSecret
                         }
@@ -3720,11 +3714,11 @@ function _ts_generator(e, t) {
                             document.removeEventListener("keydown", Z)
                         }
                 }, [Z]);
-                var O = (0, _.useMemo)(function() {
+                var q = (0, _.useMemo)(function() {
                     return {}
                 }, []);
                 return (0, a.jsx)(Je.Provider, {
-                    value: O,
+                    value: q,
                     children: A ? i : (0, a.jsx)(Oe.Z, {})
                 })
             }
@@ -4120,7 +4114,7 @@ function _ts_generator(e, t) {
                                 isCachedPage: d,
                                 children: [(0, a.jsx)(I.ZP, {}), (0, a.jsx)(Zt, {
                                     children: (0, a.jsxs)(j, {
-                                        children: [!w && !u && (0, a.jsx)(ce, {}), (0, a.jsx)("main", {
+                                        children: [!w && (0, a.jsx)(ce, {}), (0, a.jsx)("main", {
                                             className: "mainTag",
                                             children: S && g ? null : n
                                         }), (0, a.jsx)(Y, {}), (0, a.jsx)(Ut, {}), !1 === p.footer && !1 !== p.header && (0, a.jsx)(Rt, {
@@ -4136,9 +4130,9 @@ function _ts_generator(e, t) {
             var Wt = n(21306),
                 Ft = n(19402),
                 Gt = n(25910),
-                Ht = n(70291),
-                Kt = n(30082),
-                Qt = (0, g.isServerSide)(),
+                Qt = n(70291),
+                Ht = n(30082),
+                Kt = (0, g.isServerSide)(),
                 Yt = function(e) {
                     var t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : {};
                     e.layout = Bt;
@@ -4147,11 +4141,11 @@ function _ts_generator(e, t) {
                     };
                     return e.getInitialProps = (0, C._U)(function(e, r) {
                         return _async_to_generator(function() {
-                            var a, i, s, u, c, l, d, v, p, f, m, _, h, b, w, y, S, I, j, x, k, C, T, E, M, P, D, N, A, L, Z, q, O, R, z, V, B, W, F, G, H, K, Q, Y, J, X, $, ee, te, ne, re, oe, ae;
+                            var a, i, s, u, c, l, d, v, p, f, m, _, h, b, w, y, S, I, j, x, k, C, T, E, M, P, D, N, A, L, Z, q, O, R, z, V, B, W, F, G, Q, H, K, Y, J, X, $, ee, te, ne, re, oe, ae;
                             return _ts_generator(this, function(ie) {
                                 switch (ie.label) {
                                     case 0:
-                                        N = window, A = Qt && !!(null == e || null === (a = e.req) || void 0 === a ? void 0 : a.isCachedPage), L = A ? null : (0, he.Z)(e.req, e.res), Z = ye()({
+                                        N = window, A = Kt && !!(null == e || null === (a = e.req) || void 0 === a ? void 0 : a.isCachedPage), L = A ? null : (0, he.Z)(e.req, e.res), Z = ye()({
                                             query: e.query,
                                             pathname: e.pathname,
                                             headers: null === (i = e.req) || void 0 === i ? void 0 : i.headers
@@ -4170,16 +4164,16 @@ function _ts_generator(e, t) {
                                                 }(e),
                                                 n = null == t ? void 0 : t.sub;
                                             return n ? Number(n) : 0
-                                        }(O) : null, z = Qt ? e.req.headers["user-agent"] : null == N ? void 0 : N.navigator.userAgent, V = o()(z), B = Date.now(), W = (null === (l = e.req) || void 0 === l ? void 0 : l.headers["x-forwarded-for"]) || (null === (d = e.req) || void 0 === d ? void 0 : d.socket.remoteAddress), F = null === (f = e.req) || void 0 === f || null === (p = f.app) || void 0 === p || null === (v = p.get("redisDB")) || void 0 === v ? void 0 : v.DB2;
+                                        }(O) : null, z = Kt ? e.req.headers["user-agent"] : null == N ? void 0 : N.navigator.userAgent, V = o()(z), B = Date.now(), W = (null === (l = e.req) || void 0 === l ? void 0 : l.headers["x-forwarded-for"]) || (null === (d = e.req) || void 0 === d ? void 0 : d.socket.remoteAddress), F = null === (f = e.req) || void 0 === f || null === (p = f.app) || void 0 === p || null === (v = p.get("redisDB")) || void 0 === v ? void 0 : v.DB2;
                                         try {
-                                            G = (null === (x = e.req) || void 0 === x ? void 0 : x.headers["x-client-info"]) || "{}", H = (null === (k = JSON.parse(G)) || void 0 === k ? void 0 : k.version) || null, (0, ve.nZ)().setContext("Webview", {
+                                            G = (null === (x = e.req) || void 0 === x ? void 0 : x.headers["x-client-info"]) || "{}", Q = (null === (k = JSON.parse(G)) || void 0 === k ? void 0 : k.version) || null, (0, ve.nZ)().setContext("Webview", {
                                                 enabled: ye(),
-                                                version: ye() ? H : null
+                                                version: ye() ? Q : null
                                             })
                                         } catch (e) {
                                             console.error("Error setting webview context", e)
                                         }
-                                        return K = (0, g.isDevelopment)() || (0, g.isStaging)(q) ? "BASIC" : "HTTP_ONLY", "sibche" === (null === (_ = e.req) || void 0 === _ || null === (m = _.headers) || void 0 === m ? void 0 : m["x-ios-store"]) && (0, Le.setCookie)("isIosApp", "true", {
+                                        return H = (0, g.isDevelopment)() || (0, g.isStaging)(q) ? "BASIC" : "HTTP_ONLY", "sibche" === (null === (_ = e.req) || void 0 === _ || null === (m = _.headers) || void 0 === m ? void 0 : m["x-ios-store"]) && (0, Le.setCookie)("isIosApp", "true", {
                                             path: "/",
                                             req: e.req,
                                             res: e.res,
@@ -4196,8 +4190,8 @@ function _ts_generator(e, t) {
                                             maxAge: 7776e3
                                         }), t.middleware && t.middleware(e.req, e.res, {
                                             userAgent: V
-                                        }), Qt ? [4, r.fetchQuery(["feature-flag", "features"], function() {
-                                            return (0, Ht.N)(F, {
+                                        }), Kt ? [4, r.fetchQuery(["feature-flag", "features"], function() {
+                                            return (0, Qt.N)(F, {
                                                 req: e.req,
                                                 res: e.res,
                                                 isWebview: Z
@@ -4210,7 +4204,7 @@ function _ts_generator(e, t) {
                                     case 2:
                                         te = {}, ie.label = 3;
                                     case 3:
-                                        return Q = te, Y = Date.now(), J = Date.now(), X = Date.now(), $ = new Promise(function(t, o) {
+                                        return K = te, Y = Date.now(), J = Date.now(), X = Date.now(), $ = new Promise(function(t, o) {
                                             return _async_to_generator(function() {
                                                 var a, i;
                                                 return _ts_generator(this, function(s) {
@@ -4221,7 +4215,7 @@ function _ts_generator(e, t) {
                                                                 deviceId: L,
                                                                 isWebview: Z,
                                                                 userAgent: z,
-                                                                gbFeatures: Q,
+                                                                gbFeatures: K,
                                                                 queryClient: r,
                                                                 isCachedPage: A
                                                             }))];
@@ -4234,13 +4228,13 @@ function _ts_generator(e, t) {
                                                     }
                                                 })
                                             })()
-                                        }), ee = [$], Qt && !V.isMobile && (ne = new Promise(function(e, t) {
+                                        }), ee = [$], Kt && !V.isMobile && (ne = new Promise(function(e, t) {
                                             return _async_to_generator(function() {
                                                 var n, o;
                                                 return _ts_generator(this, function(a) {
                                                     switch (a.label) {
                                                         case 0:
-                                                            return a.trys.push([0, 2, , 3]), P = Date.now(), [4, V.isCrawler ? (0, Kt.uS)(r, F) : (0, Kt.ks)(r, F)];
+                                                            return a.trys.push([0, 2, , 3]), P = Date.now(), [4, V.isCrawler ? (0, Ht.uS)(r, F) : (0, Ht.ks)(r, F)];
                                                         case 1:
                                                             return n = a.sent(), D = Date.now(), e(n), [3, 3];
                                                         case 2:
@@ -4252,7 +4246,7 @@ function _ts_generator(e, t) {
                                             })()
                                         }), ee.push(ne)), [4, Promise.all(ee)];
                                     case 4:
-                                        return re = _sliced_to_array.apply(void 0, [ie.sent(), 1]), oe = re[0], ae = Date.now(), [2, (oe.userId = R, oe.authMode = K, oe.deviceId = L, oe.hostname = q, oe.isWebview = Z, oe.userAgent = z, oe.gbFeatures = Q, oe.isCachedPage = A, oe.isServerRendered = Qt, oe.serverRouteUrl = null == e || null === (S = e.req) || void 0 === S ? void 0 : S.url, oe.isIosApp = (0, Wt.isIosApp)({
+                                        return re = _sliced_to_array.apply(void 0, [ie.sent(), 1]), oe = re[0], ae = Date.now(), [2, (oe.userId = R, oe.authMode = H, oe.deviceId = L, oe.hostname = q, oe.isWebview = Z, oe.userAgent = z, oe.gbFeatures = K, oe.isCachedPage = A, oe.isServerRendered = Kt, oe.serverRouteUrl = null == e || null === (S = e.req) || void 0 === S ? void 0 : S.url, oe.isIosApp = (0, Wt.isIosApp)({
                                             req: e.req,
                                             res: e.res
                                         }), oe.webVitalData = _object_spread_props(_object_spread({}, oe.webVitalData), {
