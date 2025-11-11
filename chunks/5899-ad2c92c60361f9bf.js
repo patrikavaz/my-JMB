@@ -1947,7 +1947,6 @@ function _ts_generator(e, t) {
                     switch (e) {
                         case "productDetail":
                             return void
-
                             function(e) {
                                 for (var t, n, a, i, s, u = {
                                         category: [],
@@ -4049,7 +4048,7 @@ function _ts_generator(e, t) {
                 }, [t, e.asPath]), (0, a.jsx)("div", {})
             }
             var zt = s()(function() {
-                    return Promise.all([n.e(6823), n.e(7163), n.e(7396)]).then(n.bind(n, 27396))
+                    return Promise.all([n.e(5434), n.e(6823), n.e(7163), n.e(7396)]).then(n.bind(n, 27396))
                 }, {
                     loadableGenerated: {
                         webpack: function() {
@@ -4078,7 +4077,9 @@ function _ts_generator(e, t) {
                     h = (0, b.Z)(),
                     g = (0, y.M_)(["isLoadingCurrentUser"]).isLoadingCurrentUser;
                 (0, _.useEffect)(function() {
-                    (0, D.$h)()
+                    (0, D.$h)(), requestIdleCallback(function() {
+                        h.prefetch("/s")
+                    })
                 }, []), (0, _.useEffect)(function() {
                     i && document.body.classList.add("ios-mode")
                 }, [i]);
