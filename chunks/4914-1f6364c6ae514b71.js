@@ -1947,7 +1947,6 @@ function _ts_generator(e, t) {
                     switch (e) {
                         case "productDetail":
                             return void
-
                             function(e) {
                                 for (var t, n, a, i, s, u = {
                                         category: [],
@@ -3965,8 +3964,8 @@ function _ts_generator(e, t) {
                         return {
                             getComesFrom: It.rj,
                             serviceName: "charsou",
-                            isDev: (0, g.isDevelopment)(),
                             errorSamplingRate: .1,
+                            isDev: (0, g.isDevelopment)(),
                             ga4Id: (0, gt.getCookie)("_ga"),
                             clientInfo: (0, jt.n)(),
                             maxQueueIterationDelay: 2e3,
