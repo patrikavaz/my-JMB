@@ -1947,7 +1947,6 @@ function _ts_generator(e, t) {
                     switch (e) {
                         case "productDetail":
                             return void
-
                             function(e) {
                                 for (var t, n, a, i, s, u = {
                                         category: [],
@@ -2204,33 +2203,33 @@ function _ts_generator(e, t) {
             "use strict";
 
             function r(e) {
-                var t, n = !(arguments.length > 1) || void 0 === arguments[1] || arguments[1],
-                    r = (null == e || null === (t = e.mainBreadcrumb) || void 0 === t ? void 0 : t.breadcrumb) || [],
-                    o = [];
-                return r.forEach(function(e, t) {
-                    var n = r[0].slug;
+                var t, n, r = !(arguments.length > 1) || void 0 === arguments[1] || arguments[1],
+                    o = (null == e || null === (n = e.breadcrumbs) || void 0 === n || null === (t = n.mainBreadcrumb) || void 0 === t ? void 0 : t.breadcrumb) || [],
+                    a = [];
+                return o.forEach(function(e, t) {
+                    var n = o[0].slug;
                     if (e.title) {
-                        var a = "/cat/".concat(n).concat(0 === t ? "" : "/".concat(e.slug));
-                        o.push(_object_spread_props(_object_spread({}, e), {
-                            link: a,
+                        var r = "/cat/".concat(n).concat(0 === t ? "" : "/".concat(e.slug));
+                        a.push(_object_spread_props(_object_spread({}, e), {
+                            link: r,
                             attrs: {
-                                href: a
+                                href: r
                             }
                         }))
                     }
-                }), o.length > 0 && o.unshift({
+                }), a.length > 0 && a.unshift({
                     title: "خانه",
                     link: "/",
                     attrs: {
                         href: "/"
                     }
-                }), n && o.length > 0 && o.push({
+                }), r && a.length > 0 && a.push({
                     title: null == e ? void 0 : e.title,
                     component: "span",
                     attrs: {
                         href: void 0
                     }
-                }), o
+                }), a
             }
             n.d(t, {
                 O: function() {
