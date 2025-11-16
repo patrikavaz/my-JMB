@@ -210,23 +210,26 @@ function _ts_generator(e, t) {
             "use strict";
             n.d(t, {
                 Z: function() {
-                    return s
+                    return c
                 }
             });
             var r = n(32930),
                 o = n(40877),
-                a = n(11344),
-                i = n.n(a);
+                a = n(2134),
+                i = n.n(a),
+                s = n(11344),
+                u = n.n(s);
 
-            function s(e) {
-                var t = e.className;
+            function c(e) {
+                var t = e.className,
+                    n = i()().publicRuntimeConfig.assetPrefixUrl || "";
                 return (0, r.jsx)("div", {
-                    className: (0, o.Z)(i()["walking-loading"], t),
+                    className: (0, o.Z)(u()["walking-loading"], t),
                     children: (0, r.jsx)("img", {
                         loading: "lazy",
                         alt: "در حال بارگذاری",
-                        className: i()["walking-loading__img"],
-                        src: "https://basalam.com/charsou/img/loading.gif"
+                        className: u()["walking-loading__img"],
+                        src: "".concat(n, "/charsou/img/loading.gif")
                     })
                 })
             }
@@ -813,6 +816,9 @@ function _ts_generator(e, t) {
                 Tv: function() {
                     return x
                 },
+                Um: function() {
+                    return k
+                },
                 Xt: function() {
                     return g
                 },
@@ -940,6 +946,12 @@ function _ts_generator(e, t) {
 
             function x(e) {
                 return o.T6.get("/v1/user/parcel/".concat(e, "/tracking-details"))
+            }
+
+            function k(e) {
+                var t = e.requestId,
+                    n = e.data;
+                return o.DZ.post("/web/v1/order-processing/user/return-requests/".concat(t, "/set-posted"), (0, r.snakize)(n))
             }
         },
         55654: function(e, t, n) {
@@ -1947,7 +1959,6 @@ function _ts_generator(e, t) {
                     switch (e) {
                         case "productDetail":
                             return void
-
                             function(e) {
                                 for (var t, n, a, i, s, u = {
                                         category: [],
@@ -4145,8 +4156,8 @@ function _ts_generator(e, t) {
                                         }(O) : null, z = Gt ? e.req.headers["user-agent"] : null == N ? void 0 : N.navigator.userAgent, V = o()(z), B = Date.now(), W = (null === (l = e.req) || void 0 === l ? void 0 : l.headers["x-forwarded-for"]) || (null === (d = e.req) || void 0 === d ? void 0 : d.socket.remoteAddress), F = null === (f = e.req) || void 0 === f || null === (p = f.app) || void 0 === p || null === (v = p.get("redisDB")) || void 0 === v ? void 0 : v.DB2;
                                         try {
                                             G = (null === (x = e.req) || void 0 === x ? void 0 : x.headers["x-client-info"]) || "{}", Q = (null === (k = JSON.parse(G)) || void 0 === k ? void 0 : k.version) || null, (0, ve.nZ)().setContext("Webview", {
-                                                enabled: ye(),
-                                                version: ye() ? Q : null
+                                                enabled: Z,
+                                                version: Z ? Q : null
                                             })
                                         } catch (e) {
                                             console.error("Error setting webview context", e)
