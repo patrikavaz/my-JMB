@@ -449,13 +449,16 @@ function _ts_generator(e, t) {
                     return v
                 },
                 Is: function() {
-                    return m
+                    return _
                 },
                 Lt: function() {
                     return f
                 },
                 Ot: function() {
                     return l
+                },
+                RQ: function() {
+                    return m
                 },
                 Y0: function() {
                     return a
@@ -531,8 +534,11 @@ function _ts_generator(e, t) {
                 var n = arguments.length > 2 && void 0 !== arguments[2] ? arguments[2] : {};
                 return o.DZ.patch("/web/v1/core/users/".concat(e, "/verification-request"), (0, r.snakize)(t), n)
             }
+            var m = function() {
+                return o.DZ.get("/web/v1/core/category")
+            };
 
-            function m() {
+            function _() {
                 var e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : {};
                 return o.DZ.get("/web/v1/core/vendor/products", e)
             }
@@ -1959,7 +1965,6 @@ function _ts_generator(e, t) {
                     switch (e) {
                         case "productDetail":
                             return void
-
                             function(e) {
                                 for (var t, n, a, i, s, u = {
                                         category: [],
