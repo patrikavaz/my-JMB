@@ -1347,7 +1347,7 @@ function _ts_generator(e, t) {
             });
             var r = n(32930),
                 o = n(67938),
-                a = n(84581),
+                a = n(92369),
                 i = n(58271),
                 s = n(81918),
                 u = n(89114),
@@ -1367,7 +1367,7 @@ function _ts_generator(e, t) {
                     l = e.orderCount,
                     d = e.invoice,
                     p = e.salesCount;
-                (0, a.s)("addToCart", _object_spread({
+                (0, a.publishEvent)("addToCart", _object_spread({
                     typeOfUser: c,
                     orderCount: l,
                     salesCount: p,
@@ -1532,7 +1532,7 @@ function _ts_generator(e, t) {
                             return _ts_generator(this, function(m) {
                                 switch (m.label) {
                                     case 0:
-                                        if (t = e.quantity, n = void 0 === t ? 1 : t, r = e.productId, o = e.variationId, s = void 0 === o ? null : o, u = e.refreshCart, c = "/cart" !== window.location.pathname && !u, (0, a.s)("changeCartQuantity", {
+                                        if (t = e.quantity, n = void 0 === t ? 1 : t, r = e.productId, o = e.variationId, s = void 0 === o ? null : o, u = e.refreshCart, c = "/cart" !== window.location.pathname && !u, (0, a.publishEvent)("changeCartQuantity", {
                                                 orderCount: P,
                                                 typeOfUser: _,
                                                 item: {
@@ -1605,7 +1605,7 @@ function _ts_generator(e, t) {
                                             variationId: r
                                         }), m.label = 4;
                                     case 4:
-                                        return D.update(), (0, a.s)("removeFromCart", {
+                                        return D.update(), (0, a.publishEvent)("removeFromCart", {
                                             orderCount: P,
                                             typeOfUser: _,
                                             quantity: null == d ? void 0 : d.quantity,
@@ -1720,7 +1720,6 @@ function _ts_generator(e, t) {
                     switch (e) {
                         case "productDetail":
                             return void
-
                             function(e) {
                                 for (var t, n, a, i, s, u = {
                                         category: [],
@@ -2291,7 +2290,7 @@ function _ts_generator(e, t) {
             "use strict";
             n.d(t, {
                 Z: function() {
-                    return Ut
+                    return Vt
                 }
             });
             var r = n(12254),
@@ -3630,8 +3629,9 @@ function _ts_generator(e, t) {
                     return (0, v.aM)(["current-user-credit"], jt, e)
                 },
                 xt = n(29747),
-                St = n(76255),
-                Ct = function(e, t) {
+                St = n(92369),
+                Ct = n(76255),
+                kt = function(e, t) {
                     (0, pt.D)({
                         event: "f_".concat(e),
                         f_data: _object_spread_props(_object_spread({}, t), {
@@ -3639,9 +3639,9 @@ function _ts_generator(e, t) {
                         })
                     })
                 },
-                kt = n(47665);
+                Tt = n(47665);
 
-            function Tt(e) {
+            function Et(e) {
                 var t, n, r, o, i = e.initialUserId,
                     s = e.authMode,
                     u = (0, b.Z)(),
@@ -3682,7 +3682,7 @@ function _ts_generator(e, t) {
                     }, [y]);
                 return (0, j.useEffect)(function() {
                     s && k(s), i && S(i)
-                }, []), (0, kt.Z)(function() {
+                }, []), (0, Tt.Z)(function() {
                     l.isLoading ? N(!0) : (l.data && (S(l.data.id), E(l.data), window.currentUser = l.data), L(!0), N(!1), setTimeout(function() {
                         requestIdleCallback(function() {
                             var e;
@@ -3705,29 +3705,29 @@ function _ts_generator(e, t) {
                             isDev: (0, w.isDevelopment)(),
                             ga4Id: (0, vt.getCookie)("_ga"),
                             clientInfo: (0, ht.n)(),
-                            getSessionId: St.I,
-                            maxQueueIterationDelay: 1e4,
+                            maxQueueIterationDelay: 5e3,
+                            getSessionId: Ct.I,
                             tools: {
-                                webengage: Ct
+                                webengage: kt
                             },
                             organizationEnvironmentSecret: _.organizationEnvironmentSecret
                         }
                     };
                     g && "loading" !== v.status && l.data && requestIdleCallback(function() {
                         var t, n = null !== (t = v.data) && void 0 !== t ? t : 0;
-                        (0, w.initEventSdk)(_object_spread_props(_object_spread({}, e()), {
+                        (0, St.initEventSdk)(_object_spread_props(_object_spread({}, e()), {
                             user: {
                                 orderCount: n,
                                 id: l.data.id,
                                 userType: (0, gt.Z)(n)
                             }
-                        })), (0, w.updateUserEventData)({
+                        })), (0, St.updateUserEventData)({
                             orderCount: n,
                             id: l.data.id,
                             userType: (0, gt.Z)(n)
                         })
                     }), "error" === l.status && requestIdleCallback(function() {
-                        return (0, w.initEventSdk)(e())
+                        return (0, St.initEventSdk)(e())
                     })
                 }, [g, M, l.data, l.status, v.status]), (0, j.useEffect)(function() {
                     var e = d.data;
@@ -3742,17 +3742,17 @@ function _ts_generator(e, t) {
                         }
                 }, [A]), (0, a.jsx)("div", {})
             }
-            var Et = n(60851);
+            var Pt = n(60851);
 
-            function Pt(e) {
+            function Nt(e) {
                 var t = e.children,
                     n = (0, m.b)().isWebview,
                     r = (0, f.M_)(["isLoggedIn", "isLoadingCurrentUser"]),
                     o = r.isLoggedIn,
                     i = r.isLoadingCurrentUser;
-                return n && !o && i ? (0, a.jsx)(Et.Z, {}) : t
+                return n && !o && i ? (0, a.jsx)(Pt.Z, {}) : t
             }
-            var Nt = s()(function() {
+            var Dt = s()(function() {
                     return Promise.all([n.e(5434), n.e(6823), n.e(7163), n.e(7396)]).then(n.bind(n, 27396))
                 }, {
                     loadableGenerated: {
@@ -3762,10 +3762,10 @@ function _ts_generator(e, t) {
                     },
                     ssr: !0
                 }),
-                Dt = new Set(["/landings/create-vendor", "/landings/powered-by-us", "/account/chats", "/account/chats/[identifier]"]),
-                Mt = {};
+                Mt = new Set(["/landings/create-vendor", "/landings/powered-by-us", "/account/chats", "/account/chats/[identifier]"]),
+                Lt = {};
 
-            function Lt(e) {
+            function At(e) {
                 var t = e.userId,
                     n = e.children,
                     r = e.deviceId,
@@ -3780,7 +3780,7 @@ function _ts_generator(e, t) {
                     v = e.parsedUserAgent,
                     _ = e.isServerRendered,
                     h = e.options,
-                    g = void 0 === h ? Mt : h,
+                    g = void 0 === h ? Lt : h,
                     w = (0, b.Z)(),
                     I = (0, f.M_)(["isLoadingCurrentUser"]).isLoadingCurrentUser;
                 (0, j.useEffect)(function() {
@@ -3791,10 +3791,10 @@ function _ts_generator(e, t) {
                     i && document.body.classList.add("ios-mode")
                 }, [i]);
                 var x = (0, j.useMemo)(function() {
-                        return Dt.has(w.pathname)
+                        return Mt.has(w.pathname)
                     }, [w.pathname]),
                     S = "loadedInCsrMode" in window,
-                    C = u ? j.Fragment : Nt;
+                    C = u ? j.Fragment : Dt;
                 return (0, a.jsx)(ne.g3, {
                     initialState: {
                         userId: t,
@@ -3818,10 +3818,10 @@ function _ts_generator(e, t) {
                         initialIsWebview: u,
                         parsedUserAgent: v,
                         isServerRendered: _,
-                        children: [(0, a.jsx)(se, {}), (0, a.jsx)(Tt, {
+                        children: [(0, a.jsx)(se, {}), (0, a.jsx)(Et, {
                             initialUserId: t,
                             authMode: o
-                        }), (0, a.jsx)(Pt, {
+                        }), (0, a.jsx)(Nt, {
                             children: (0, a.jsxs)(X.K, {
                                 isCachedPage: d,
                                 children: [(0, a.jsx)(te.ZP, {}), (0, a.jsx)(at, {
@@ -3841,15 +3841,15 @@ function _ts_generator(e, t) {
                     })
                 })
             }
-            var At = n(21306),
-                Zt = n(19402),
-                qt = n(25910),
-                Ot = n(70291),
-                Rt = n(30082),
-                zt = (0, w.isServerSide)(),
-                Ut = function(e) {
+            var Zt = n(21306),
+                qt = n(19402),
+                Ot = n(25910),
+                Rt = n(70291),
+                zt = n(30082),
+                Ut = (0, w.isServerSide)(),
+                Vt = function(e) {
                     var t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : {};
-                    e.layout = Lt;
+                    e.layout = At;
                     var n = e.getInitialProps || function() {
                         return {}
                     };
@@ -3859,11 +3859,11 @@ function _ts_generator(e, t) {
                             return _ts_generator(this, function(se) {
                                 switch (se.label) {
                                     case 0:
-                                        L = window, A = zt && !!(null == e || null === (a = e.req) || void 0 === a ? void 0 : a.isCachedPage), Z = A ? null : (0, ce.Z)(e.req, e.res), q = ve()({
+                                        L = window, A = Ut && !!(null == e || null === (a = e.req) || void 0 === a ? void 0 : a.isCachedPage), Z = A ? null : (0, ce.Z)(e.req, e.res), q = ve()({
                                             query: e.query,
                                             pathname: e.pathname,
                                             headers: null === (i = e.req) || void 0 === i ? void 0 : i.headers
-                                        }), O = (null == e || null === (u = e.req) || void 0 === u || null === (s = u.headers) || void 0 === s ? void 0 : s.host) || (null == L || null === (c = L.location) || void 0 === c ? void 0 : c.hostname), R = A ? null : (0, Zt.hP)(e.req), z = R && !A ? function(e) {
+                                        }), O = (null == e || null === (u = e.req) || void 0 === u || null === (s = u.headers) || void 0 === s ? void 0 : s.host) || (null == L || null === (c = L.location) || void 0 === c ? void 0 : c.hostname), R = A ? null : (0, qt.hP)(e.req), z = R && !A ? function(e) {
                                             if (!e) return 0;
                                             var t = function(e) {
                                                     try {
@@ -3878,7 +3878,7 @@ function _ts_generator(e, t) {
                                                 }(e),
                                                 n = null == t ? void 0 : t.sub;
                                             return n ? Number(n) : 0
-                                        }(R) : null, U = zt ? e.req.headers["user-agent"] : null == L ? void 0 : L.navigator.userAgent, V = o()(U), B = Date.now(), W = (null === (l = e.req) || void 0 === l ? void 0 : l.headers["x-forwarded-for"]) || (null === (d = e.req) || void 0 === d ? void 0 : d.socket.remoteAddress), F = null === (f = e.req) || void 0 === f || null === (v = f.app) || void 0 === v || null === (p = v.get("redisDB")) || void 0 === p ? void 0 : p.DB2;
+                                        }(R) : null, U = Ut ? e.req.headers["user-agent"] : null == L ? void 0 : L.navigator.userAgent, V = o()(U), B = Date.now(), W = (null === (l = e.req) || void 0 === l ? void 0 : l.headers["x-forwarded-for"]) || (null === (d = e.req) || void 0 === d ? void 0 : d.socket.remoteAddress), F = null === (f = e.req) || void 0 === f || null === (v = f.app) || void 0 === v || null === (p = v.get("redisDB")) || void 0 === p ? void 0 : p.DB2;
                                         try {
                                             G = (null === (S = e.req) || void 0 === S ? void 0 : S.headers["x-client-info"]) || "{}", H = (null === (C = JSON.parse(G)) || void 0 === C ? void 0 : C.version) || null, (0, oe.nZ)().setContext("Webview", {
                                                 enabled: q,
@@ -3904,14 +3904,14 @@ function _ts_generator(e, t) {
                                             maxAge: 7776e3
                                         }), t.middleware && t.middleware(e.req, e.res, {
                                             userAgent: V
-                                        }), zt ? [4, r.fetchQuery(["feature-flag", "features"], function() {
-                                            return (0, Ot.N)(F, {
+                                        }), Ut ? [4, r.fetchQuery(["feature-flag", "features"], function() {
+                                            return (0, Rt.N)(F, {
                                                 req: e.req,
                                                 res: e.res,
                                                 isWebview: q
                                             })
                                         }, {
-                                            cacheTime: qt.nW
+                                            cacheTime: Ot.nW
                                         })] : [3, 2];
                                     case 1:
                                         return te = se.sent(), [3, 3];
@@ -3943,13 +3943,13 @@ function _ts_generator(e, t) {
                                                     }
                                                 })
                                             })()
-                                        }), ee = [$], zt && !V.isMobile && (ne = new Promise(function(e, t) {
+                                        }), ee = [$], Ut && !V.isMobile && (ne = new Promise(function(e, t) {
                                             return _async_to_generator(function() {
                                                 var n, o;
                                                 return _ts_generator(this, function(a) {
                                                     switch (a.label) {
                                                         case 0:
-                                                            return a.trys.push([0, 2, , 3]), D = Date.now(), [4, V.isCrawler ? (0, Rt.uS)(r, F) : (0, Rt.ks)(r, F)];
+                                                            return a.trys.push([0, 2, , 3]), D = Date.now(), [4, V.isCrawler ? (0, zt.uS)(r, F) : (0, zt.ks)(r, F)];
                                                         case 1:
                                                             return n = a.sent(), M = Date.now(), e(n), [3, 3];
                                                         case 2:
@@ -3961,7 +3961,7 @@ function _ts_generator(e, t) {
                                             })()
                                         }), ee.push(ne)), [4, Promise.all(ee)];
                                     case 4:
-                                        return re = _sliced_to_array.apply(void 0, [se.sent(), 1]), ae = re[0], ie = Date.now(), [2, (ae.userId = z, ae.authMode = Q, ae.deviceId = Z, ae.hostname = O, ae.isWebview = q, ae.userAgent = U, ae.gbFeatures = Y, ae.isCachedPage = A, ae.isServerRendered = zt, ae.serverRouteUrl = null == e || null === (j = e.req) || void 0 === j ? void 0 : j.url, ae.parsedUserAgent = V, ae.isIosApp = (0, At.isIosApp)({
+                                        return re = _sliced_to_array.apply(void 0, [se.sent(), 1]), ae = re[0], ie = Date.now(), [2, (ae.userId = z, ae.authMode = Q, ae.deviceId = Z, ae.hostname = O, ae.isWebview = q, ae.userAgent = U, ae.gbFeatures = Y, ae.isCachedPage = A, ae.isServerRendered = Ut, ae.serverRouteUrl = null == e || null === (j = e.req) || void 0 === j ? void 0 : j.url, ae.parsedUserAgent = V, ae.isIosApp = (0, Zt.isIosApp)({
                                             req: e.req,
                                             res: e.res
                                         }), ae.webVitalData = _object_spread_props(_object_spread({}, ae.webVitalData), {
