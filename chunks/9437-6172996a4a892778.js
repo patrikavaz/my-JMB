@@ -1711,7 +1711,6 @@ function _ts_generator(e, t) {
                     switch (e) {
                         case "productDetail":
                             return void
-
                             function(e) {
                                 for (var t, n, a, i, s, u = {
                                         category: [],
@@ -3627,9 +3626,8 @@ function _ts_generator(e, t) {
                     return (0, f.aM)(["current-user-credit"], jt, e)
                 },
                 xt = n(29747),
-                St = n(92369),
-                Ct = n(76255),
-                kt = function(e, t) {
+                St = n(76255),
+                Ct = function(e, t) {
                     (0, pt.D)({
                         event: "f_".concat(e),
                         f_data: _object_spread_props(_object_spread({}, t), {
@@ -3637,7 +3635,8 @@ function _ts_generator(e, t) {
                         })
                     })
                 },
-                Et = n(47665);
+                kt = n(47665),
+                Et = n(92369);
 
             function Dt(e) {
                 var t, n, r, o, i = e.initialUserId,
@@ -3680,7 +3679,7 @@ function _ts_generator(e, t) {
                     }, [y]);
                 return (0, j.useEffect)(function() {
                     s && k(s), i && S(i)
-                }, []), (0, Et.Z)(function() {
+                }, []), (0, kt.Z)(function() {
                     d.isLoading ? T(!0) : (d.data && (S(d.data.id), D(d.data), window.currentUser = d.data), Z(!0), T(!1), setTimeout(function() {
                         requestIdleCallback(function() {
                             var e;
@@ -3704,29 +3703,29 @@ function _ts_generator(e, t) {
                             ga4Id: (0, vt.getCookie)("_ga"),
                             clientInfo: (0, ht.n)(),
                             maxQueueIterationDelay: 5e3,
-                            getSessionId: Ct.I,
+                            getSessionId: St.I,
                             tools: {
-                                webengage: kt
+                                webengage: Ct
                             },
                             organizationEnvironmentSecret: m.organizationEnvironmentSecret
                         }
                     };
-                    w && "loading" !== f.status && d.data && requestIdleCallback(function() {
+                    w && "loading" !== f.status && d.data ? requestIdleCallback(function() {
                         var t, n = null !== (t = f.data) && void 0 !== t ? t : 0;
-                        (0, St.initEventSdk)(_object_spread_props(_object_spread({}, e()), {
+                        (0, Et.initEventSdk)(_object_spread_props(_object_spread({}, e()), {
                             user: {
                                 orderCount: n,
                                 id: d.data.id,
                                 userType: (0, gt.Z)(n)
                             }
-                        })), (0, St.updateUserEventData)({
+                        })), (0, Et.updateUserEventData)({
                             orderCount: n,
                             id: d.data.id,
                             userType: (0, gt.Z)(n)
                         })
-                    }), "error" === d.status && requestIdleCallback(function() {
-                        return (0, St.initEventSdk)(e())
-                    })
+                    }) : "error" === d.status ? requestIdleCallback(function() {
+                        return (0, Et.initEventSdk)(e())
+                    }) : (0, Et.preInitEventConfig)(e())
                 }, [w, M, d.data, d.status, f.status]), (0, j.useEffect)(function() {
                     var e = p.data;
                     e && x(_object_spread({}, e))
