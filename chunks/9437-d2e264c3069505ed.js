@@ -1711,7 +1711,6 @@ function _ts_generator(e, t) {
                     switch (e) {
                         case "productDetail":
                             return void
-
                             function(e) {
                                 for (var t, n, a, i, s, u = {
                                         category: [],
@@ -3045,19 +3044,25 @@ function _ts_generator(e, t) {
                             var t = function(e) {
                                 var t = 0;
                                 return (e.getEntries() || []).forEach(function(e) {
-                                    var n, r, o, a;
-                                    e.hadRecentInput || (e.value >= .01 && (we = _object_spread_props(_object_spread({}, we), {
-                                        topCLSElements: _to_consumable_array(we.topCLSElements).concat([{
-                                            value: e.value,
-                                            nodeName: (null === (o = e.target) || void 0 === o ? void 0 : o.nodeName) || "",
-                                            elementClassname: (null === (a = e.target) || void 0 === a ? void 0 : a.className) || ""
-                                        }])
-                                    })), we = _object_spread_props(_object_spread({}, we), {
-                                        value: we.value + e.value,
-                                        clsPageUrl: window.location.href || "",
-                                        clsPageName: (null === (n = window.__CLS2Data) || void 0 === n ? void 0 : n.name) || "",
-                                        clsPageRoute: (null === (r = window.__CLS2Data) || void 0 === r ? void 0 : r.route) || ""
-                                    }), t += e.value)
+                                    if (!e.hadRecentInput) {
+                                        var n, r, o, a;
+                                        if (e.value >= .01) {
+                                            var i = null === (a = e.sources) || void 0 === a || null === (o = a[0]) || void 0 === o ? void 0 : o.node;
+                                            we = _object_spread_props(_object_spread({}, we), {
+                                                topCLSElements: _to_consumable_array(we.topCLSElements).concat([{
+                                                    value: e.value,
+                                                    nodeName: (null == i ? void 0 : i.nodeName) || "",
+                                                    elementClassName: (null == i ? void 0 : i.className) || ""
+                                                }])
+                                            })
+                                        }
+                                        we = _object_spread_props(_object_spread({}, we), {
+                                            value: we.value + e.value,
+                                            clsPageUrl: window.location.href || "",
+                                            clsPageName: (null === (n = window.__CLS2Data) || void 0 === n ? void 0 : n.name) || "",
+                                            clsPageRoute: (null === (r = window.__CLS2Data) || void 0 === r ? void 0 : r.route) || ""
+                                        }), t += e.value
+                                    }
                                 }), {
                                     cls: t
                                 }
