@@ -1711,7 +1711,6 @@ function _ts_generator(e, t) {
                     switch (e) {
                         case "productDetail":
                             return void
-
                             function(e) {
                                 for (var t, n, a, i, s, u = {
                                         category: [],
@@ -2325,7 +2324,7 @@ function _ts_generator(e, t) {
                 j = n(79723),
                 I = n(89504),
                 x = (0, u.lazy)(function() {
-                    return Promise.all([n.e(246), n.e(3449), n.e(3620), n.e(5382), n.e(3098), n.e(7314), n.e(6208), n.e(4287), n.e(3941), n.e(7468), n.e(2308), n.e(928), n.e(5437), n.e(4491), n.e(1305), n.e(1896)]).then(n.bind(n, 30797)).then(function(e) {
+                    return Promise.all([n.e(246), n.e(3449), n.e(3620), n.e(5382), n.e(3098), n.e(7314), n.e(8990), n.e(2746), n.e(4287), n.e(3941), n.e(7468), n.e(2308), n.e(928), n.e(5437), n.e(4491), n.e(1305), n.e(1896)]).then(n.bind(n, 30797)).then(function(e) {
                         return {
                             default: e.ReviewSuggestion
                         }
@@ -2559,7 +2558,7 @@ function _ts_generator(e, t) {
                     ssr: !1
                 }),
                 z = s()(function() {
-                    return Promise.all([n.e(7314), n.e(989)]).then(n.bind(n, 62481))
+                    return Promise.all([n.e(7314), n.e(8035)]).then(n.bind(n, 62481))
                 }, {
                     loadableGenerated: {
                         webpack: function() {
