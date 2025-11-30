@@ -1711,7 +1711,6 @@ function _ts_generator(e, t) {
                     switch (e) {
                         case "productDetail":
                             return void
-
                             function(e) {
                                 for (var t, n, a, i, s, u = {
                                         category: [],
@@ -2499,11 +2498,11 @@ function _ts_generator(e, t) {
                     ssr: !1
                 }),
                 Z = s()(function() {
-                    return Promise.all([n.e(2998), n.e(2485), n.e(4400), n.e(9796)]).then(n.bind(n, 86571))
+                    return n.e(4676).then(n.bind(n, 84676))
                 }, {
                     loadableGenerated: {
                         webpack: function() {
-                            return [86571]
+                            return [84676]
                         }
                     },
                     ssr: !1
@@ -2705,7 +2704,7 @@ function _ts_generator(e, t) {
                                 onClose: ue
                             }), !r.isPc && !n && (0, a.jsx)(z, {}), (0, a.jsx)(_(), {
                                 position: r.isPc ? "top-right" : "top-center"
-                            }), !n && (0, a.jsx)(Z, {}), (0, a.jsx)(d, {})]
+                            }), !n && (0, a.jsx)(Z, {}), !n && (0, a.jsx)(d, {})]
                         })
                     })
                 }),
