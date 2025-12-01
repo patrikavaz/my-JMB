@@ -205,7 +205,7 @@ function _ts_generator(e, t) {
         }
     }
 }(self.webpackChunk_N_E = self.webpackChunk_N_E || []).push([
-    [28], {
+    [9421], {
         60851: function(e, t, n) {
             "use strict";
             n.d(t, {
@@ -371,11 +371,8 @@ function _ts_generator(e, t) {
                 JM: function() {
                     return i
                 },
-                SB: function() {
-                    return u
-                },
                 Vv: function() {
-                    return c
+                    return u
                 },
                 oC: function() {
                     return a
@@ -397,13 +394,6 @@ function _ts_generator(e, t) {
             }
 
             function u(e) {
-                var t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : {};
-                return o.DZ.post("/web/v1/adwiser/wallet/charge", e, _object_spread_props(_object_spread({}, t), {
-                    hasTapsellClickId: !0
-                }))
-            }
-
-            function c(e) {
                 return o.DZ.get("/web/v1/adwiser/invoice/".concat(e))
             }
         },
@@ -960,35 +950,6 @@ function _ts_generator(e, t) {
                 return (0, r.aM)(["current-user"], o.Y0, e)
             }
         },
-        29747: function(e, t, n) {
-            "use strict";
-            n.d(t, {
-                Z: function() {
-                    return i
-                }
-            });
-            var r = n(67938),
-                o = n(5164),
-                a = n(79723);
-            var i = function(e) {
-                var t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : {};
-                return (0, r.aM)(["current-user-order-count", e], function() {
-                    return function(e) {
-                        return _async_to_generator(function() {
-                            var t, n, r, i, s;
-                            return _ts_generator(this, function(u) {
-                                switch (u.label) {
-                                    case 0:
-                                        return e ? (r = "orderCount_".concat(e), (i = o.bsLocalStorage.getItem(r)) ? [2, i] : [4, (0, a.F$)()]) : [2, 0];
-                                    case 1:
-                                        return s = u.sent(), [2, (o.bsLocalStorage.setItem(r, null !== (t = s.count) && void 0 !== t ? t : null, 86400), null !== (n = null == s ? void 0 : s.count) && void 0 !== n ? n : null)]
-                                }
-                            })
-                        })()
-                    }(e)
-                }, t)
-            }
-        },
         11219: function(e, t, n) {
             "use strict";
             n.d(t, {
@@ -1226,6 +1187,7 @@ function _ts_generator(e, t) {
                     hasIncompleteAddressError: i,
                     optionCode: e.optionCode,
                     credit: t.total.credit,
+                    serviceFee: e.serviceFee,
                     totalPrice: t.products.grand,
                     payableAmount: t.total.grand,
                     installment: t.total.installment,
@@ -1250,13 +1212,14 @@ function _ts_generator(e, t) {
                             return e + t.payableAmount
                         }, 0),
                         items: e.items.map(function(e) {
+                            var t, n, r, o;
                             return {
                                 quantity: e.quantity,
                                 productPrice: e.price,
                                 productTitle: e.title,
                                 productId: e.product.id,
-                                productCategoryId: e.product.category.id,
-                                productCategoryTitle: e.product.category.title
+                                productCategoryId: null !== (r = null === (t = e.product.category) || void 0 === t ? void 0 : t.id) && void 0 !== r ? r : null,
+                                productCategoryTitle: null !== (o = null === (n = e.product.category) || void 0 === n ? void 0 : n.title) && void 0 !== o ? o : null
                             }
                         })
                     }
@@ -1711,7 +1674,6 @@ function _ts_generator(e, t) {
                     switch (e) {
                         case "productDetail":
                             return void
-
                             function(e) {
                                 for (var t, n, a, i, s, u = {
                                         category: [],
@@ -2278,7 +2240,7 @@ function _ts_generator(e, t) {
                 })
             }
         },
-        60028: function(e, t, n) {
+        9421: function(e, t, n) {
             "use strict";
             n.d(t, {
                 Z: function() {
@@ -3658,10 +3620,27 @@ function _ts_generator(e, t) {
                 return It.DZ.get("/web/v1/wallet/public/balance", e)
             }
             var St = function() {
-                    var e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : {};
-                    return (0, b.aM)(["current-user-credit"], xt, e)
+                var e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : {};
+                return (0, b.aM)(["current-user-credit"], xt, e)
+            };
+            var Ct = function(e) {
+                    var t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : {};
+                    return (0, b.aM)(["current-user-order-count", e], function() {
+                        return function(e) {
+                            return _async_to_generator(function() {
+                                var t, n, r, o, a;
+                                return _ts_generator(this, function(i) {
+                                    switch (i.label) {
+                                        case 0:
+                                            return e ? (r = "orderCount_".concat(e), (o = l.bsLocalStorage.getItem(r)) ? [2, o] : [4, (0, j.F$)()]) : [2, 0];
+                                        case 1:
+                                            return a = i.sent(), [2, (l.bsLocalStorage.setItem(r, null !== (t = a.count) && void 0 !== t ? t : null, 86400), null !== (n = null == a ? void 0 : a.count) && void 0 !== n ? n : null)]
+                                    }
+                                })
+                            })()
+                        }(e)
+                    }, t)
                 },
-                Ct = n(29747),
                 kt = n(76255),
                 Et = function(e, t) {
                     (0, ft.D)({
@@ -3690,7 +3669,7 @@ function _ts_generator(e, t) {
                     _ = St({
                         enabled: !!(null === (n = v.data) || void 0 === n ? void 0 : n.id)
                     }),
-                    m = (0, Ct.Z)(null == v || null === (r = v.data) || void 0 === r ? void 0 : r.id, {
+                    m = Ct(null == v || null === (r = v.data) || void 0 === r ? void 0 : r.id, {
                         retry: 1,
                         enabled: !!(null === (o = v.data) || void 0 === o ? void 0 : o.id)
                     }),
