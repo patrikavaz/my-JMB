@@ -371,9 +371,6 @@ function _ts_generator(e, t) {
                 JM: function() {
                     return i
                 },
-                Vv: function() {
-                    return u
-                },
                 oC: function() {
                     return a
                 }
@@ -391,10 +388,6 @@ function _ts_generator(e, t) {
 
             function s(e) {
                 return o.DZ.get("/web/v1/adwiser/ads/offers/retarget/".concat(e, "?size=5"))
-            }
-
-            function u(e) {
-                return o.DZ.get("/web/v1/adwiser/invoice/".concat(e))
             }
         },
         59736: function(e, t, n) {
@@ -1674,7 +1667,6 @@ function _ts_generator(e, t) {
                     switch (e) {
                         case "productDetail":
                             return void
-
                             function(e) {
                                 for (var t, n, a, i, s, u = {
                                         category: [],
