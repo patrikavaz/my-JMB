@@ -245,12 +245,13 @@ function _ts_generator(e, t) {
 
             function o(e) {
                 var t = e.children,
-                    n = _sliced_to_array((0, r.useState)(!1), 2),
-                    o = n[0],
-                    a = n[1];
+                    n = e.fallback,
+                    o = _sliced_to_array((0, r.useState)(!1), 2),
+                    a = o[0],
+                    i = o[1];
                 return (0, r.useEffect)(function() {
-                    return a(!0)
-                }, []), o && t
+                    return i(!0)
+                }, []), a ? t : n
             }
         },
         97910: function(e, t, n) {
@@ -1667,7 +1668,6 @@ function _ts_generator(e, t) {
                     switch (e) {
                         case "productDetail":
                             return void
-
                             function(e) {
                                 for (var t, n, a, i, s, u = {
                                         category: [],
