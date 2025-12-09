@@ -275,9 +275,9 @@ function _ts_generator(e, t) {
                         y = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : null,
                         j = (0, c.b)().ua,
                         I = (0, f.useRef)(null),
-                        S = _sliced_to_array((0, f.useState)(!1), 2),
-                        x = S[0],
-                        C = S[1];
+                        x = _sliced_to_array((0, f.useState)(!1), 2),
+                        S = x[0],
+                        C = x[1];
                     (0, f.useImperativeHandle)(y, function() {
                         return {
                             scrollIntoView: function() {
@@ -296,7 +296,7 @@ function _ts_generator(e, t) {
                             }
                         }
                     }, []);
-                    var k = (0, o.Z)([h, u()["trust-slides"], (e = {}, _define_property(e, u()["trust-slides--is-slider"], s), _define_property(e, u()["trust-slides--has-border"], _), _define_property(e, u()["trust-slides--is-appearing"], x), _define_property(e, u()["trust-slides--has-navigation"], v), e)]),
+                    var k = (0, o.Z)([h, u()["trust-slides"], (e = {}, _define_property(e, u()["trust-slides--is-slider"], s), _define_property(e, u()["trust-slides--has-border"], _), _define_property(e, u()["trust-slides--is-appearing"], S), _define_property(e, u()["trust-slides--has-navigation"], v), e)]),
                         E = j.isPc ? p() : "div",
                         T = j.isPc ? p().Item : "div";
                     return (0, r.jsxs)("div", {
@@ -523,7 +523,7 @@ function _ts_generator(e, t) {
                     return c
                 },
                 wd: function() {
-                    return S
+                    return x
                 },
                 wm: function() {
                     return y
@@ -711,7 +711,7 @@ function _ts_generator(e, t) {
                 return o.DZ.get("/web/v1/explore/user/special-sale/0?size=0", _object_spread({}, e))
             }
 
-            function S() {
+            function x() {
                 var e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : 0,
                     t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : {};
                 return o.DZ.get("/web/v1/explore/user/landings/".concat(e, "?tab=yazdah-yazdah&size=50"), t)
@@ -748,10 +748,10 @@ function _ts_generator(e, t) {
                     return u
                 },
                 Tv: function() {
-                    return S
+                    return x
                 },
                 Um: function() {
-                    return x
+                    return S
                 },
                 Xt: function() {
                     return h
@@ -869,11 +869,11 @@ function _ts_generator(e, t) {
                 return o.DZ.put("/web/v1/order-processing/user/order/".concat(e.orderId, "/cancel-items"), (0, r.snakize)(e.body))
             }
 
-            function S(e) {
+            function x(e) {
                 return o.DZ.get("/web/v1/order-processing/user/parcel/".concat(e, "/tracking-details"))
             }
 
-            function x(e) {
+            function S(e) {
                 var t = e.requestId,
                     n = e.data;
                 return o.DZ.post("/web/v1/order-processing/user/return-requests/".concat(t, "/set-posted"), (0, r.snakize)(n))
@@ -923,8 +923,8 @@ function _ts_generator(e, t) {
                     y = void 0 === w ? "xs" : w,
                     j = e.product,
                     I = void 0 === j ? null : j,
-                    S = e.square,
-                    x = void 0 !== S && S,
+                    x = e.square,
+                    S = void 0 !== x && x,
                     C = e.className,
                     k = void 0 === C ? "" : C,
                     E = e.productId,
@@ -1027,7 +1027,7 @@ function _ts_generator(e, t) {
                 })) : (0, r.jsx)(d(), _object_spread_props(_object_spread({
                     size: y,
                     label: g,
-                    square: x,
+                    square: S,
                     icon: l || g ? "" : "bi-plus",
                     loading: oe,
                     disabled: P,
@@ -1182,39 +1182,39 @@ function _ts_generator(e, t) {
             function a(e) {
                 var t, n, a, i, s, u, c, l, d, v, p, f, m, _, b, h, g, w, y, j = (null === (n = e.category) || void 0 === n || null === (t = n.parent) || void 0 === t ? void 0 : t.parent) || {},
                     I = (null === (a = e.category) || void 0 === a ? void 0 : a.parent) || {},
-                    S = e.category || {},
-                    x = e.vendor || {};
+                    x = e.category || {},
+                    S = e.vendor || {};
                 return (0, o.removeEmpty)({
                     price: e.price,
-                    vendorName: null == x ? void 0 : x.name,
+                    vendorName: null == S ? void 0 : S.name,
                     productId: Number(e.id),
                     isSaleable: e.isSaleable,
                     hasVideo: !!(null === (i = e.video) || void 0 === i ? void 0 : i.url),
-                    vendorId: Number(null == x ? void 0 : x.id) || 0,
+                    vendorId: Number(null == S ? void 0 : S.id) || 0,
                     primaryPrice: e.primaryPrice,
                     categoryName: j.title,
                     imageCount: null === (s = e.photos) || void 0 === s ? void 0 : s.length,
                     shippingArea: e.shippingArea,
                     rating: (null === (u = e.rating) || void 0 === u ? void 0 : u.rating) || 0,
                     category2Name: I.title,
-                    category3Name: S.title,
-                    vendorCityName: null == x || null === (c = x.city) || void 0 === c ? void 0 : c.title,
-                    vendorIdentifier: null == x ? void 0 : x.identifier,
-                    vendorSalesCount: null == x ? void 0 : x.salesCount,
+                    category3Name: x.title,
+                    vendorCityName: null == S || null === (c = S.city) || void 0 === c ? void 0 : c.title,
+                    vendorIdentifier: null == S ? void 0 : S.identifier,
+                    vendorSalesCount: null == S ? void 0 : S.salesCount,
                     inventory: Number(e.stock) || 0,
                     vendorScore: !!(null == e || null === (l = e.vendor) || void 0 === l ? void 0 : l.score),
                     isFreeShipping: e.isFreeShipping,
                     preparationDays: e.preparationDays,
                     isInUserWishlist: e.isInUserWishlist,
                     productName: (null == e ? void 0 : e.name) || (null == e ? void 0 : e.title),
-                    vendorProvinceName: null == x || null === (v = x.city) || void 0 === v || null === (d = v.province) || void 0 === d ? void 0 : d.name,
+                    vendorProvinceName: null == S || null === (v = S.city) || void 0 === v || null === (d = v.province) || void 0 === d ? void 0 : d.name,
                     ratingCount: Number(null === (p = e.rating) || void 0 === p ? void 0 : p.signals) || 0,
                     categoryId: Number(j.id) || void 0,
                     category2Id: Number(I.id) || void 0,
-                    category3Id: Number(S.id) || void 0,
-                    vendorCityId: Number(null == x || null === (f = x.city) || void 0 === f ? void 0 : f.id) || void 0,
+                    category3Id: Number(x.id) || void 0,
+                    vendorCityId: Number(null == S || null === (f = S.city) || void 0 === f ? void 0 : f.id) || void 0,
                     promotionEndTime: (null === (m = e.currentPromotion) || void 0 === m ? void 0 : m.endTime) || "",
-                    vendorProvinceId: Number(null == x || null === (b = x.city) || void 0 === b || null === (_ = b.province) || void 0 === _ ? void 0 : _.value) || void 0,
+                    vendorProvinceId: Number(null == S || null === (b = S.city) || void 0 === b || null === (_ = b.province) || void 0 === _ ? void 0 : _.value) || void 0,
                     discountPercent: (0, o.getDiscountPercent)(e.primaryPrice, e.price),
                     promotionRemainingSeconds: (0, r.j)(null === (h = e.currentPromotion) || void 0 === h ? void 0 : h.endTime) || 0,
                     promotion: e.realDiscount ? "real_discount" : (null === (g = e.currentPromotion) || void 0 === g ? void 0 : g.type) || "",
@@ -1234,7 +1234,7 @@ function _ts_generator(e, t) {
                     return C
                 },
                 t: function() {
-                    return x
+                    return S
                 }
             });
             var r = n(32930),
@@ -1281,9 +1281,9 @@ function _ts_generator(e, t) {
                 y = n(53045),
                 j = n(89504),
                 I = n(41581),
-                S = (0, v.createContext)({}),
-                x = function() {
-                    return (0, v.useContext)(S)
+                x = (0, v.createContext)({}),
+                S = function() {
+                    return (0, v.useContext)(x)
                 };
 
             function C(e) {
@@ -1292,7 +1292,7 @@ function _ts_generator(e, t) {
                     m = n[0],
                     _ = n[1],
                     b = (0, v.useRef)(null),
-                    x = (0, l.b)().isWebview,
+                    S = (0, l.b)().isWebview,
                     C = (0, d.M_)(["typeOfUser", "isLoggedIn", "userId", "orderCount"]),
                     k = C.typeOfUser,
                     E = C.isLoggedIn,
@@ -1417,7 +1417,7 @@ function _ts_generator(e, t) {
                                 })) : u(n ? s() : t)
                             })
                         })
-                    }, [E, m, D, R, x]),
+                    }, [E, m, D, R, S]),
                     B = (0, v.useCallback)(function(e) {
                         return _async_to_generator(function() {
                             var t, n, r, o, s, u, c, l, d, v, p, f;
@@ -1457,7 +1457,7 @@ function _ts_generator(e, t) {
                                 }
                             })
                         })()
-                    }, [E, N, P, m, D, x]),
+                    }, [E, N, P, m, D, S]),
                     W = function(e) {
                         var t = e.itemId,
                             n = e.productId,
@@ -1511,7 +1511,7 @@ function _ts_generator(e, t) {
                                 }
                             })
                         })()
-                    }, [E, P, N, m, D, x]),
+                    }, [E, P, N, m, D, S]),
                     G = (0, v.useCallback)(function(e) {
                         return _async_to_generator(function() {
                             var t;
@@ -1588,7 +1588,7 @@ function _ts_generator(e, t) {
                         showResultModalIfNeeded: U
                     }
                 }, [V, L, B, F, G, R, z, O]);
-                return (0, r.jsx)(S.Provider, {
+                return (0, r.jsx)(x.Provider, {
                     value: H,
                     children: t
                 })
@@ -1612,7 +1612,6 @@ function _ts_generator(e, t) {
                     switch (e) {
                         case "productDetail":
                             return void
-
                             function(e) {
                                 for (var t, n, a, i, s, u = {
                                         category: [],
@@ -1764,10 +1763,10 @@ function _ts_generator(e, t) {
                     I = (0, d.useMemo)(function() {
                         return (0, c.gregoryDate)(t)
                     }, [t]),
-                    S = (0, l.useIntersectionObserver)(),
-                    x = S.isInViewport,
-                    C = S.observe,
-                    k = S.unobserve,
+                    x = (0, l.useIntersectionObserver)(),
+                    S = x.isInViewport,
+                    C = x.observe,
+                    k = x.unobserve,
                     E = function(e) {
                         var t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : {},
                             n = t.onTimesUp,
@@ -1810,7 +1809,7 @@ function _ts_generator(e, t) {
                         }
                     }(I.diff(j, "s"), {
                         onTimesUp: n,
-                        shouldRender: x
+                        shouldRender: S
                     }),
                     T = (0, d.useMemo)(function() {
                         return w ? _to_consumable_array(p ? [E.timeLeft.formattedDays] : []).concat(_to_consumable_array(b ? [Number(E.timeLeft.formattedHours) + Number(p ? 0 : 24 * E.timeLeft.formattedDays)] : []), [E.timeLeft.formattedMinutes, E.timeLeft.formattedSeconds]) : []
@@ -2220,14 +2219,14 @@ function _ts_generator(e, t) {
                 y = n(82623),
                 j = n(79723),
                 I = n(89504),
-                S = (0, u.lazy)(function() {
+                x = (0, u.lazy)(function() {
                     return Promise.all([n.e(246), n.e(8293), n.e(3620), n.e(5382), n.e(3098), n.e(7314), n.e(8990), n.e(2746), n.e(4287), n.e(3941), n.e(7468), n.e(2308), n.e(928), n.e(5437), n.e(4491), n.e(1305), n.e(1896)]).then(n.bind(n, 30797)).then(function(e) {
                         return {
                             default: e.ReviewSuggestion
                         }
                     })
                 }),
-                x = (0, u.lazy)(function() {
+                S = (0, u.lazy)(function() {
                     return n.e(3549).then(n.bind(n, 13549))
                 }),
                 C = (0, u.lazy)(function() {
@@ -2316,8 +2315,8 @@ function _ts_generator(e, t) {
                     X = (0, u.useMemo)(function() {
                         return {
                             OrderTracking: C,
-                            ModalPromotion: x,
-                            ReviewSuggestion: S
+                            ModalPromotion: S,
+                            ReviewSuggestion: x
                         }
                     }, []),
                     J = (0, u.useMemo)(function() {
@@ -2490,8 +2489,8 @@ function _ts_generator(e, t) {
                         y = h[1],
                         j = (0, u.useRef)(null),
                         I = _sliced_to_array((0, u.useState)(null), 2),
-                        S = I[0],
-                        x = I[1],
+                        x = I[0],
+                        S = I[1],
                         C = _sliced_to_array((0, u.useState)(null), 2),
                         k = C[0],
                         E = C[1],
@@ -2505,7 +2504,7 @@ function _ts_generator(e, t) {
                         Y = Q[0],
                         K = Q[1],
                         X = (0, u.useCallback)(function() {
-                            return x(!0)
+                            return S(!0)
                         }, []),
                         J = (0, u.useCallback)(function(e) {
                             return y(e)
@@ -2524,7 +2523,7 @@ function _ts_generator(e, t) {
                         }, []),
                         re = (0, u.useCallback)(function() {
                             return (0, u.startTransition)(function() {
-                                return x(null)
+                                return S(null)
                             })
                         }, []),
                         oe = (0, u.useCallback)(function() {
@@ -2581,8 +2580,8 @@ function _ts_generator(e, t) {
                         children: (0, a.jsxs)(D.ErrorBoundary, {
                             fallback: (0, a.jsx)("div", {}),
                             onError: P.wJ,
-                            children: [!n && (0, a.jsx)(q, {}), S && (0, a.jsx)(N, {
-                                data: S,
+                            children: [!n && (0, a.jsx)(q, {}), x && (0, a.jsx)(N, {
+                                data: x,
                                 onClose: re
                             }), !n && (0, a.jsx)(M, {}), _ && (0, a.jsx)(T, {}), k && (0, a.jsx)(A, {
                                 data: k,
@@ -2670,16 +2669,16 @@ function _ts_generator(e, t) {
                     }(),
                     j = y.banner,
                     I = y.isShowBanner,
-                    S = y.urgentBanner,
-                    x = (null == j ? void 0 : j.moreLink) ? W.Z : "div",
-                    C = null == S || null === (t = S.variant) || void 0 === t ? void 0 : t.toLowerCase();
+                    x = y.urgentBanner,
+                    S = (null == j ? void 0 : j.moreLink) ? W.Z : "div",
+                    C = null == x || null === (t = x.variant) || void 0 === t ? void 0 : t.toLowerCase();
                 (0, u.useEffect)(function() {
                     p(!0), I ? ((0, Y.addClass)(document.body, "wb"), document.documentElement.style.setProperty("--top-banner-height", i.isMobile ? "48px" : "56px")) : document.documentElement.style.setProperty("--top-banner-height", "0px")
                 }, [I, i.isMobile]);
                 var k = (0, u.useMemo)(function() {
                     return K.X.has(s.pathname)
                 }, [s.pathname]);
-                return (null == S ? void 0 : S.show) && !k ? (0, a.jsx)("div", {
+                return (null == x ? void 0 : x.show) && !k ? (0, a.jsx)("div", {
                     id: "urgent-sticky-note",
                     className: (0, B.Z)(G()["urgent-banner"], G()["urgent-banner--".concat(C)], _define_property({}, G()["urgent-banner--hidden"], h)),
                     children: (0, a.jsxs)(J(), {
@@ -2689,7 +2688,7 @@ function _ts_generator(e, t) {
                             className: G()["urgent-banner__icon"],
                             name: null === (n = oe[C]) || void 0 === n ? void 0 : n.icon,
                             color: "var(--".concat(null === (r = oe[C]) || void 0 === r ? void 0 : r.color, ")")
-                        }), null == S ? void 0 : S.text, (0, a.jsx)("div", {
+                        }), null == x ? void 0 : x.text, (0, a.jsx)("div", {
                             className: G()["urgent-banner__close"],
                             onClick: function() {
                                 g(!0)
@@ -2700,7 +2699,7 @@ function _ts_generator(e, t) {
                             })
                         })]
                     })
-                }) : I && !k ? (0, a.jsxs)(x, {
+                }) : I && !k ? (0, a.jsxs)(S, {
                     id: "top-banner",
                     target: "_blank",
                     href: j.moreLink,
@@ -2746,16 +2745,14 @@ function _ts_generator(e, t) {
                         }, [t.pathname, t.query.from, r]),
                         s = (0, u.useCallback)(function() {
                             if (!(0, l.isDevelopment)()) try {
-                                var e, t, n, r = (0, I.Cw)(),
-                                    o = (null == r || null === (e = r.getClientInfo) || void 0 === e ? void 0 : e.call(r)) || "{}";
-                                n = (null === (t = JSON.parse(o)) || void 0 === t ? void 0 : t.version) || null, (0, ce.nZ)().setContext("Webview", {
-                                    version: n,
-                                    enabled: !!r
+                                (0, ce.nZ)().setContext("Webview", {
+                                    enabled: n,
+                                    version: window.WebviewInterfaceVersionName
                                 })
                             } catch (e) {
                                 console.error("Error setting webview context", e)
                             }
-                        }, []),
+                        }, [n]),
                         c = (0, u.useCallback)(function() {
                             window.__isTimersInterceptorPatched || (window.__origSetTimeout || (window.__origSetTimeout = window.setTimeout, window.__origSetInterval = window.setInterval, window.__origRaf = window.requestAnimationFrame, window.__expTimeouts = [], window.__expIntervals = []), window.onActivated = function() {
                                 return -1
@@ -2787,17 +2784,17 @@ function _ts_generator(e, t) {
                             }, window.__isTimersInterceptorPatched = !0)
                         }, []);
                     return (0, u.useEffect)(function() {
-                        var e, n = (0, I.Cw)();
-                        (n && (window.getCurrentActiveTab = function(e) {
+                        var e, r = window.WebviewInterfaceVersion;
+                        n && !r && (r = null === (e = (0, I.Cw)()) || void 0 === e ? void 0 : e.version);
+                        n && (window.getCurrentActiveTab = function(e) {
                             return o(e)
-                        }), n && n.version === I.gO.MOSTLY_WEBVIEW) && (null === (e = n.setRefreshEnabled) || void 0 === e || e.call(n, !1), window.backFromAndroid = function(e) {
+                        }), n && r === I.gO.MOSTLY_WEBVIEW && (window.backFromAndroid = function(e) {
                             var n, r;
                             "/" === (null == e ? void 0 : e.split("?")[0]) && ["/account", "/cart", "/cat/list"].includes(null === (r = history) || void 0 === r || null === (n = r.state) || void 0 === n ? void 0 : n.as) ? t.push("/?client=app") : t.back()
-                        }, c());
-                        n && document.body.classList.add("webview"), requestIdleCallback(function() {
+                        }, c()), n && document.body.classList.add("webview"), requestIdleCallback(function() {
                             return s()
                         })
-                    }, []), (0, u.useEffect)(function() {
+                    }, [n]), (0, u.useEffect)(function() {
                         var n;
                         n = l.bsSessionStorage.getItem("root_path") ? l.bsSessionStorage.getItem("root_path") : de.w.includes(t.pathname) ? t.pathname : "native", e.current = n, l.bsSessionStorage.setItem("root_path", n)
                     }, []), (0, u.useEffect)(function() {
@@ -2838,7 +2835,7 @@ function _ts_generator(e, t) {
                     name: "amin",
                     url: "https://dc06.basalam.com"
                 }],
-                Se = {
+                xe = {
                     headers: {
                         "Content-Type": "application/json"
                     },
@@ -2847,7 +2844,7 @@ function _ts_generator(e, t) {
                         password: "ZoLGZeXHOIDyhn23"
                     }
                 };
-            var xe = {
+            var Se = {
                     value: 0,
                     clsPageUrl: "",
                     clsPageName: "",
@@ -2872,15 +2869,14 @@ function _ts_generator(e, t) {
                     }, []);
                 return (0, u.useEffect)(function() {
                     try {
-                        var e, a = (0, I.Cw)();
+                        var e;
                         n.current = function(e, t) {
-                            var n, r, o, a, i, s, u, c, l, d = e.ua,
-                                v = e.deviceId,
-                                p = e.userId,
-                                f = e.userAgent,
-                                m = e.webVitalData,
-                                _ = e.isCsr,
-                                b = e.webview;
+                            var n, r, o, a, i, s, u, c, l, d, v, p = e.ua,
+                                f = e.deviceId,
+                                m = e.userId,
+                                _ = e.userAgent,
+                                b = e.webVitalData,
+                                h = e.isCsr;
                             return _object_spread_props(_object_spread({}, function() {
                                 if (!performance || !performance.getEntriesByType) return {};
                                 var e = performance.getEntriesByType("navigation");
@@ -2919,50 +2915,49 @@ function _ts_generator(e, t) {
                                 ttfb2: 0,
                                 inpPageUrl: null,
                                 lcpResponseEnd: 0,
-                                "page.spa": _,
+                                "page.spa": h,
                                 inpPageName: null,
                                 project: "charsou",
                                 lcpRequestStart: 0,
                                 inpPageRoute: null,
-                                "user.ili": !!p,
-                                "user.os": d.os.name,
+                                "user.ili": !!m,
+                                "user.os": p.os.name,
                                 isWebview: he()(),
-                                "user.isCrux": (null === (c = d.browser) || void 0 === c || null === (u = c.name) || void 0 === u ? void 0 : u.toLowerCase().includes("chrome")) && !(null === (l = d.os.name) || void 0 === l ? void 0 : l.toLowerCase().includes("mac")),
-                                "user.deviceId": v,
-                                srt: m.srt || 0,
-                                "user.ip": m.ip,
-                                "user.userId": p || 0,
-                                "user.userAgent": f,
+                                "user.isCrux": (null === (d = p.browser) || void 0 === d || null === (l = d.name) || void 0 === l ? void 0 : l.toLowerCase().includes("chrome")) && !(null === (v = p.os.name) || void 0 === v ? void 0 : v.toLowerCase().includes("mac")),
+                                "user.deviceId": f,
+                                srt: b.srt || 0,
+                                "user.ip": b.ip,
+                                "user.userId": m || 0,
+                                "user.userAgent": _,
                                 "page.route": t.asPath,
                                 _id: (0, _e.Z)() + Date.now(),
-                                "user.browser": d.browser.name,
-                                webviewVersion: null == b ? void 0 : b.version,
+                                "user.browser": p.browser.name,
                                 "page.url": window.location.href,
                                 "page.name": (0, me.j)(t),
-                                traceId: null !== (s = m.traceId) && void 0 !== s ? s : null,
-                                "page.hasVideo": m.hasVideo,
-                                "api.pdrt": m.pageData || 0,
-                                "api.pdpReq": m.pdpReq || 0,
-                                "app.versionName": null == b ? void 0 : b.versionName,
+                                traceId: null !== (c = b.traceId) && void 0 !== c ? c : null,
+                                "page.hasVideo": b.hasVideo,
+                                "api.pdrt": b.pageData || 0,
+                                "api.pdpReq": b.pdpReq || 0,
                                 "page.cacheRead": window.cacheRead || 0,
-                                "api.idrt": m.initialData || 0,
-                                "api.pdpFirst": m.pdpFirst || 0,
+                                "api.idrt": b.initialData || 0,
+                                "api.pdpFirst": b.pdpFirst || 0,
                                 "user.hasStorageAccess": (0, ge.$)(),
-                                "user.browserMajorVersion": d.browser.major,
-                                "api.pageProps": m.pageProps || 0,
-                                "user.browserFullVersion": d.browser.version,
+                                "user.browserMajorVersion": p.browser.major,
+                                "api.pageProps": b.pageProps || 0,
+                                "user.browserFullVersion": p.browser.version,
                                 "page.isRedirected": !!(null == t || null === (n = t.query) || void 0 === n ? void 0 : n.replaced),
-                                "api.pdpStatus": m.pdpStatus || null,
+                                "api.pdpStatus": b.pdpStatus || null,
                                 "page.cacheGenerate": window.cacheGenerate || 0,
-                                "api.categories": m.categoriesData || 0,
+                                "api.categories": b.categoriesData || 0,
                                 "network.connection": (null === (o = navigator) || void 0 === o || null === (r = o.connection) || void 0 === r ? void 0 : r.type) || "unknown",
-                                "page.categoryIsInExplore": !!m.categoryIsInExplore,
+                                "page.categoryIsInExplore": !!b.categoryIsInExplore,
                                 "network.networkType": (null === (i = navigator) || void 0 === i || null === (a = i.connection) || void 0 === a ? void 0 : a.effectiveType) || "unknown",
+                                webviewVersion: window.WebviewInterfaceVersion || (null === (s = (0, I.Cw)()) || void 0 === s ? void 0 : s.version),
+                                "app.versionName": window.WebviewInterfaceVersionName || (null === (u = (0, I.Cw)()) || void 0 === u ? void 0 : u.versionName),
                                 "page.cache": void 0 === window.cacheRead ? void 0 === window.cacheGenerate ? "BYPASS" : "MISS" : "HIT"
                             })
                         }({
                             userId: v,
-                            webview: a,
                             ua: o()(),
                             webVitalData: t,
                             deviceId: (0, fe.Z)(),
@@ -2986,16 +2981,16 @@ function _ts_generator(e, t) {
                                                     nodeName: ""
                                                 }
                                             }(null === (o = e.sources) || void 0 === o || null === (r = o[0]) || void 0 === r ? void 0 : r.node);
-                                            xe = _object_spread_props(_object_spread({}, xe), {
-                                                topCLSElements: _to_consumable_array(xe.topCLSElements).concat([{
+                                            Se = _object_spread_props(_object_spread({}, Se), {
+                                                topCLSElements: _to_consumable_array(Se.topCLSElements).concat([{
                                                     value: e.value,
                                                     nodeName: a.nodeName,
                                                     elementClassName: a.elementClassName
                                                 }])
                                             })
                                         }
-                                        xe = _object_spread_props(_object_spread({}, xe), {
-                                            value: xe.value + e.value,
+                                        Se = _object_spread_props(_object_spread({}, Se), {
+                                            value: Se.value + e.value,
                                             clsPageUrl: window.location.href || "",
                                             clsPageName: (null === (t = window.__CLS2Data) || void 0 === t ? void 0 : t.name) || "",
                                             clsPageRoute: (null === (n = window.__CLS2Data) || void 0 === n ? void 0 : n.route) || ""
@@ -3010,7 +3005,7 @@ function _ts_generator(e, t) {
                             type: "layout-shift",
                             buffered: !0
                         });
-                        var u = new PerformanceObserver(function(e) {
+                        var a = new PerformanceObserver(function(e) {
                             var t = function(e) {
                                 var t = {};
                                 try {
@@ -3031,11 +3026,11 @@ function _ts_generator(e, t) {
                             }(e);
                             m(t), (0, pe.g)(n.current)
                         });
-                        u.observe({
+                        a.observe({
                             type: "largest-contentful-paint",
                             buffered: !0
                         });
-                        var c = new PerformanceObserver(function(e) {
+                        var u = new PerformanceObserver(function(e) {
                             var t = function(e) {
                                 var t = 0;
                                 return (e.getEntries() || []).forEach(function(e) {
@@ -3049,11 +3044,11 @@ function _ts_generator(e, t) {
                             }(e);
                             m(t)
                         });
-                        c.observe({
+                        u.observe({
                             type: "first-input",
                             buffered: !0
                         });
-                        var l = new PerformanceObserver(function(e) {
+                        var c = new PerformanceObserver(function(e) {
                             var t = function(e) {
                                 var t, n, r = e.getEntries() || [],
                                     o = 0,
@@ -3089,7 +3084,7 @@ function _ts_generator(e, t) {
                             }(e);
                             t && m(t)
                         });
-                        return l.observe({
+                        return c.observe({
                                 type: "event",
                                 buffered: !0,
                                 durationThreshold: 40
@@ -3105,7 +3100,7 @@ function _ts_generator(e, t) {
                             }),
                             function() {
                                 var e;
-                                e = s.current, c && c.disconnect(), e && e.disconnect()
+                                e = s.current, u && u.disconnect(), e && e.disconnect()
                             }
                     } catch (e) {
                         return console.warn(e),
@@ -3115,7 +3110,7 @@ function _ts_generator(e, t) {
                     var e = function(e) {
                         if ("pagehide" === e.type || "hidden" === document.visibilityState) {
                             var t = (0, me.j)(r),
-                                o = _object_spread({}, xe);
+                                o = _object_spread({}, Se);
                             o.value > 0 && (!n.current.cls2[t] || o.value > n.current.cls2[t].value) && m({
                                 cls2: _object_spread_props(_object_spread({}, n.current.cls2), _define_property({}, t, _object_spread({}, o)))
                             }), (0, pe.g)(n.current)
@@ -3192,7 +3187,7 @@ function _ts_generator(e, t) {
                                                             }
                                                         }(e.url, n), n.totalTime = Date.now() - r, [4, Promise.allSettled([ye.Z.post("https://loki-proxy.darkube.app/store/dc", _object_spread_props(_object_spread({}, n), {
                                                             endPoint: "hamravesh"
-                                                        }), Se)])];
+                                                        }), xe)])];
                                                     case 5:
                                                         return i.sent(), [7];
                                                     case 6:
@@ -3222,10 +3217,10 @@ function _ts_generator(e, t) {
                         route: c,
                         name: s
                     }), n.current["page.name"] !== s && (i.current = !0);
-                    var d = _object_spread({}, xe);
+                    var d = _object_spread({}, Se);
                     u && d.value > 0 && (!(null === (o = n.current.cls2) || void 0 === o ? void 0 : o[u]) || d.value > (null === (a = n.current.cls2) || void 0 === a ? void 0 : a[u].value)) && m({
                         cls2: _object_spread_props(_object_spread({}, n.current.cls2), _define_property({}, u, _object_spread({}, d)))
-                    }), xe = {
+                    }), Se = {
                         value: 0,
                         clsPageUrl: "",
                         clsPageName: "",
@@ -3316,8 +3311,8 @@ function _ts_generator(e, t) {
                     y = g.isLoggedIn,
                     j = g.currentUser,
                     I = (0, le.B)().auth,
-                    S = I.setBnpl,
-                    x = I.setUserId,
+                    x = I.setBnpl,
+                    S = I.setUserId,
                     C = I.setCredit,
                     k = I.setAuthMode,
                     E = I.setOrderCount,
@@ -3331,16 +3326,16 @@ function _ts_generator(e, t) {
                         e.ctrlKey && e.altKey && ("KeyA" === e.code || 65 === e.which) && (((null == j || null === (t = j.markedType) || void 0 === t ? void 0 : t.id) === Le.Pw.BASALAM_SUPPORT || (null == j || null === (n = j.markedType) || void 0 === n ? void 0 : n.id) === Le.Pw.BASALAM_COLLEAGUES) && d.push("/accounts/admin?prev=".concat(encodeURIComponent(window.location.href))))
                     }, [j]);
                 return (0, u.useEffect)(function() {
-                    s && k(s), i && x(i)
+                    s && k(s), i && S(i)
                 }, []), (0, Ge.Z)(function() {
-                    p.isLoading ? D(!0) : (p.data && (x(p.data.id), T(p.data), window.currentUser = p.data), Z(!0), D(!1), setTimeout(function() {
+                    p.isLoading ? D(!0) : (p.data && (S(p.data.id), T(p.data), window.currentUser = p.data), Z(!0), D(!1), setTimeout(function() {
                         requestIdleCallback(function() {
                             var e;
                             return (0, Pe.e)(null === (e = p.data) || void 0 === e ? void 0 : e.id)
                         })
-                    }, 50))
+                    }, 5e3))
                 }, [p.isLoading]), (0, u.useEffect)(function() {
-                    p.data && !p.isLoading && (x(p.data.id), T(p.data), window.currentUser = p.data)
+                    p.data && !p.isLoading && (S(p.data.id), T(p.data), window.currentUser = p.data)
                 }, [p.data]), (0, u.useEffect)(function() {
                     var e = _.data;
                     void 0 !== e && E(e)
@@ -3381,7 +3376,7 @@ function _ts_generator(e, t) {
                     }) : (0, He.preInitEventConfig)(e())
                 }, [y, M, p.data, p.status, _.status]), (0, u.useEffect)(function() {
                     var e = f.data;
-                    e && S(_object_spread({}, e))
+                    e && x(_object_spread({}, e))
                 }, [f.data]), (0, u.useEffect)(function() {
                     var e = m.data;
                     e && C(_object_spread({}, e))
@@ -3567,8 +3562,8 @@ function _ts_generator(e, t) {
                     })
                 },
                 It = n(4852),
-                St = n.n(It),
-                xt = n(97910),
+                xt = n.n(It),
+                St = n(97910),
                 Ct = function() {
                     var e = (0, c.Z)(),
                         t = (0, Ye.t)(),
@@ -3579,8 +3574,8 @@ function _ts_generator(e, t) {
                             showVariationList: !0,
                             product: r,
                             variationId: t.modal.variationId
-                        }), (0, a.jsx)(xt.Z, {
-                            className: St()["atc-modal-result__trust-slides"],
+                        }), (0, a.jsx)(St.Z, {
+                            className: xt()["atc-modal-result__trust-slides"],
                             hasBorder: !0
                         }), (0, a.jsx)(wt(), {
                             target: ".atc-modal-footer",
@@ -3727,7 +3722,7 @@ function _ts_generator(e, t) {
                     g = void 0 === b ? At : b,
                     y = e.shouldReserveTopBannerSpace,
                     j = (0, c.Z)(),
-                    S = (0, h.M_)(["isLoadingCurrentUser"]).isLoadingCurrentUser;
+                    x = (0, h.M_)(["isLoadingCurrentUser"]).isLoadingCurrentUser;
                 (0, u.useEffect)(function() {
                     (0, I.$h)(), requestIdleCallback(function() {
                         j.prefetch("/s")
@@ -3735,7 +3730,7 @@ function _ts_generator(e, t) {
                 }, []), (0, u.useEffect)(function() {
                     i && document.body.classList.add("ios-mode")
                 }, [i]);
-                var x = "loadedInCsrMode" in window,
+                var S = "loadedInCsrMode" in window,
                     C = l ? u.Fragment : Zt;
                 return (0, a.jsx)(se.g3, {
                     initialState: {
@@ -3772,7 +3767,7 @@ function _ts_generator(e, t) {
                                         shouldReserveTopBannerSpace: y
                                     }), (0, a.jsx)("main", {
                                         className: "mainTag",
-                                        children: x && S ? null : n
+                                        children: S && x ? null : n
                                     }), (0, a.jsx)(V, {}), (0, a.jsx)(Mt, {}), !1 === g.footer && !1 !== g.header && (0, a.jsx)(Nt, {
                                         hasBottomNavigation: !1 !== g.bottomNavigation
                                     })]
@@ -3798,7 +3793,7 @@ function _ts_generator(e, t) {
                     };
                     return e.getInitialProps = (0, b._U)(function(e, r) {
                         return _async_to_generator(function() {
-                            var a, i, s, u, c, d, v, p, f, m, _, b, h, g, w, y, j, I, S, x, C, k, E, T, D, N, M, Z, A, L, q, O, R, z, U, V, B, W, F, G, H, Q, Y, X, J, $, ee, te, ne, re, oe, ae, ie, se, ue, le;
+                            var a, i, s, u, c, d, v, p, f, m, _, b, h, g, w, y, j, I, x, S, C, k, E, T, D, N, M, Z, A, L, q, O, R, z, U, V, B, W, F, G, H, Q, Y, X, J, $, ee, te, ne, re, oe, ae, ie, se, ue, le;
                             return _ts_generator(this, function(de) {
                                 switch (de.label) {
                                     case 0:
@@ -3921,7 +3916,7 @@ function _ts_generator(e, t) {
                                             pageData: le - W,
                                             initialData: ee - W,
                                             pageProps: ne - te,
-                                            hasVideo: !!(null == ue || null === (x = ue.product) || void 0 === x || null === (S = x.video) || void 0 === S ? void 0 : S.url),
+                                            hasVideo: !!(null == ue || null === (S = ue.product) || void 0 === S || null === (x = S.video) || void 0 === x ? void 0 : x.url),
                                             categoriesData: Z - M
                                         }), ue)]
                                 }
