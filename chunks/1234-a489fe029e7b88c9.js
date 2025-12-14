@@ -1139,33 +1139,34 @@ function _ts_generator(e, t) {
             }
 
             function a(e, t) {
-                var n = e.vendors.map(function(e) {
-                    return {
-                        vendorId: e.id,
-                        vendorTitle: e.title,
-                        ownerUserId: e.owner.id,
-                        totalProductAmount: e.totalProductAmount,
-                        totalDeliveryAmount: e.deliveryCosts.grand,
-                        totalAmount: e.items.reduce(function(e, t) {
-                            return e + t.payableAmount
-                        }, 0),
-                        items: e.items.map(function(e) {
-                            var t, n, r, o;
-                            return {
-                                quantity: e.quantity,
-                                productPrice: e.price,
-                                productTitle: e.title,
-                                productId: e.product.id,
-                                productCategoryId: null !== (r = null === (t = e.product.category) || void 0 === t ? void 0 : t.id) && void 0 !== r ? r : null,
-                                productCategoryTitle: null !== (o = null === (n = e.product.category) || void 0 === n ? void 0 : n.title) && void 0 !== o ? o : null
-                            }
-                        })
-                    }
-                });
+                var n, r = (null == e || null === (n = e.serviceFee) || void 0 === n ? void 0 : n.applied) && e.serviceFee.amount || 0,
+                    o = e.vendors.map(function(e) {
+                        return {
+                            vendorId: e.id,
+                            vendorTitle: e.title,
+                            ownerUserId: e.owner.id,
+                            totalProductAmount: e.totalProductAmount,
+                            totalDeliveryAmount: e.deliveryCosts.grand,
+                            totalAmount: e.items.reduce(function(e, t) {
+                                return e + t.payableAmount
+                            }, 0) + r,
+                            items: e.items.map(function(e) {
+                                var t, n, r, o;
+                                return {
+                                    quantity: e.quantity,
+                                    productPrice: e.price,
+                                    productTitle: e.title,
+                                    productId: e.product.id,
+                                    productCategoryId: null !== (r = null === (t = e.product.category) || void 0 === t ? void 0 : t.id) && void 0 !== r ? r : null,
+                                    productCategoryTitle: null !== (o = null === (n = e.product.category) || void 0 === n ? void 0 : n.title) && void 0 !== o ? o : null
+                                }
+                            })
+                        }
+                    });
                 return {
                     userId: t,
-                    vendors: n,
-                    amount: e.costs.total.grand
+                    vendors: o,
+                    amount: e.costs.total.grand + r
                 }
             }
         },
@@ -1612,7 +1613,6 @@ function _ts_generator(e, t) {
                     switch (e) {
                         case "productDetail":
                             return void
-
                             function(e) {
                                 for (var t, n, a, i, s, u = {
                                         category: [],
