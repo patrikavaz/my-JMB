@@ -1613,7 +1613,6 @@ function _ts_generator(e, t) {
                     switch (e) {
                         case "productDetail":
                             return void
-
                             function(e) {
                                 for (var t, n, a, i, s, u = {
                                         category: [],
@@ -3057,33 +3056,19 @@ function _ts_generator(e, t) {
                                 var t, n, r = e.getEntries() || [],
                                     o = 0,
                                     a = null,
-                                    i = "",
-                                    s = "",
-                                    u = [];
+                                    i = "";
                                 return r.forEach(function(e) {
-                                    var t, n, r;
                                     if (e.interactionId && !(o >= e.duration)) {
-                                        o = e.duration, a = e.name, i = (null == e || null === (t = e.target) || void 0 === t ? void 0 : t.className) || "", s = (null == e || null === (n = e.target) || void 0 === n ? void 0 : n.className) || "";
-                                        for (var c = e.target; c;) {
-                                            var l = "string" == typeof c.className ? c.className : (null === (r = c.className) || void 0 === r ? void 0 : r.baseVal) || "";
-                                            "" !== l && u.length < 10 && u.unshift(l);
-                                            var d = l.match(/(dataset-inp-[\w-]+)/);
-                                            if (d && d[0]) {
-                                                i = d[0];
-                                                break
-                                            }
-                                            c = c.parentElement
-                                        }
+                                        var t = null == e ? void 0 : e.target;
+                                        o = e.duration, a = e.name, i = (null == t ? void 0 : t.className) || ""
                                     }
                                 }), ke < o ? (ke = o, {
                                     inp: o,
-                                    section: i,
-                                    className: s,
+                                    className: i,
                                     inpAction: a,
                                     inpPageUrl: window.location.href,
                                     inpPageName: null === (t = window.__INPData) || void 0 === t ? void 0 : t.name,
-                                    inpPageRoute: null === (n = window.__INPData) || void 0 === n ? void 0 : n.route,
-                                    classNamePath: u.join("/")
+                                    inpPageRoute: null === (n = window.__INPData) || void 0 === n ? void 0 : n.route
                                 }) : null
                             }(e);
                             t && m(t)
