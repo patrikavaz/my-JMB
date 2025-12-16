@@ -1613,7 +1613,6 @@ function _ts_generator(e, t) {
                     switch (e) {
                         case "productDetail":
                             return void
-
                             function(e) {
                                 for (var t, n, a, i, s, u = {
                                         category: [],
@@ -3618,10 +3617,10 @@ function _ts_generator(e, t) {
                                         se = {}, pe.label = 3;
                                     case 3:
                                         return $ = null == (J = se) || null === (j = J.sticky_banner) || void 0 === j ? void 0 : j.defaultValue, ee = !Mt.X.has(e.pathname) && (null == $ ? void 0 : $.show) && function(e) {
-                                            if (!(null == e ? void 0 : e.endTime) || !(null == e ? void 0 : e.startTime)) return !1;
+                                            if (!(null == e ? void 0 : e.end_time) || !(null == e ? void 0 : e.start_time)) return !1;
                                             try {
-                                                var t = (0, l.gregoryDate)().isBefore((0, l.gregoryDate)(e.endTime));
-                                                return (0, l.gregoryDate)().isAfter((0, l.gregoryDate)(e.startTime)) && t
+                                                var t = (0, l.gregoryDate)().isBefore((0, l.gregoryDate)(e.end_time));
+                                                return (0, l.gregoryDate)().isAfter((0, l.gregoryDate)(e.start_time)) && t
                                             } catch (e) {
                                                 return !1
                                             }
