@@ -1613,7 +1613,6 @@ function _ts_generator(e, t) {
                     switch (e) {
                         case "productDetail":
                             return void
-
                             function(e) {
                                 for (var t, n, a, i, s, u = {
                                         category: [],
@@ -1717,7 +1716,7 @@ function _ts_generator(e, t) {
                     return (0, r.aM)(["pdp", "shipping", e, null == t || null === (n = t.params) || void 0 === n ? void 0 : n.userCityId], function() {
                         return function(e) {
                             var t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : {};
-                            return s.o9.get("/v2/product-zones/".concat(e), (0, o.snakize)(t))
+                            return s.DZ.get("/web/v1/shipping/product-zones/".concat(e), (0, o.snakize)(t))
                         }(e, t)
                     }, _object_spread({}, a))
                 }
