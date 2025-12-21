@@ -1613,7 +1613,6 @@ function _ts_generator(e, t) {
                     switch (e) {
                         case "productDetail":
                             return void
-
                             function(e) {
                                 for (var t, n, a, i, s, u = {
                                         category: [],
@@ -3451,7 +3450,7 @@ function _ts_generator(e, t) {
                             return [16848]
                         }
                     },
-                    ssr: !1,
+                    ssr: !0,
                     loading: Me.Z
                 }),
                 Ct = s()(function() {
@@ -3525,7 +3524,7 @@ function _ts_generator(e, t) {
                             isCachedPage: v,
                             children: [(0, a.jsx)(W.ZP, {}), (0, a.jsx)(gt, {
                                 children: (0, a.jsxs)(C, {
-                                    children: [y && (0, a.jsx)(xt, {}), (0, a.jsx)("main", {
+                                    children: [(!m || y) && (0, a.jsx)(xt, {}), (0, a.jsx)("main", {
                                         className: "mainTag",
                                         children: x && S ? null : n
                                     }), (0, a.jsx)(V, {}), (0, a.jsx)(St, {}), !1 === g.footer && !1 !== g.header && (0, a.jsx)(It, {
