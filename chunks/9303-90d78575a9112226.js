@@ -950,11 +950,11 @@ function _ts_generator(e, t) {
                     Y = e.variationErrorHandler,
                     H = (e.checkShippingLimit, e.isShowSuccessToast),
                     K = void 0 !== H && H,
-                    X = (0, m.t)(),
-                    J = (0, u.Z)(),
+                    J = (0, m.t)(),
+                    X = (0, u.Z)(),
                     $ = (0, a.useSnackbar)().showSuccessSnackbar,
-                    ee = "next" === J.query.tab,
-                    te = "/cart" === J.pathname && !ee,
+                    ee = "next" === X.query.tab,
+                    te = "/cart" === X.pathname && !ee,
                     ne = (0, _.useRef)(),
                     re = _sliced_to_array((0, _.useState)(!1), 2),
                     oe = re[0],
@@ -1006,7 +1006,7 @@ function _ts_generator(e, t) {
                                 return _ts_generator(this, function(r) {
                                     switch (r.label) {
                                         case 0:
-                                            return r.trys.push([0, 2, 3, 4]), "" === e ? (de(F), [2]) : (ue(!0), t = e - F, [4, X.changeQuantity({
+                                            return r.trys.push([0, 2, 3, 4]), "" === e ? (de(F), [2]) : (ue(!0), t = e - F, [4, J.changeQuantity({
                                                 variationId: U,
                                                 quantity: t,
                                                 productId: I.id
@@ -1048,20 +1048,20 @@ function _ts_generator(e, t) {
                                             hasVariation: Q
                                         }, a.label = 2;
                                     case 2:
-                                        return a.trys.push([2, 4, 5, 6]), [4, X.addToCart({
+                                        return a.trys.push([2, 4, 5, 6]), [4, J.addToCart({
                                             variationId: U,
                                             product: t,
                                             autoHandleVariation: !1,
                                             salesCount: L
                                         })];
                                     case 3:
-                                        return n = a.sent(), (0, s.b)("productAddToCart", t), null == p || p(), de(1), "function" == typeof N && N(t, n), te || K ? $("به سبد خریدت اضافه شد.") : ee || X.showModal({
+                                        return n = a.sent(), (0, s.b)("productAddToCart", t), null == p || p(), de(1), "function" == typeof N && N(t, n), te || K ? $("به سبد خریدت اضافه شد.") : ee || J.showModal({
                                             product: t,
                                             variationId: U,
                                             mode: "result"
                                         }), [3, 6];
                                     case 4:
-                                        return r = a.sent(), (0, f.NS)(r) ? Y ? Y(r) : X.showModal({
+                                        return r = a.sent(), (0, f.NS)(r) ? Y ? Y(r) : J.showModal({
                                             onChange: p,
                                             mode: "add",
                                             product: t
@@ -1613,7 +1613,6 @@ function _ts_generator(e, t) {
                     switch (e) {
                         case "productDetail":
                             return void
-
                             function(e) {
                                 for (var t, n, a, i, s, u = {
                                         category: [],
@@ -2195,8 +2194,8 @@ function _ts_generator(e, t) {
                         enabled: W
                     }),
                     K = H.data,
-                    X = H.isLoading,
-                    J = H.isFetched,
+                    J = H.isLoading,
+                    X = H.isFetched,
                     $ = (0, g.aM)(["exploreModalPromotion", R], function() {
                         return (0, y.Z2)({
                             userId: R || 0,
@@ -2212,8 +2211,8 @@ function _ts_generator(e, t) {
                     ee = $.data,
                     te = $.isLoading,
                     ne = $.isFetched,
-                    re = Y && J && !!R && ne,
-                    oe = W && (Q || X || !!R && te),
+                    re = Y && X && !!R && ne,
+                    oe = W && (Q || J || !!R && te),
                     ae = (0, u.useMemo)(function() {
                         return {
                             OrderTracking: T,
@@ -2409,10 +2408,10 @@ function _ts_generator(e, t) {
                         Y = _sliced_to_array((0, u.useState)(null), 2),
                         H = Y[0],
                         K = Y[1],
-                        X = (0, u.useCallback)(function() {
+                        J = (0, u.useCallback)(function() {
                             return x(!0)
                         }, []),
-                        J = (0, u.useCallback)(function(e) {
+                        X = (0, u.useCallback)(function(e) {
                             return w(e)
                         }, []),
                         $ = (0, u.useCallback)(function(e) {
@@ -2464,11 +2463,11 @@ function _ts_generator(e, t) {
                                 (0, u.startTransition)(function() {
                                     return b(!0)
                                 })
-                            }), i("open-ban-modal", X, {
+                            }), i("open-ban-modal", J, {
                                 autoOff: !1
                             }), i("open-wishlist-modal", te, {
                                 autoOff: !1
-                            }), i("show-more-like-this-modal", J, {
+                            }), i("show-more-like-this-modal", X, {
                                 autoOff: !1
                             }), i("open-cart-info-modal", ne, {
                                 autoOff: !1
@@ -2478,10 +2477,10 @@ function _ts_generator(e, t) {
                                 autoOff: !1
                             }),
                             function() {
-                                s("open-ban-modal", X), s("open-wishlist-modal", te), s("show-more-like-this-modal", J), s("open-cart-info-modal", ne), s("show-report-content-modal", ee), s("show-add-or-edit-review-modal", $)
+                                s("open-ban-modal", J), s("open-wishlist-modal", te), s("show-more-like-this-modal", X), s("open-cart-info-modal", ne), s("show-report-content-modal", ee), s("show-add-or-edit-review-modal", $)
                             }
                     }, []), (0, u.useEffect)(function() {
-                        !(0, l.isServerSide)() && window.location.hash.includes("mlt") && y.current && (J(y.current), y.current = null)
+                        !(0, l.isServerSide)() && window.location.hash.includes("mlt") && y.current && (X(y.current), y.current = null)
                     }, [e.asPath]), (0, a.jsx)(v.Z, {
                         children: (0, a.jsxs)(q.ErrorBoundary, {
                             fallback: (0, a.jsx)("div", {}),
@@ -2512,13 +2511,13 @@ function _ts_generator(e, t) {
                 }),
                 H = n(64191),
                 K = n(29723),
-                X = n(43828),
-                J = n(67101),
+                J = n(43828),
+                X = n(67101),
                 $ = n(61262),
                 ee = n(9775),
                 te = (0, u.memo)(function() {
                     var e = (0, u.useRef)(""),
-                        t = (0, X.useRouter)(),
+                        t = (0, J.useRouter)(),
                         n = (0, j.b)().isWebview,
                         r = (0, K.Kp)(["webviewActiveTab"]).webviewActiveTab,
                         o = (0, $.B)().auth.setWebviewActiveTab,
@@ -2530,7 +2529,7 @@ function _ts_generator(e, t) {
                         }, [t.pathname, t.query.from, r]),
                         s = (0, u.useCallback)(function() {
                             if (!(0, l.isDevelopment)()) try {
-                                (0, J.nZ)().setContext("Webview", {
+                                (0, X.nZ)().setContext("Webview", {
                                     enabled: n,
                                     version: window.WebviewInterfaceVersionName
                                 })
@@ -3060,7 +3059,14 @@ function _ts_generator(e, t) {
                     p = (0, j.b)().isWebview,
                     v = (0, Ce.Z)({
                         onSuccess: function(e) {
-                            p && l.bsLocalStorage.setItem(w.gm, e)
+                            p && requestIdleCallback(function() {
+                                try {
+                                    var t = JSON.stringify(e);
+                                    localStorage.setItem(w.gm, t)
+                                } catch (e) {
+                                    console.error(e)
+                                }
+                            })
                         }
                     }),
                     f = ye({
@@ -3169,7 +3175,7 @@ function _ts_generator(e, t) {
                 Ye = n(76303),
                 He = n.n(Ye),
                 Ke = n(43221),
-                Xe = function(e) {
+                Je = function(e) {
                     var t = e.price,
                         n = e.primaryPrice,
                         r = void 0 === n ? 0 : n,
@@ -3194,8 +3200,8 @@ function _ts_generator(e, t) {
                         })]
                     })
                 },
-                Je = n(21891),
-                $e = n.n(Je),
+                Xe = n(21891),
+                $e = n.n(Xe),
                 et = n(53278),
                 tt = n.n(et),
                 nt = n(81433),
@@ -3234,7 +3240,7 @@ function _ts_generator(e, t) {
                             isHorizontal: !0,
                             properties: s.properties,
                             className: $e()["atc-modal-product__variation-list"]
-                        }), (0, a.jsx)(Xe, {
+                        }), (0, a.jsx)(Je, {
                             primaryPrice: l,
                             price: c
                         })]
@@ -3577,7 +3583,7 @@ function _ts_generator(e, t) {
                     };
                     return e.getInitialProps = (0, g._U)(function(e, r) {
                         return _async_to_generator(function() {
-                            var a, i, s, u, c, d, p, v, f, _, m, b, h, g, w, y, j, I, S, x, C, k, E, P, D, T, N, M, A, Z, q, O, R, z, U, V, B, W, F, G, Q, Y, H, K, X, $, ee, te, ne, oe, ae, ie, ue, ce, le, de;
+                            var a, i, s, u, c, d, p, v, f, _, m, b, h, g, w, y, j, I, S, x, C, k, E, P, D, T, N, M, A, Z, q, O, R, z, U, V, B, W, F, G, Q, Y, H, K, J, $, ee, te, ne, oe, ae, ie, ue, ce, le, de;
                             return _ts_generator(this, function(pe) {
                                 switch (pe.label) {
                                     case 0:
@@ -3602,7 +3608,7 @@ function _ts_generator(e, t) {
                                             return n ? Number(n) : 0
                                         }(z) : null, V = Ot ? e.req.headers["user-agent"] : null == A ? void 0 : A.navigator.userAgent, B = o()(V), W = Date.now(), F = (null === (d = e.req) || void 0 === d ? void 0 : d.headers["x-forwarded-for"]) || (null === (p = e.req) || void 0 === p ? void 0 : p.socket.remoteAddress), G = null === (_ = e.req) || void 0 === _ || null === (f = _.app) || void 0 === f || null === (v = f.get("redisDB")) || void 0 === v ? void 0 : v.DB2;
                                         try {
-                                            Q = (null === (C = e.req) || void 0 === C ? void 0 : C.headers["x-client-info"]) || "{}", Y = (null === (k = JSON.parse(Q)) || void 0 === k ? void 0 : k.version) || null, (0, J.nZ)().setContext("Webview", {
+                                            Q = (null === (C = e.req) || void 0 === C ? void 0 : C.headers["x-client-info"]) || "{}", Y = (null === (k = JSON.parse(Q)) || void 0 === k ? void 0 : k.version) || null, (0, X.nZ)().setContext("Webview", {
                                                 enabled: O,
                                                 version: O ? Y : null
                                             })
@@ -3640,7 +3646,7 @@ function _ts_generator(e, t) {
                                     case 2:
                                         ie = {}, pe.label = 3;
                                     case 3:
-                                        return X = null == (K = ie) || null === (j = K.sticky_banner) || void 0 === j ? void 0 : j.defaultValue, $ = !qt.X.has(e.pathname) && (null == X ? void 0 : X.show) && function(e) {
+                                        return J = null == (K = ie) || null === (j = K.sticky_banner) || void 0 === j ? void 0 : j.defaultValue, $ = !qt.X.has(e.pathname) && (null == J ? void 0 : J.show) && function(e) {
                                             if (!(null == e ? void 0 : e.end_time) || !(null == e ? void 0 : e.start_time)) return !1;
                                             try {
                                                 var t = (0, l.gregoryDate)().isBefore((0, l.gregoryDate)(e.end_time));
@@ -3648,7 +3654,7 @@ function _ts_generator(e, t) {
                                             } catch (e) {
                                                 return !1
                                             }
-                                        }(X), ee = Date.now(), te = Date.now(), ne = Date.now(), oe = new Promise(function(t, o) {
+                                        }(J), ee = Date.now(), te = Date.now(), ne = Date.now(), oe = new Promise(function(t, o) {
                                             return _async_to_generator(function() {
                                                 var a, i;
                                                 return _ts_generator(this, function(s) {
