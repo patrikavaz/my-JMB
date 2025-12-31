@@ -1613,7 +1613,6 @@ function _ts_generator(e, t) {
                     switch (e) {
                         case "productDetail":
                             return void
-
                             function(e) {
                                 for (var t, n, a, i, s, u = {
                                         category: [],
@@ -2527,7 +2526,7 @@ function _ts_generator(e, t) {
                                 var n, o, a, i = (0, C.Cw)();
                                 e.current === r ? "navigation" === t.query.from && ee.w.includes(t.pathname) ? null === (n = i.setBottomNavigationVisibility) || void 0 === n || n.call(i, !0) : null === (o = i.setBottomNavigationVisibility) || void 0 === o || o.call(i, !1) : "native" === e.current && (null === (a = i.setBottomNavigationVisibility) || void 0 === a || a.call(i, !1))
                             }
-                        }, [t.pathname, t.query.from, r]),
+                        }, [t.asPath, r]),
                         s = (0, u.useCallback)(function() {
                             if (!(0, l.isDevelopment)()) try {
                                 "function" == typeof X.nZ && window.WebviewInterfaceVersionName && (0, X.nZ)().setContext("Webview", {
