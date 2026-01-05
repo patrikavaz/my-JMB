@@ -257,15 +257,15 @@ function _ts_generator(e, t) {
                 c = n(45835),
                 l = n(81433),
                 d = n.n(l),
-                p = n(93222),
-                v = n.n(p),
+                v = n(93222),
+                p = n.n(v),
                 f = n(27434),
                 _ = (0, f.forwardRef)(function() {
                     var e, t = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : {},
                         n = t.isSlider,
                         s = void 0 === n || n,
                         l = t.hasNavigation,
-                        p = void 0 !== l && l,
+                        v = void 0 !== l && l,
                         _ = t.hasBorder,
                         m = void 0 !== _ && _,
                         b = t.className,
@@ -296,9 +296,9 @@ function _ts_generator(e, t) {
                             }
                         }
                     }, []);
-                    var k = (0, o.Z)([h, u()["trust-slides"], (e = {}, _define_property(e, u()["trust-slides--is-slider"], s), _define_property(e, u()["trust-slides--has-border"], m), _define_property(e, u()["trust-slides--is-appearing"], x), _define_property(e, u()["trust-slides--has-navigation"], p), e)]),
-                        E = j.isPc ? v() : "div",
-                        P = j.isPc ? v().Item : "div";
+                    var k = (0, o.Z)([h, u()["trust-slides"], (e = {}, _define_property(e, u()["trust-slides--is-slider"], s), _define_property(e, u()["trust-slides--has-border"], m), _define_property(e, u()["trust-slides--is-appearing"], x), _define_property(e, u()["trust-slides--has-navigation"], v), e)]),
+                        E = j.isPc ? p() : "div",
+                        P = j.isPc ? p().Item : "div";
                     return (0, r.jsxs)("div", {
                         ref: I,
                         className: k,
@@ -310,7 +310,7 @@ function _ts_generator(e, t) {
                             })
                         }), (0, r.jsx)(E, {
                             className: u()["trust-slides__carousel"],
-                            navigation: p,
+                            navigation: v,
                             children: a.map(function(e) {
                                 return (0, r.jsx)(P, {
                                     className: u()["trust-slides__carousel-item"],
@@ -374,7 +374,7 @@ function _ts_generator(e, t) {
                     return u
                 },
                 GF: function() {
-                    return p
+                    return v
                 },
                 Is: function() {
                     return m
@@ -395,7 +395,7 @@ function _ts_generator(e, t) {
                     return i
                 },
                 dE: function() {
-                    return v
+                    return p
                 },
                 lv: function() {
                     return d
@@ -450,11 +450,11 @@ function _ts_generator(e, t) {
                 return o.DZ.get("/web/v1/core/shelve/list/".concat(n, "?have_product=").concat(r), t)
             }
 
-            function p(e) {
+            function v(e) {
                 return o.DZ.get("/web/v1/core/user/username/".concat(e))
             }
 
-            function v(e) {
+            function p(e) {
                 return o.DZ.get("/web/v1/core/user/".concat(e))
             }
 
@@ -511,7 +511,7 @@ function _ts_generator(e, t) {
                     return a
                 },
                 _Q: function() {
-                    return p
+                    return v
                 },
                 p8: function() {
                     return _
@@ -529,7 +529,7 @@ function _ts_generator(e, t) {
                     return y
                 },
                 wv: function() {
-                    return v
+                    return p
                 },
                 zR: function() {
                     return l
@@ -608,7 +608,7 @@ function _ts_generator(e, t) {
                 }))
             }
 
-            function p(e) {
+            function v(e) {
                 var t = e.userId,
                     n = void 0 === t ? 0 : t,
                     a = e.config,
@@ -618,7 +618,7 @@ function _ts_generator(e, t) {
                 }))
             }
 
-            function v(e) {
+            function p(e) {
                 var t = e.userId,
                     n = void 0 === t ? 0 : t,
                     a = e.config,
@@ -760,10 +760,10 @@ function _ts_generator(e, t) {
                     return j
                 },
                 ed: function() {
-                    return v
+                    return p
                 },
                 fy: function() {
-                    return p
+                    return v
                 },
                 kc: function() {
                     return c
@@ -819,11 +819,11 @@ function _ts_generator(e, t) {
                 return o.DZ.get("/web/v1/order-processing/".concat(e, "/can-cancel"))
             }
 
-            function p(e) {
+            function v(e) {
                 return o.DZ.post("/web/v1/order-processing/".concat(e.params.operator, "/agreements/").concat(e.params.agreementId, "/determine-agreement"), (0, r.snakize)(e.body))
             }
 
-            function v(e) {
+            function p(e) {
                 return o.DZ.post("/web/v1/order-processing/user/order/parcel/set-feedback", (0, r.snakize)(e))
             }
 
@@ -904,8 +904,8 @@ function _ts_generator(e, t) {
                 c = n(25867),
                 l = n(65074),
                 d = n.n(l),
-                p = n(35952),
-                v = n.n(p),
+                v = n(35952),
+                p = n.n(v),
                 f = n(74495),
                 _ = n(27434),
                 m = n(18925);
@@ -916,7 +916,7 @@ function _ts_generator(e, t) {
             var h = function(e) {
                 var t, n = e.stock,
                     l = e.children,
-                    p = e.onChange,
+                    v = e.onChange,
                     h = e.label,
                     g = void 0 === h ? "" : h,
                     w = e.size,
@@ -932,17 +932,17 @@ function _ts_generator(e, t) {
                     D = e.disabled,
                     T = void 0 !== D && D,
                     N = (e.onUpdateQuantity, e.onAfterAddToCart),
-                    M = e.buttonProps,
-                    A = void 0 === M ? {} : M,
+                    A = e.buttonProps,
+                    M = void 0 === A ? {} : A,
                     Z = e.fullWidth,
                     q = void 0 !== Z && Z,
                     L = e.productSalesCount,
                     O = e.stepperProps,
                     R = void 0 === O ? {} : O,
                     z = e.variationId,
-                    V = void 0 === z ? null : z,
-                    U = e.hasStepper,
-                    W = void 0 !== U && U,
+                    U = void 0 === z ? null : z,
+                    V = e.hasStepper,
+                    W = void 0 !== V && V,
                     B = e.quantityInCart,
                     F = void 0 === B ? 0 : B,
                     G = e.hasVariation,
@@ -965,8 +965,8 @@ function _ts_generator(e, t) {
                     ce = _sliced_to_array((0, _.useState)(F), 2),
                     le = ce[0],
                     de = ce[1],
-                    pe = null !== (t = null != n ? n : null == I ? void 0 : I.stock) && void 0 !== t ? t : 1,
-                    ve = W && F > 0,
+                    ve = null !== (t = null != n ? n : null == I ? void 0 : I.stock) && void 0 !== t ? t : 1,
+                    pe = W && F > 0,
                     fe = (0, _.useMemo)(function() {
                         switch (y) {
                             case "xxs":
@@ -988,12 +988,12 @@ function _ts_generator(e, t) {
                     }, [y]);
                 return (0, _.useEffect)(function() {
                     F !== le && de(F)
-                }, [F]), ve ? (0, r.jsx)(v(), _object_spread_props(_object_spread({
+                }, [F]), pe ? (0, r.jsx)(p(), _object_spread_props(_object_spread({
                     min: 0,
                     canType: !0,
                     value: le,
                     size: fe,
-                    max: pe,
+                    max: ve,
                     disabled: T,
                     className: k,
                     loading: se,
@@ -1007,12 +1007,12 @@ function _ts_generator(e, t) {
                                     switch (r.label) {
                                         case 0:
                                             return r.trys.push([0, 2, 3, 4]), "" === e ? (de(F), [2]) : (ue(!0), t = e - F, [4, J.changeQuantity({
-                                                variationId: V,
+                                                variationId: U,
                                                 quantity: t,
                                                 productId: I.id
                                             })]);
                                         case 1:
-                                            return r.sent(), null == p || p(), [3, 4];
+                                            return r.sent(), null == v || v(), [3, 4];
                                         case 2:
                                             return n = r.sent(), (0, i.S_)(n), de(F), [3, 4];
                                         case 3:
@@ -1033,7 +1033,7 @@ function _ts_generator(e, t) {
                     disabled: T,
                     fullWidth: q,
                     className: k
-                }, A), {
+                }, M), {
                     onClick: function(e) {
                         return _async_to_generator(function() {
                             var t, n, r;
@@ -1049,20 +1049,20 @@ function _ts_generator(e, t) {
                                         }, a.label = 2;
                                     case 2:
                                         return a.trys.push([2, 4, 5, 6]), [4, J.addToCart({
-                                            variationId: V,
+                                            variationId: U,
                                             product: t,
                                             autoHandleVariation: !1,
                                             salesCount: L
                                         })];
                                     case 3:
-                                        return n = a.sent(), (0, s.b)("productAddToCart", t), null == p || p(), de(1), "function" == typeof N && N(t, n), te || K ? $("به سبد خریدت اضافه شد.") : ee || J.showModal({
+                                        return n = a.sent(), (0, s.b)("productAddToCart", t), null == v || v(), de(1), "function" == typeof N && N(t, n), te || K ? $("به سبد خریدت اضافه شد.") : ee || J.showModal({
                                             product: t,
-                                            variationId: V,
+                                            variationId: U,
                                             mode: "result"
                                         }), [3, 6];
                                     case 4:
                                         return r = a.sent(), (0, f.NS)(r) ? Y ? Y(r) : J.showModal({
-                                            onChange: p,
+                                            onChange: v,
                                             mode: "add",
                                             product: t
                                         }) : _instanceof(r, b) || (0, i.S_)(r), [3, 6];
@@ -1181,7 +1181,7 @@ function _ts_generator(e, t) {
                 o = n(5164);
 
             function a(e) {
-                var t, n, a, i, s, u, c, l, d, p, v, f, _, m, b, h, g, w, y, j = (null === (n = e.category) || void 0 === n || null === (t = n.parent) || void 0 === t ? void 0 : t.parent) || {},
+                var t, n, a, i, s, u, c, l, d, v, p, f, _, m, b, h, g, w, y, j = (null === (n = e.category) || void 0 === n || null === (t = n.parent) || void 0 === t ? void 0 : t.parent) || {},
                     I = (null === (a = e.category) || void 0 === a ? void 0 : a.parent) || {},
                     S = e.category || {},
                     x = e.vendor || {};
@@ -1208,8 +1208,8 @@ function _ts_generator(e, t) {
                     preparationDays: e.preparationDays,
                     isInUserWishlist: e.isInUserWishlist,
                     productName: (null == e ? void 0 : e.name) || (null == e ? void 0 : e.title),
-                    vendorProvinceName: null == x || null === (p = x.city) || void 0 === p || null === (d = p.province) || void 0 === d ? void 0 : d.name,
-                    ratingCount: Number(null === (v = e.rating) || void 0 === v ? void 0 : v.signals) || 0,
+                    vendorProvinceName: null == x || null === (v = x.city) || void 0 === v || null === (d = v.province) || void 0 === d ? void 0 : d.name,
+                    ratingCount: Number(null === (p = e.rating) || void 0 === p ? void 0 : p.signals) || 0,
                     categoryId: Number(j.id) || void 0,
                     category2Id: Number(I.id) || void 0,
                     category3Id: Number(S.id) || void 0,
@@ -1247,8 +1247,8 @@ function _ts_generator(e, t) {
                 c = n(88107),
                 l = n(45835),
                 d = n(88592),
-                p = n(27434),
-                v = n(36350),
+                v = n(27434),
+                p = n(36350),
                 f = n(60802),
                 _ = n(25867),
                 m = n(5164),
@@ -1259,11 +1259,11 @@ function _ts_generator(e, t) {
                     c = e.typeOfUser,
                     l = e.orderCount,
                     d = e.invoice,
-                    p = e.salesCount;
+                    v = e.salesCount;
                 (0, a.publishEvent)("addToCart", _object_spread({
                     typeOfUser: c,
                     orderCount: l,
-                    salesCount: p,
+                    salesCount: v,
                     quantity: 1,
                     invoiceId: null == d ? void 0 : d.id,
                     invoiceItemId: null == d || null === (t = d.lastItem) || void 0 === t ? void 0 : t.id,
@@ -1282,24 +1282,24 @@ function _ts_generator(e, t) {
                 y = n(53045),
                 j = n(89504),
                 I = n(41581),
-                S = (0, p.createContext)({}),
+                S = (0, v.createContext)({}),
                 x = function() {
-                    return (0, p.useContext)(S)
+                    return (0, v.useContext)(S)
                 };
 
             function C(e) {
                 var t = e.children,
-                    n = _sliced_to_array((0, p.useState)(null), 2),
+                    n = _sliced_to_array((0, v.useState)(null), 2),
                     _ = n[0],
                     m = n[1],
-                    b = (0, p.useRef)(null),
+                    b = (0, v.useRef)(null),
                     x = (0, l.b)().isWebview,
                     C = (0, d.M_)(["typeOfUser", "isLoggedIn", "userId", "orderCount"]),
                     k = C.typeOfUser,
                     E = C.isLoggedIn,
                     P = C.userId,
                     D = C.orderCount;
-                (0, p.useEffect)(function() {
+                (0, v.useEffect)(function() {
                     return b.current = setTimeout(function() {
                             m(function() {
                                 return k
@@ -1311,9 +1311,9 @@ function _ts_generator(e, t) {
                 }, [k]);
                 var T = (0, o.NL)(),
                     N = (0, s.E)(),
-                    M = (0, c.Z)(),
-                    A = (0, f.l)().runGBTest,
-                    Z = _sliced_to_array((0, p.useState)({
+                    A = (0, c.Z)(),
+                    M = (0, f.l)().runGBTest,
+                    Z = _sliced_to_array((0, v.useState)({
                         product: null,
                         onAdded: null,
                         onClose: null,
@@ -1325,21 +1325,21 @@ function _ts_generator(e, t) {
                     }), 2),
                     q = Z[0],
                     L = Z[1],
-                    O = (0, p.useCallback)(function() {
+                    O = (0, v.useCallback)(function() {
                         L(function(e) {
                             return _object_spread_props(_object_spread({}, e), {
                                 isShown: !1
                             })
                         })
                     }, []),
-                    R = (0, p.useCallback)(function(e) {
+                    R = (0, v.useCallback)(function(e) {
                         L(function(t) {
                             return _object_spread_props(_object_spread({}, t, e), {
                                 isShown: !0
                             })
                         })
                     }, []),
-                    z = (0, p.useCallback)(function(e) {
+                    z = (0, v.useCallback)(function(e) {
                         var t = e.product,
                             n = e.mode;
                         L(function(e) {
@@ -1349,9 +1349,9 @@ function _ts_generator(e, t) {
                             })
                         })
                     }, []),
-                    V = function(e) {
+                    U = function(e) {
                         var t = e.product,
-                            n = "/cart" !== M.pathname;
+                            n = "/cart" !== A.pathname;
                         L(function(e) {
                             return _object_spread_props(_object_spread({}, e), {
                                 product: t,
@@ -1360,7 +1360,7 @@ function _ts_generator(e, t) {
                             })
                         })
                     },
-                    U = (0, p.useCallback)(function() {
+                    V = (0, v.useCallback)(function() {
                         var e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : {},
                             t = e.product,
                             n = e.variationId,
@@ -1378,7 +1378,7 @@ function _ts_generator(e, t) {
                                     switch (d.label) {
                                         case 0:
                                             if (t.hasVariation && !n) throw s();
-                                            return E ? (i = "/cart" !== window.location.pathname && !(null === (e = A("free_shipping_inform", !1)) || void 0 === e ? void 0 : e.value), u = {
+                                            return E ? (i = "/cart" !== window.location.pathname && !(null === (e = M("free_shipping_inform", !1)) || void 0 === e ? void 0 : e.value), u = {
                                                 isLight: i,
                                                 variationId: n,
                                                 quantity: 1,
@@ -1399,7 +1399,7 @@ function _ts_generator(e, t) {
                                                 salesCount: a,
                                                 invoice: c,
                                                 typeOfUser: _
-                                            }), [2, ((null == (l = (0, j.Cw)()) ? void 0 : l.version) === j.gO.MOSTLY_WEBVIEW ? null == l || null === (r = l.updateBasketSize) || void 0 === r || r.call(l, c.itemCount || -1) : null == l || null === (o = l.updateBasketSize) || void 0 === o || o.call(l), c)]
+                                            }), x && ((null == (l = (0, j.Cw)()) ? void 0 : l.version) === j.gO.MOSTLY_WEBVIEW ? null == l || null === (r = l.updateBasketSize) || void 0 === r || r.call(l, c.itemCount || -1) : null == l || null === (o = l.updateBasketSize) || void 0 === o || o.call(l)), [2, c]
                                     }
                                 })
                             })().then(r).catch(function(t) {
@@ -1419,9 +1419,9 @@ function _ts_generator(e, t) {
                             })
                         })
                     }, [E, _, D, R, x]),
-                    W = (0, p.useCallback)(function(e) {
+                    W = (0, v.useCallback)(function(e) {
                         return _async_to_generator(function() {
-                            var t, n, r, o, s, u, c, l, d, p, v, f;
+                            var t, n, r, o, s, u, c, l, d, v, p, f;
                             return _ts_generator(this, function(m) {
                                 switch (m.label) {
                                     case 0:
@@ -1450,7 +1450,7 @@ function _ts_generator(e, t) {
                                             variationId: s
                                         })];
                                     case 2:
-                                        return p = m.sent(), c ? N.setData(p) : (T.setQueryData(["cart", P], p), N.update()), [2, ((null == (v = (0, j.Cw)()) ? void 0 : v.version) === j.gO.MOSTLY_WEBVIEW ? null == v || null === (l = v.updateBasketSize) || void 0 === l || l.call(v, p.itemCount || -1) : null == v || null === (d = v.updateBasketSize) || void 0 === d || d.call(v), p)];
+                                        return l = m.sent(), c ? N.setData(l) : (T.setQueryData(["cart", P], l), N.update()), x && ((null == (p = (0, j.Cw)()) ? void 0 : p.version) === j.gO.MOSTLY_WEBVIEW ? null == p || null === (d = p.updateBasketSize) || void 0 === d || d.call(p, l.itemCount || -1) : null == p || null === (v = p.updateBasketSize) || void 0 === v || v.call(p)), [2, l];
                                     case 3:
                                         throw f = m.sent(), (0, i.S_)(f), f;
                                     case 4:
@@ -1477,9 +1477,9 @@ function _ts_generator(e, t) {
                             return null
                         }
                     },
-                    F = (0, p.useCallback)(function(e) {
+                    F = (0, v.useCallback)(function(e) {
                         return _async_to_generator(function() {
-                            var t, n, r, o, s, u, c, l, d, p, v, f;
+                            var t, n, r, o, s, u, c, l, d, v, p, f;
                             return _ts_generator(this, function(m) {
                                 switch (m.label) {
                                     case 0:
@@ -1489,9 +1489,9 @@ function _ts_generator(e, t) {
                                             itemId: o,
                                             productId: t,
                                             variationId: r
-                                        }), p = null, E ? [4, (0, g.Ep)(o)] : [3, 3];
+                                        }), v = null, E ? [4, (0, g.Ep)(o)] : [3, 3];
                                     case 2:
-                                        return p = m.sent(), T.setQueryData(["cart", P], p), [3, 4];
+                                        return v = m.sent(), T.setQueryData(["cart", P], v), [3, 4];
                                     case 3:
                                         (0, I.VZ)({
                                             productId: t,
@@ -1504,7 +1504,7 @@ function _ts_generator(e, t) {
                                             quantity: null == d ? void 0 : d.quantity,
                                             vendorId: null == d || null === (s = d.vendor) || void 0 === s ? void 0 : s.id,
                                             inventory: null == d || null === (u = d.product) || void 0 === u ? void 0 : u.stock
-                                        }), [2, ((null == (v = (0, j.Cw)()) ? void 0 : v.version) === j.gO.MOSTLY_WEBVIEW ? null == v || null === (c = v.updateBasketSize) || void 0 === c || c.call(v, p.itemCount || -1) : null == v || null === (l = v.updateBasketSize) || void 0 === l || l.call(v), p)];
+                                        }), x && ((null == (p = (0, j.Cw)()) ? void 0 : p.version) === j.gO.MOSTLY_WEBVIEW ? null == p || null === (c = p.updateBasketSize) || void 0 === c || c.call(p, v.itemCount || -1) : null == p || null === (l = p.updateBasketSize) || void 0 === l || l.call(p)), [2, v];
                                     case 5:
                                         throw f = m.sent(), (0, i.S_)(f), f;
                                     case 6:
@@ -1513,13 +1513,13 @@ function _ts_generator(e, t) {
                             })
                         })()
                     }, [E, T, N, _, D, x]),
-                    G = (0, p.useCallback)(function(e) {
+                    G = (0, v.useCallback)(function(e) {
                         return _async_to_generator(function() {
                             var t;
                             return _ts_generator(this, function(n) {
                                 switch (n.label) {
                                     case 0:
-                                        return n.trys.push([0, 2, , 3]), [4, U({
+                                        return n.trys.push([0, 2, , 3]), [4, V({
                                             product: e,
                                             autoHandleVariation: !1
                                         })];
@@ -1538,19 +1538,19 @@ function _ts_generator(e, t) {
                                 }
                             })
                         })()
-                    }, [U, R]);
+                    }, [V, R]);
                 ! function(e) {
-                    var t = (0, v.useEmitter)().subEvent,
+                    var t = (0, p.useEmitter)().subEvent,
                         n = (0, s.E)(),
                         r = (0, d.M_)(["userId"]).userId,
-                        o = (0, p.useRef)({
+                        o = (0, v.useRef)({
                             userId: null,
                             updateSummary: null,
                             refetchSummary: null
                         });
-                    (0, p.useEffect)(function() {
+                    (0, v.useEffect)(function() {
                         r && (o.current.userId = r, o.current.updateSummary = n.update, o.current.refetchSummary = n.refetch)
-                    }, [n, r]), (0, p.useEffect)(function() {
+                    }, [n, r]), (0, v.useEffect)(function() {
                         t("login", function() {
                             null == e || e(o.current)
                         }, {
@@ -1576,9 +1576,9 @@ function _ts_generator(e, t) {
                         })
                     })()
                 });
-                var Q = (0, p.useMemo)(function() {
+                var Q = (0, v.useMemo)(function() {
                     return {
-                        addToCart: U,
+                        addToCart: V,
                         showModal: R,
                         closeModal: O,
                         changeQuantity: W,
@@ -1586,9 +1586,9 @@ function _ts_generator(e, t) {
                         quickAddToCart: G,
                         switchModalMode: z,
                         modal: q,
-                        showResultModalIfNeeded: V
+                        showResultModalIfNeeded: U
                     }
-                }, [U, q, W, F, G, R, z, O]);
+                }, [V, q, W, F, G, R, z, O]);
                 return (0, r.jsx)(S.Provider, {
                     value: Q,
                     children: t
@@ -1613,7 +1613,6 @@ function _ts_generator(e, t) {
                     switch (e) {
                         case "productDetail":
                             return void
-
                             function(e) {
                                 for (var t, n, a, i, s, u = {
                                         category: [],
@@ -1788,16 +1787,16 @@ function _ts_generator(e, t) {
                 c = n.n(u),
                 l = n(67557),
                 d = n.n(l),
-                p = n(45835);
+                v = n(45835);
 
-            function v(e) {
+            function p(e) {
                 var t = e.className,
                     n = e.properties,
                     a = e.isHorizontal,
                     i = e.valueClassName,
                     u = (0, o.Z)(t, c()["variation-list"], a ? c()["variation-list--horizontal"] : ""),
-                    l = (0, p.b)().ua.isPc,
-                    v = n.reduce(function(e, t) {
+                    l = (0, v.b)().ua.isPc,
+                    p = n.reduce(function(e, t) {
                         var n = t.property,
                             r = t.value,
                             o = _object_spread_props(_object_spread({}, n), {
@@ -1811,14 +1810,14 @@ function _ts_generator(e, t) {
                         }) || a.values.push(r) : e.push(o), e
                     }, []),
                     f = (0, s.useMemo)(function() {
-                        return !!v.some(function(e) {
+                        return !!p.some(function(e) {
                             var t;
                             return (null == e || null === (t = e.values) || void 0 === t ? void 0 : t.length) > 1
                         })
-                    }, [v]);
-                return 0 === v.length ? null : (0, r.jsxs)("div", {
+                    }, [p]);
+                return 0 === p.length ? null : (0, r.jsxs)("div", {
                     className: u,
-                    children: [v.map(function(e) {
+                    children: [p.map(function(e) {
                         var t;
                         return (0, r.jsx)("span", {
                             className: c()["variation-list__item"],
@@ -1853,12 +1852,12 @@ function _ts_generator(e, t) {
                     title: i().string
                 })
             }));
-            v.propTypes = {
+            p.propTypes = {
                 className: i().string,
                 isHorizontal: i().bool,
                 valueClassName: i().string,
                 properties: f
-            }, t.Z = (0, s.memo)(v)
+            }, t.Z = (0, s.memo)(p)
         },
         42349: function(e, t, n) {
             "use strict";
@@ -1876,8 +1875,8 @@ function _ts_generator(e, t) {
                 c = n(93222),
                 l = n.n(c),
                 d = n(40877),
-                p = n(22549),
-                v = n.n(p);
+                v = n(22549),
+                p = n.n(v);
 
             function f(e) {
                 var t, n, o = e.option,
@@ -1896,7 +1895,7 @@ function _ts_generator(e, t) {
                         return !e || (null == e ? void 0 : e.stock) <= 0
                     }, [o.id, c, u.id, a]);
                 return (0, r.jsx)("button", {
-                    className: (0, d.Z)(v()["product-variation-item"], (n = {}, _define_property(n, v()["product-variation-item--disabled"], l), _define_property(n, v()["product-variation-item--selected"], (null === (t = c[o.id]) || void 0 === t ? void 0 : t.id) === u.id), n)),
+                    className: (0, d.Z)(p()["product-variation-item"], (n = {}, _define_property(n, p()["product-variation-item--disabled"], l), _define_property(n, p()["product-variation-item--selected"], (null === (t = c[o.id]) || void 0 === t ? void 0 : t.id) === u.id), n)),
                     onClick: function() {
                         l || null == s || s(u)
                     },
@@ -1914,12 +1913,12 @@ function _ts_generator(e, t) {
                     s = (0, i.useRef)(),
                     c = _sliced_to_array((0, i.useState)(!0), 2),
                     d = c[0],
-                    p = c[1],
-                    v = _sliced_to_array((0, i.useState)(!1), 2),
-                    _ = v[0],
-                    m = v[1],
+                    v = c[1],
+                    p = _sliced_to_array((0, i.useState)(!1), 2),
+                    _ = p[0],
+                    m = p[1],
                     b = (0, i.useCallback)(function(e) {
-                        p(function() {
+                        v(function() {
                             return e.canScrollNext()
                         }), m(function() {
                             return e.canScrollPrev()
@@ -2006,7 +2005,7 @@ function _ts_generator(e, t) {
                             })
                         }), e
                     }, [null == t ? void 0 : t.variants]),
-                    p = function(e) {
+                    v = function(e) {
                         var n, r = _object_spread({}, c);
                         (null === (n = r[e.optionId]) || void 0 === n ? void 0 : n.id) === e.id ? delete r[e.optionId] : r = _object_spread_props(_object_spread({}, r), _define_property({}, e.optionId, e)), l(r);
                         var a = t.variants.find(function(e) {
@@ -2047,7 +2046,7 @@ function _ts_generator(e, t) {
                             option: e,
                             variants: (null == t ? void 0 : t.variants) || [],
                             selectedValues: c,
-                            onSelect: p
+                            onSelect: v
                         }, e.id)
                     })]
                 })
@@ -2087,8 +2086,8 @@ function _ts_generator(e, t) {
                     })
                 }, [e.events]), null
             }
-            var p = n(36350),
-                v = n(79373),
+            var v = n(36350),
+                p = n(79373),
                 f = n(82280),
                 _ = n.n(f),
                 m = n(2134),
@@ -2105,7 +2104,7 @@ function _ts_generator(e, t) {
                 k = (("function" == typeof b() ? b()() : {}) || {}).publicRuntimeConfig,
                 E = void 0 === k ? {} : k,
                 P = (0, u.lazy)(function() {
-                    return Promise.all([n.e(246), n.e(8293), n.e(3620), n.e(5382), n.e(3098), n.e(7314), n.e(8990), n.e(2746), n.e(4287), n.e(3941), n.e(4168), n.e(2308), n.e(928), n.e(5437), n.e(4491), n.e(1305), n.e(1896)]).then(n.bind(n, 30797)).then(function(e) {
+                    return Promise.all([n.e(246), n.e(8293), n.e(3620), n.e(5382), n.e(3098), n.e(7314), n.e(8990), n.e(2746), n.e(4287), n.e(5228), n.e(3941), n.e(6023), n.e(4208), n.e(928), n.e(5437), n.e(4491), n.e(1305), n.e(1896)]).then(n.bind(n, 30797)).then(function(e) {
                         return {
                             default: e.ReviewSuggestion
                         }
@@ -2120,86 +2119,88 @@ function _ts_generator(e, t) {
                 N = (0, u.lazy)(function() {
                     return n.e(5288).then(n.bind(n, 35288))
                 }),
-                M = "POPUP_LOADER_DATA_V2",
-                A = [3739, 3237, 3238, 4633, 5075, 5017, 3572, 3740, 6440];
+                A = "POPUP_LOADER_DATA_V2",
+                M = [3739, 3237, 3238, 4633, 5075, 5017, 3572, 3740, 6440];
 
             function Z() {
-                var e, t = (0, c.Z)(),
-                    n = (0, x.l)().getFeatureValue,
-                    r = (0, j.b)(),
-                    o = r.isWebview,
-                    i = void 0 !== o && o,
-                    s = r.ua.isPc,
-                    d = _sliced_to_array((0, u.useState)(!1), 2),
-                    p = d[0],
-                    v = d[1],
-                    f = _sliced_to_array((0, u.useState)(!1), 2),
-                    _ = f[0],
-                    m = f[1],
-                    b = _sliced_to_array((0, u.useState)([]), 2),
-                    k = b[0],
-                    Z = b[1],
-                    q = (0, w.M_)(["banStatus", "isLoggedIn", "userId"]),
-                    L = q.banStatus,
-                    O = q.isLoggedIn,
-                    R = q.userId,
-                    z = (0, u.useMemo)(function() {
-                        return "/" === t.asPath || (0, h.isPdpPage)(t.asPath)
-                    }, [t.asPath]),
-                    V = (0, u.useMemo)(function() {
-                        var e = n("ai-agent-touchpoints");
+                var e, t, n, r, o, i = (0, c.Z)(),
+                    s = (0, x.l)().getFeatureValue,
+                    d = (0, j.b)(),
+                    v = d.isWebview,
+                    p = void 0 !== v && v,
+                    f = d.ua.isPc,
+                    _ = _sliced_to_array((0, u.useState)(!1), 2),
+                    m = _[0],
+                    b = _[1],
+                    k = _sliced_to_array((0, u.useState)(!1), 2),
+                    Z = k[0],
+                    q = k[1],
+                    L = _sliced_to_array((0, u.useState)([]), 2),
+                    O = L[0],
+                    R = L[1],
+                    z = (0, w.M_)(["banStatus", "isLoggedIn", "userId"]),
+                    U = z.banStatus,
+                    V = z.isLoggedIn,
+                    W = z.userId,
+                    B = "/" === (null === (r = i.asPath) || void 0 === r || null === (n = r.split("?")) || void 0 === n || null === (t = n[0]) || void 0 === t || null === (e = t.split("#")) || void 0 === e ? void 0 : e[0]),
+                    F = (0, u.useMemo)(function() {
+                        return B || (0, h.isPdpPage)(i.asPath)
+                    }, [B, i.asPath]),
+                    G = (0, u.useMemo)(function() {
+                        var e = s("ai-agent-touchpoints");
                         return (null == e ? void 0 : e.home) ? null == e ? void 0 : e.home : (null == e ? void 0 : e.pdp) ? null == e ? void 0 : e.pdp : null
-                    }, [n]),
-                    U = (0, u.useMemo)(function() {
-                        return z && !!V && !!(null == E ? void 0 : E.aiAgentUrl)
-                    }, [z, V]),
-                    W = (0, u.useCallback)(function(e) {
-                        var n = ["/cart", "/live", "/games", "/invite", "/account", "/landings", "/vendor-guides"],
-                            r = !(null == L ? void 0 : L.business),
-                            o = !s && "/" === t.asPath.split("?")[0],
-                            a = e.filter(function(e) {
-                                var a, s;
+                    }, [s]),
+                    Q = (0, u.useMemo)(function() {
+                        return F && !!G && !!(null == E ? void 0 : E.aiAgentUrl)
+                    }, [F, G]),
+                    Y = (0, u.useCallback)(function(e) {
+                        if (!Array.isArray(e)) return [];
+                        var t = ["/cart", "/live", "/games", "/invite", "/account", "/landings", "/vendor-guides"],
+                            n = !(null == U ? void 0 : U.business),
+                            r = !f && "/" === i.asPath.split("?")[0],
+                            o = e.filter(function(e) {
+                                var o, a;
                                 switch (e.ui) {
                                     case "order_tracking":
-                                        return o && r;
+                                        return r && n;
                                     case "review_suggestion":
-                                        var u = _to_consumable_array(n).concat(_to_consumable_array((null === (a = e.metaData) || void 0 === a ? void 0 : a.links) || []));
-                                        return !new RegExp("^(".concat(u.join("|"), ")")).test(t.asPath) && !(0, h.isPdpPage)(t.asPath) && r && (!i || "/" === t.asPath.split("?")[0]);
+                                        var s = _to_consumable_array(t).concat(_to_consumable_array((null === (o = e.metaData) || void 0 === o ? void 0 : o.links) || []));
+                                        return !new RegExp("^(".concat(s.join("|"), ")")).test(i.asPath) && !(0, h.isPdpPage)(i.asPath) && n && (!p || "/" === i.asPath.split("?")[0]);
                                     case "modal_promotion":
-                                        var c = _to_consumable_array(n).concat(_to_consumable_array((null === (s = e.metaData) || void 0 === s ? void 0 : s.links) || []));
-                                        return !new RegExp("^(".concat(c.join("|"), ")")).test(t.asPath) && !(0, h.isPdpPage)(t.asPath) && r && (!i || "/" === t.asPath.split("?")[0]);
+                                        var u = _to_consumable_array(t).concat(_to_consumable_array((null === (a = e.metaData) || void 0 === a ? void 0 : a.links) || []));
+                                        return !new RegExp("^(".concat(u.join("|"), ")")).test(i.asPath) && !(0, h.isPdpPage)(i.asPath) && n && (!p || "/" === i.asPath.split("?")[0]);
                                     case "ai_assistant_fab_button":
-                                        return U;
+                                        return Q;
                                     default:
                                         return !1
                                 }
                             });
-                        return a
-                    }, [null == L ? void 0 : L.business, s, t.asPath, i, U]),
-                    B = (0, u.useMemo)(function() {
-                        return p && O && (!(i && (0, l.isClientSide)()) || window.WebviewInterfaceVersion === C.gO.MOSTLY_WEBVIEW) && _
-                    }, [p, _, O, i]),
-                    F = (0, g.aM)(["my-orders"], function() {
+                        return Array.isArray(o) ? o : []
+                    }, [null == U ? void 0 : U.business, f, i.asPath, p, Q]),
+                    H = (0, u.useMemo)(function() {
+                        return m && V && (!(p && (0, l.isClientSide)()) || window.WebviewInterfaceVersion === C.gO.MOSTLY_WEBVIEW) && Z
+                    }, [m, Z, V, p]),
+                    K = (0, g.aM)(["my-orders"], function() {
                         return (0, S.Mw)({
                             per_page: 10,
                             sort: "paid_at:desc",
-                            "parcels.statuses": A.join(",")
+                            "parcels.statuses": M.join(",")
                         })
                     }, {
-                        enabled: B
+                        enabled: H
                     }),
-                    G = F.data,
-                    Q = F.isLoading,
-                    Y = F.isFetched,
-                    H = (0, g.aM)(["review-suggestion"], I.xN, {
-                        enabled: B
+                    J = K.data,
+                    X = K.isLoading,
+                    $ = K.isFetched,
+                    ee = (0, g.aM)(["review-suggestion"], I.xN, {
+                        enabled: H
                     }),
-                    K = H.data,
-                    J = H.isLoading,
-                    X = H.isFetched,
-                    $ = (0, g.aM)(["exploreModalPromotion", R], function() {
+                    te = ee.data,
+                    ne = ee.isLoading,
+                    re = ee.isFetched,
+                    oe = (0, g.aM)(["exploreModalPromotion", W], function() {
                         return (0, y.Z2)({
-                            userId: R || 0,
+                            userId: W || 0,
                             config: {
                                 params: {
                                     tab: "modals"
@@ -2207,14 +2208,14 @@ function _ts_generator(e, t) {
                             }
                         })
                     }, {
-                        enabled: B && !!R
+                        enabled: H && !!W
                     }),
-                    ee = $.data,
-                    te = $.isLoading,
-                    ne = $.isFetched,
-                    re = Y && X && !!R && ne,
-                    oe = B && (Q || J || !!R && te),
-                    ae = (0, u.useMemo)(function() {
+                    ae = oe.data,
+                    ie = oe.isLoading,
+                    se = oe.isFetched,
+                    ue = $ && re && !!W && se,
+                    ce = H && (X || ne || !!W && ie),
+                    le = (0, u.useMemo)(function() {
                         return {
                             OrderTracking: T,
                             ModalPromotion: D,
@@ -2222,60 +2223,66 @@ function _ts_generator(e, t) {
                             AiAssistantFabButton: N
                         }
                     }, []),
-                    ie = (0, u.useMemo)(function() {
-                        var e, t = null === (e = k[0]) || void 0 === e ? void 0 : e.ui;
+                    de = (0, u.useMemo)(function() {
+                        var e, t = null === (e = O[0]) || void 0 === e ? void 0 : e.ui;
                         if (!t) return null;
                         var n = t.split("_").map(function(e) {
                                 return e.charAt(0).toUpperCase() + e.slice(1)
                             }).join(""),
-                            r = ae[n];
+                            r = le[n];
                         return r || console.warn('Component "'.concat(n, '" not found for popup type "').concat(t, '"')), r || null
-                    }, [k, ae]);
+                    }, [O, le]);
                 return (0, u.useEffect)(function() {
-                    var e = l.bsLocalStorage.getItem(M);
-                    e ? Z(W(O ? e : [])) : v(!0)
-                }, [O, W]), (0, u.useEffect)(function() {
+                    var e = l.bsLocalStorage.getItem(A);
+                    if (e) {
+                        var t = Array.isArray(e) ? e : (null == e ? void 0 : e.value) || [],
+                            n = Y(V ? t : []);
+                        R(n), 0 === n.length && b(!0)
+                    } else b(!0)
+                }, [V, Y]), (0, u.useEffect)(function() {
                     if ("requestIdleCallback" in window) {
                         var e = requestIdleCallback(function() {
-                            m(!0)
+                            q(!0)
                         });
                         return function() {
                             return cancelIdleCallback(e)
                         }
                     }
-                    return m(!0),
+                    return q(!0),
                         function() {}
                 }, []), (0, u.useEffect)(function() {
-                    var e, n, r;
-                    if (!oe && p && re) {
-                        var o = [];
-                        O && (null == G || null === (n = G.data) || void 0 === n ? void 0 : n.length) && o.push({
+                    var e, t, n;
+                    if (!ce && m && ue) {
+                        var r = [];
+                        V && (null == J || null === (t = J.data) || void 0 === t ? void 0 : t.length) && r.push({
                             ui: "order_tracking",
-                            orders: G.data
-                        }), O && (null == ee || null === (r = ee.items) || void 0 === r ? void 0 : r.length) && (e = o).push.apply(e, _to_consumable_array(ee.items)), O && !(0, h.isPdpPage)(t.asPath) && (null == K ? void 0 : K.id) && o.push({
+                            orders: J.data
+                        }), V && (null == ae || null === (n = ae.items) || void 0 === n ? void 0 : n.length) && (e = r).push.apply(e, _to_consumable_array(ae.items)), V && !(0, h.isPdpPage)(i.asPath) && (null == te ? void 0 : te.id) && r.push({
                             ui: "review_suggestion",
-                            review: K
-                        }), U && o.push({
+                            review: te
+                        }), Q && r.push({
                             ui: "ai_assistant_fab_button",
                             href: null == E ? void 0 : E.aiAgentUrl
-                        }), v(!1), l.bsLocalStorage.setItem(M, o, 86400), Z(W(o))
+                        }), b(!1), l.bsLocalStorage.setItem(A, r, 86400), R(Y(r))
                     }
-                }, [p, oe, O, re, G, ee, K, t, V, W, U]), ie && (0, a.jsx)(ie, {
-                    items: k[0],
+                }, [m, ce, V, ue, J, ae, te, i, G, Y, Q]), de && (0, a.jsx)(de, {
+                    items: O[0],
                     clearItem: function() {
                         var e;
                         return function(e) {
-                            var t = l.bsLocalStorage.getItem(M).filter(function(t) {
-                                return t.ui !== e
-                            });
-                            Z(function(t) {
-                                return t.filter(function(t) {
+                            var t = l.bsLocalStorage.getItem(A),
+                                n = (Array.isArray(t) ? t : (null == t ? void 0 : t.value) || []).filter(function(t) {
                                     return t.ui !== e
-                                })
-                            }), l.bsLocalStorage.setItem(M, t, 86400)
-                        }(null === (e = k[0]) || void 0 === e ? void 0 : e.ui)
+                                });
+                            Q && !n.some(function(e) {
+                                return "ai_assistant_fab_button" === e.ui
+                            }) && n.push({
+                                ui: "ai_assistant_fab_button",
+                                href: null == E ? void 0 : E.aiAgentUrl
+                            }), l.bsLocalStorage.setItem(A, n, 86400), R(Y(n))
+                        }(null === (e = O[0]) || void 0 === e ? void 0 : e.ui)
                     }
-                }, null === (e = k[0]) || void 0 === e ? void 0 : e.ui)
+                }, null === (o = O[0]) || void 0 === o ? void 0 : o.ui)
             }
             var q = n(94002),
                 L = n(58271),
@@ -2309,7 +2316,7 @@ function _ts_generator(e, t) {
                     },
                     ssr: !1
                 }),
-                V = s()(function() {
+                U = s()(function() {
                     return Promise.all([n.e(1305), n.e(3904)]).then(n.bind(n, 91305))
                 }, {
                     loadableGenerated: {
@@ -2319,7 +2326,7 @@ function _ts_generator(e, t) {
                     },
                     ssr: !1
                 }),
-                U = s()(function() {
+                V = s()(function() {
                     return n.e(4969).then(n.bind(n, 64969))
                 }, {
                     loadableGenerated: {
@@ -2384,7 +2391,7 @@ function _ts_generator(e, t) {
                         t = (0, j.b)(),
                         n = t.isWebview,
                         r = t.ua,
-                        o = (0, p.useEmitter)(),
+                        o = (0, v.useEmitter)(),
                         i = o.subEvent,
                         s = o.offEvent,
                         f = _sliced_to_array((0, u.useState)(!1), 2),
@@ -2404,8 +2411,8 @@ function _ts_generator(e, t) {
                         D = P[0],
                         T = P[1],
                         N = _sliced_to_array((0, u.useState)(null), 2),
-                        M = N[0],
-                        A = N[1],
+                        A = N[0],
+                        M = N[1],
                         Y = _sliced_to_array((0, u.useState)(null), 2),
                         H = Y[0],
                         K = Y[1],
@@ -2422,7 +2429,7 @@ function _ts_generator(e, t) {
                             return T(e)
                         }, []),
                         te = (0, u.useCallback)(function(e) {
-                            return A(e)
+                            return M(e)
                         }, []),
                         ne = (0, u.useCallback)(function(e) {
                             return K(e)
@@ -2444,7 +2451,7 @@ function _ts_generator(e, t) {
                         }, []),
                         ie = (0, u.useCallback)(function() {
                             return (0, u.startTransition)(function() {
-                                return A(null)
+                                return M(null)
                             })
                         }, []),
                         se = (0, u.useCallback)(function(e) {
@@ -2482,26 +2489,26 @@ function _ts_generator(e, t) {
                             }
                     }, []), (0, u.useEffect)(function() {
                         !(0, l.isServerSide)() && window.location.hash.includes("mlt") && y.current && (X(y.current), y.current = null)
-                    }, [e.asPath]), (0, a.jsx)(v.Z, {
+                    }, [e.asPath]), (0, a.jsx)(p.Z, {
                         children: (0, a.jsxs)(q.ErrorBoundary, {
                             fallback: (0, a.jsx)("div", {}),
                             onError: L.wJ,
                             children: [!n && (0, a.jsx)(W, {}), S && (0, a.jsx)(O, {
                                 data: S,
                                 onClose: re
-                            }), !n && (0, a.jsx)(R, {}), m && (0, a.jsx)(Z, {}), k && (0, a.jsx)(V, {
+                            }), !n && (0, a.jsx)(R, {}), m && (0, a.jsx)(Z, {}), k && (0, a.jsx)(U, {
                                 data: k,
                                 onClose: oe
                             }), D && (0, a.jsx)(B, {
                                 data: D,
                                 onClose: ae
-                            }), M && (0, a.jsx)(F, {
-                                data: M,
+                            }), A && (0, a.jsx)(F, {
+                                data: A,
                                 onClose: ie
                             }), g && (0, a.jsx)(Q, {
                                 data: g,
                                 onClose: se
-                            }), H && (0, a.jsx)(U, {
+                            }), H && (0, a.jsx)(V, {
                                 data: H,
                                 onClose: ue
                             }), !r.isPc && !n && (0, a.jsx)(G, {}), (0, a.jsx)(_(), {
@@ -2523,11 +2530,11 @@ function _ts_generator(e, t) {
                         r = (0, K.Kp)(["webviewActiveTab"]).webviewActiveTab,
                         o = (0, $.B)().auth.setWebviewActiveTab,
                         i = (0, u.useCallback)(function() {
-                            if ("visible" === document.visibilityState && window.WebviewInterfaceVersion === C.gO.MOSTLY_WEBVIEW) {
-                                var n, o, a, i = (0, C.Cw)();
-                                e.current === r ? "navigation" === t.query.from && ee.w.includes(t.pathname) ? null === (n = i.setBottomNavigationVisibility) || void 0 === n || n.call(i, !0) : null === (o = i.setBottomNavigationVisibility) || void 0 === o || o.call(i, !1) : "native" === e.current && (null === (a = i.setBottomNavigationVisibility) || void 0 === a || a.call(i, !1))
+                            if (n && "visible" === document.visibilityState && window.WebviewInterfaceVersion === C.gO.MOSTLY_WEBVIEW) {
+                                var o, a, i, s = (0, C.Cw)();
+                                e.current === r ? "navigation" === t.query.from && ee.w.includes(t.pathname) ? null === (o = s.setBottomNavigationVisibility) || void 0 === o || o.call(s, !0) : null === (a = s.setBottomNavigationVisibility) || void 0 === a || a.call(s, !1) : "native" === e.current && (null === (i = s.setBottomNavigationVisibility) || void 0 === i || i.call(s, !1))
                             }
-                        }, [t.asPath, r]),
+                        }, [t.asPath, r, n]),
                         s = (0, u.useCallback)(function() {
                             if (!(0, l.isDevelopment)()) try {
                                 "function" == typeof X.nZ && window.WebviewInterfaceVersionName && (0, X.nZ)().setContext("Webview", {
@@ -2626,7 +2633,7 @@ function _ts_generator(e, t) {
                 ce = n(67375),
                 le = n(12179),
                 de = .1 > Math.random(),
-                pe = [{
+                ve = [{
                     name: "soton",
                     url: "https://test2.basalam.com/"
                 }, {
@@ -2648,7 +2655,7 @@ function _ts_generator(e, t) {
                     name: "amin",
                     url: "https://dc06.basalam.com"
                 }],
-                ve = {
+                pe = {
                     headers: {
                         "Content-Type": "application/json"
                     },
@@ -2674,8 +2681,8 @@ function _ts_generator(e, t) {
                     i = (0, u.useRef)(!1),
                     s = (0, u.useRef)(null),
                     d = (0, w.M_)(["userId", "currentUser", "isLoggedIn"]),
-                    p = d.userId,
-                    v = d.currentUser,
+                    v = d.userId,
+                    p = d.currentUser,
                     f = d.isLoggedIn,
                     _ = (0, u.useCallback)(function(e) {
                         n.current = _object_spread({}, n.current, e)
@@ -2684,7 +2691,7 @@ function _ts_generator(e, t) {
                     try {
                         var e;
                         n.current = function(e, t) {
-                            var n, r, o, a, i, s, u, c, l, d, p, v = e.ua,
+                            var n, r, o, a, i, s, u, c, l, d, v, p = e.ua,
                                 f = e.deviceId,
                                 _ = e.userId,
                                 m = e.userAgent,
@@ -2734,9 +2741,9 @@ function _ts_generator(e, t) {
                                 lcpRequestStart: 0,
                                 inpPageRoute: null,
                                 "user.ili": !!_,
-                                "user.os": v.os.name,
+                                "user.os": p.os.name,
                                 isWebview: se()(),
-                                "user.isCrux": (null === (d = v.browser) || void 0 === d || null === (l = d.name) || void 0 === l ? void 0 : l.toLowerCase().includes("chrome")) && !(null === (p = v.os.name) || void 0 === p ? void 0 : p.toLowerCase().includes("mac")),
+                                "user.isCrux": (null === (d = p.browser) || void 0 === d || null === (l = d.name) || void 0 === l ? void 0 : l.toLowerCase().includes("chrome")) && !(null === (v = p.os.name) || void 0 === v ? void 0 : v.toLowerCase().includes("mac")),
                                 "user.deviceId": f,
                                 srt: b.srt || 0,
                                 "user.ip": b.ip,
@@ -2744,7 +2751,7 @@ function _ts_generator(e, t) {
                                 "user.userAgent": m,
                                 "page.route": t.asPath,
                                 _id: (0, ae.Z)() + Date.now(),
-                                "user.browser": v.browser.name,
+                                "user.browser": p.browser.name,
                                 "page.url": window.location.href,
                                 "page.name": (0, oe.j)(t),
                                 traceId: null !== (c = b.traceId) && void 0 !== c ? c : null,
@@ -2755,9 +2762,9 @@ function _ts_generator(e, t) {
                                 "api.idrt": b.initialData || 0,
                                 "api.pdpFirst": b.pdpFirst || 0,
                                 "user.hasStorageAccess": (0, ue.$)(),
-                                "user.browserMajorVersion": v.browser.major,
+                                "user.browserMajorVersion": p.browser.major,
                                 "api.pageProps": b.pageProps || 0,
-                                "user.browserFullVersion": v.browser.version,
+                                "user.browserFullVersion": p.browser.version,
                                 "page.isRedirected": !!(null == t || null === (n = t.query) || void 0 === n ? void 0 : n.replaced),
                                 "api.pdpStatus": b.pdpStatus || null,
                                 "page.cacheGenerate": window.cacheGenerate || 0,
@@ -2770,7 +2777,7 @@ function _ts_generator(e, t) {
                                 "page.cache": void 0 === window.cacheRead ? void 0 === window.cacheGenerate ? "BYPASS" : "MISS" : "HIT"
                             })
                         }({
-                            userId: p,
+                            userId: v,
                             ua: o()(),
                             webVitalData: t,
                             deviceId: (0, re.Z)(),
@@ -2920,18 +2927,18 @@ function _ts_generator(e, t) {
                             window.removeEventListener("visibilitychange", e), window.removeEventListener("pagehide", e)
                         }
                 }, []), (0, u.useEffect)(function() {
-                    (!f || v) && requestIdleCallback(function() {
+                    (!f || p) && requestIdleCallback(function() {
                         var e, n;
                         ! function(e) {
                             var t, n, r, o, a, i, s, u, c = e.ua,
                                 d = e.deviceId,
-                                p = e.userId,
-                                v = e.ip,
+                                v = e.userId,
+                                p = e.ip,
                                 f = e.cityId;
                             if (de && !(0, l.isDevelopment)()) {
                                 var _ = {
-                                    ip: v,
-                                    userId: p,
+                                    ip: p,
+                                    userId: v,
                                     cityId: f,
                                     deviceId: d,
                                     os: null == c || null === (t = c.os) || void 0 === t ? void 0 : t.name,
@@ -2943,7 +2950,7 @@ function _ts_generator(e, t) {
                                     network: (null === (a = navigator) || void 0 === a || null === (o = a.connection) || void 0 === o || null === (r = o.type) || void 0 === r ? void 0 : r.toLowerCase()) || "unknown",
                                     networkType: (null === (u = navigator) || void 0 === u || null === (s = u.connection) || void 0 === s || null === (i = s.effectiveType) || void 0 === i ? void 0 : i.toLowerCase()) || "unknown"
                                 };
-                                pe.forEach(function(e) {
+                                ve.forEach(function(e) {
                                     ! function(e, t) {
                                         _async_to_generator(function() {
                                             var n, r, o, a;
@@ -2986,7 +2993,7 @@ function _ts_generator(e, t) {
                                                             }
                                                         }(e.url, n), n.totalTime = Date.now() - r, [4, Promise.allSettled([le.Z.post("https://loki-proxy.darkube.app/store/dc", _object_spread_props(_object_spread({}, n), {
                                                             endPoint: "hamravesh"
-                                                        }), ve)])];
+                                                        }), pe)])];
                                                     case 5:
                                                         return i.sent(), [7];
                                                     case 6:
@@ -2999,16 +3006,16 @@ function _ts_generator(e, t) {
                             }
                         }({
                             ua: o()(),
-                            userId: p || 0,
+                            userId: v || 0,
                             ip: null == t ? void 0 : t.ip,
                             deviceId: (0, re.Z)(),
-                            cityId: (null == v || null === (e = v.city) || void 0 === e ? void 0 : e.id) || null,
-                            cityName: (null == v || null === (n = v.city) || void 0 === n ? void 0 : n.title) || null
+                            cityId: (null == p || null === (e = p.city) || void 0 === e ? void 0 : e.id) || null,
+                            cityName: (null == p || null === (n = p.city) || void 0 === n ? void 0 : n.title) || null
                         })
                     }, {
                         timeout: 1e4
                     })
-                }, [f, v, p]), (0, u.useEffect)(function() {
+                }, [f, p, v]), (0, u.useEffect)(function() {
                     var e, t, o, a, s = (0, oe.j)(r),
                         u = null === (t = window) || void 0 === t || null === (e = t.__CLS2Data) || void 0 === e ? void 0 : e.name,
                         c = r.asPath;
@@ -3080,17 +3087,17 @@ function _ts_generator(e, t) {
                         })
                     })
                 },
-                Me = n(47665),
-                Ae = n(92369);
+                Ae = n(47665),
+                Me = n(92369);
 
             function Ze(e) {
                 var t, n, r, o, i = e.initialUserId,
                     s = e.authMode,
                     d = (0, c.Z)(),
-                    p = (0, j.b)().isWebview,
-                    v = (0, Ce.Z)({
+                    v = (0, j.b)().isWebview,
+                    p = (0, Ce.Z)({
                         onSuccess: function(e) {
-                            p && requestIdleCallback(function() {
+                            v && requestIdleCallback(function() {
                                 try {
                                     var t = JSON.stringify(e);
                                     localStorage.setItem(w.gm, t)
@@ -3101,14 +3108,14 @@ function _ts_generator(e, t) {
                         }
                     }),
                     f = ye({
-                        enabled: !!(null === (t = v.data) || void 0 === t ? void 0 : t.id)
+                        enabled: !!(null === (t = p.data) || void 0 === t ? void 0 : t.id)
                     }),
                     _ = Pe({
-                        enabled: !!(null === (n = v.data) || void 0 === n ? void 0 : n.id)
+                        enabled: !!(null === (n = p.data) || void 0 === n ? void 0 : n.id)
                     }),
-                    m = De(null == v || null === (r = v.data) || void 0 === r ? void 0 : r.id, {
+                    m = De(null == p || null === (r = p.data) || void 0 === r ? void 0 : r.id, {
                         retry: 1,
-                        enabled: !!(null === (o = v.data) || void 0 === o ? void 0 : o.id)
+                        enabled: !!(null === (o = p.data) || void 0 === o ? void 0 : o.id)
                     }),
                     h = b()().publicRuntimeConfig,
                     g = (0, w.M_)(["isLoggedIn", "currentUser"]),
@@ -3122,25 +3129,25 @@ function _ts_generator(e, t) {
                     P = S.setOrderCount,
                     D = S.setCurrentUser,
                     T = S.setIsLoadingCurrentUser,
-                    N = _sliced_to_array((0, u.useState)(!p || y), 2),
-                    M = N[0],
-                    A = N[1],
+                    N = _sliced_to_array((0, u.useState)(!v || y), 2),
+                    A = N[0],
+                    M = N[1],
                     Z = (0, u.useCallback)(function(e) {
                         var t, n;
                         e.ctrlKey && e.altKey && ("KeyA" === e.code || 65 === e.which) && (((null == I || null === (t = I.markedType) || void 0 === t ? void 0 : t.id) === Ie.Pw.BASALAM_SUPPORT || (null == I || null === (n = I.markedType) || void 0 === n ? void 0 : n.id) === Ie.Pw.BASALAM_COLLEAGUES) && d.push("/accounts/admin?prev=".concat(encodeURIComponent(window.location.href))))
                     }, [I]);
                 return (0, u.useEffect)(function() {
                     s && E(s), i && C(i)
-                }, []), (0, Me.Z)(function() {
-                    v.isLoading ? T(!0) : (v.data && (C(v.data.id), D(v.data), window.currentUser = v.data), A(!0), T(!1), setTimeout(function() {
+                }, []), (0, Ae.Z)(function() {
+                    p.isLoading ? T(!0) : (p.data && (C(p.data.id), D(p.data), window.currentUser = p.data), M(!0), T(!1), setTimeout(function() {
                         requestIdleCallback(function() {
                             var e;
-                            return (0, he.e)(null === (e = v.data) || void 0 === e ? void 0 : e.id)
+                            return (0, he.e)(null === (e = p.data) || void 0 === e ? void 0 : e.id)
                         })
                     }, 5e3))
-                }, [v.isLoading]), (0, u.useEffect)(function() {
-                    v.data && !v.isLoading && (C(v.data.id), D(v.data), window.currentUser = v.data)
-                }, [v.data]), (0, u.useEffect)(function() {
+                }, [p.isLoading]), (0, u.useEffect)(function() {
+                    p.data && !p.isLoading && (C(p.data.id), D(p.data), window.currentUser = p.data)
+                }, [p.data]), (0, u.useEffect)(function() {
                     var e = m.data;
                     void 0 !== e && P(e)
                 }, [m.data]), (0, u.useEffect)(function() {
@@ -3162,23 +3169,23 @@ function _ts_generator(e, t) {
                             organizationEnvironmentSecret: h.organizationEnvironmentSecret
                         }
                     };
-                    y && "loading" !== m.status && v.data ? requestIdleCallback(function() {
+                    y && "loading" !== m.status && p.data ? requestIdleCallback(function() {
                         var t, n = null !== (t = m.data) && void 0 !== t ? t : 0;
-                        (0, Ae.initEventSdk)(_object_spread_props(_object_spread({}, e()), {
+                        (0, Me.initEventSdk)(_object_spread_props(_object_spread({}, e()), {
                             user: {
                                 orderCount: n,
-                                id: v.data.id,
+                                id: p.data.id,
                                 userType: (0, xe.Z)(n)
                             }
-                        })), (0, Ae.updateUserEventData)({
+                        })), (0, Me.updateUserEventData)({
                             orderCount: n,
-                            id: v.data.id,
+                            id: p.data.id,
                             userType: (0, xe.Z)(n)
                         })
-                    }) : "error" === v.status ? requestIdleCallback(function() {
-                        return (0, Ae.initEventSdk)(e())
-                    }) : (0, Ae.preInitEventConfig)(e())
-                }, [y, M, v.data, v.status, m.status]), (0, u.useEffect)(function() {
+                    }) : "error" === p.status ? requestIdleCallback(function() {
+                        return (0, Me.initEventSdk)(e())
+                    }) : (0, Me.preInitEventConfig)(e())
+                }, [y, A, p.data, p.status, m.status]), (0, u.useEffect)(function() {
                     var e = f.data;
                     e && x(_object_spread({}, e))
                 }, [f.data]), (0, u.useEffect)(function() {
@@ -3196,8 +3203,8 @@ function _ts_generator(e, t) {
                 Oe = n(40877),
                 Re = n(29962),
                 ze = n.n(Re),
-                Ve = n(92034),
-                Ue = n.n(Ve),
+                Ue = n(92034),
+                Ve = n.n(Ue),
                 We = n(43085),
                 Be = n.n(We),
                 Fe = n(13838),
@@ -3282,8 +3289,8 @@ function _ts_generator(e, t) {
                 ct = n.n(ut),
                 lt = n(26050),
                 dt = n.n(lt),
-                pt = n(7095),
-                vt = n.n(pt),
+                vt = n(7095),
+                pt = n.n(vt),
                 ft = n(42349),
                 _t = function() {
                     var e, t = (0, Le.t)(),
@@ -3295,16 +3302,16 @@ function _ts_generator(e, t) {
                         c = (0, Fe.Kj)(null === (e = r.product) || void 0 === e ? void 0 : e.id),
                         l = c.isError,
                         d = c.isLoading,
-                        p = c.data,
-                        v = c.refetch,
+                        v = c.data,
+                        p = c.refetch,
                         f = (0, u.useMemo)(function() {
-                            return p || r.product || {}
-                        }, [p, r.product]),
+                            return v || r.product || {}
+                        }, [v, r.product]),
                         _ = (0, u.useMemo)(function() {
                             return i && (null == f ? void 0 : f.variants) ? (0, ot.tC)(f.variants, i) : null
                         }, [i, f]),
-                        m = !!(null == p ? void 0 : p.id);
-                    return p && !p.variants && (t.addToCart({
+                        m = !!(null == v ? void 0 : v.id);
+                    return v && !v.variants && (t.addToCart({
                         product: f
                     }), setTimeout(function() {
                         t.switchModalMode({
@@ -3324,7 +3331,7 @@ function _ts_generator(e, t) {
                             }), (0, a.jsx)(ct(), {
                                 label: "تلاش مجدد",
                                 icon: "bi bi-refresh-single",
-                                onClick: v
+                                onClick: p
                             })]
                         }), m && (0, a.jsxs)(a.Fragment, {
                             children: [(0, a.jsx)("div", {
@@ -3341,7 +3348,7 @@ function _ts_generator(e, t) {
                                 product: f,
                                 variationId: i
                             })]
-                        }), (0, a.jsx)(vt(), {
+                        }), (0, a.jsx)(pt(), {
                             target: ".atc-modal-footer",
                             children: (0, a.jsx)("div", {
                                 className: Be()["atc-modal-add__footer"],
@@ -3387,7 +3394,7 @@ function _ts_generator(e, t) {
                         }), (0, a.jsx)(ht.Z, {
                             className: bt()["atc-modal-result__trust-slides"],
                             hasBorder: !0
-                        }), (0, a.jsx)(vt(), {
+                        }), (0, a.jsx)(pt(), {
                             target: ".atc-modal-footer",
                             children: r && (0, a.jsx)(rt(), {
                                 display: "flex",
@@ -3417,7 +3424,7 @@ function _ts_generator(e, t) {
                 wt = function() {
                     var e, t, n = (0, Le.t)(),
                         r = "result" === (null == n || null === (e = n.modal) || void 0 === e ? void 0 : e.mode);
-                    return (0, a.jsx)(Ue(), {
+                    return (0, a.jsx)(Ve(), {
                         size: "sm",
                         title: r ? "به سبد خریدت اضافه شد." : "انتخاب تنوع",
                         show: null == n || null === (t = n.modal) || void 0 === t ? void 0 : t.isShown,
@@ -3456,11 +3463,11 @@ function _ts_generator(e, t) {
                     i = o[0],
                     s = o[1],
                     d = (0, x.l)().runGBTest,
-                    p = (0, w.M_)(["currentUser", "isLoggedIn"]),
-                    v = p.currentUser,
-                    f = p.isLoggedIn,
+                    v = (0, w.M_)(["currentUser", "isLoggedIn"]),
+                    p = v.currentUser,
+                    f = v.isLoggedIn,
                     _ = (0, c.Z)(),
-                    m = (0, j.b)().ua.isMobile && f && !!v && (null == r ? void 0 : r.itemCount) > 0 && 0 === (null == r ? void 0 : r.totalDeliveryCost) && (null === (t = d("free_shipping_inform")) || void 0 === t ? void 0 : t.value),
+                    m = (0, j.b)().ua.isMobile && f && !!p && (null == r ? void 0 : r.itemCount) > 0 && 0 === (null == r ? void 0 : r.totalDeliveryCost) && (null === (t = d("free_shipping_inform")) || void 0 === t ? void 0 : t.value),
                     b = (0, u.useRef)(null);
                 (0, u.useEffect)(function() {
                     return m && (s(!0), b.current = setTimeout(function() {
@@ -3535,8 +3542,8 @@ function _ts_generator(e, t) {
                     s = e.userAgent,
                     l = e.isWebview,
                     d = e.gbFeatures,
-                    p = e.webVitalData,
-                    v = e.isCachedPage,
+                    v = e.webVitalData,
+                    p = e.isCachedPage,
                     f = e.serverRouteUrl,
                     _ = e.parsedUserAgent,
                     m = e.isServerRendered,
@@ -3563,8 +3570,8 @@ function _ts_generator(e, t) {
                         userAgent: s,
                         isWebview: l,
                         gbFeatures: d,
-                        webVitalData: p,
-                        isCachedPage: v,
+                        webVitalData: v,
+                        isCachedPage: p,
                         serverRouteUrl: f,
                         isServerRendered: m,
                         isLoggedIn: !!t,
@@ -3573,7 +3580,7 @@ function _ts_generator(e, t) {
                     children: (0, a.jsxs)(j.w, {
                         gbFeatures: d,
                         initialDeviceId: r,
-                        isCachedPage: v,
+                        isCachedPage: p,
                         initialUserAgent: s,
                         initialIsWebview: l,
                         parsedUserAgent: _,
@@ -3582,7 +3589,7 @@ function _ts_generator(e, t) {
                             initialUserId: t,
                             authMode: o
                         }), (0, a.jsxs)(x.K, {
-                            isCachedPage: v,
+                            isCachedPage: p,
                             children: [(0, a.jsx)(H.ZP, {}), (0, a.jsx)(jt, {
                                 children: (0, a.jsxs)(k, {
                                     children: [(!m || g) && (0, a.jsx)(Et, {}), (0, a.jsx)("main", {
@@ -3594,14 +3601,14 @@ function _ts_generator(e, t) {
                                 })
                             })]
                         }), (0, a.jsx)(be, {
-                            webVitalData: p
+                            webVitalData: v
                         })]
                     })
                 })
             }
             var Nt = n(21306),
-                Mt = n(19402),
-                At = n(25910),
+                At = n(19402),
+                Mt = n(25910),
                 Zt = n(70291),
                 qt = n(85185),
                 Lt = n(30082),
@@ -3614,15 +3621,15 @@ function _ts_generator(e, t) {
                     };
                     return e.getInitialProps = (0, g._U)(function(e, r) {
                         return _async_to_generator(function() {
-                            var a, i, s, u, c, d, p, v, f, _, m, b, h, g, w, y, j, I, S, x, C, k, E, P, D, T, N, M, A, Z, q, O, R, z, V, U, W, B, F, G, Q, Y, H, K, J, $, ee, te, ne, oe, ae, ie, ue, ce, le, de;
-                            return _ts_generator(this, function(pe) {
-                                switch (pe.label) {
+                            var a, i, s, u, c, d, v, p, f, _, m, b, h, g, w, y, j, I, S, x, C, k, E, P, D, T, N, A, M, Z, q, O, R, z, U, V, W, B, F, G, Q, Y, H, K, J, $, ee, te, ne, oe, ae, ie, ue, ce, le, de;
+                            return _ts_generator(this, function(ve) {
+                                switch (ve.label) {
                                     case 0:
-                                        A = window, Z = Ot && !!(null == e || null === (a = e.req) || void 0 === a ? void 0 : a.isCachedPage), q = Z ? null : (0, re.Z)(e.req, e.res), O = se()({
+                                        M = window, Z = Ot && !!(null == e || null === (a = e.req) || void 0 === a ? void 0 : a.isCachedPage), q = Z ? null : (0, re.Z)(e.req, e.res), O = se()({
                                             query: e.query,
                                             pathname: e.pathname,
                                             headers: null === (i = e.req) || void 0 === i ? void 0 : i.headers
-                                        }), R = (null == e || null === (u = e.req) || void 0 === u || null === (s = u.headers) || void 0 === s ? void 0 : s.host) || (null == A || null === (c = A.location) || void 0 === c ? void 0 : c.hostname), z = Z ? null : (0, Mt.hP)(e.req), V = z && !Z ? function(e) {
+                                        }), R = (null == e || null === (u = e.req) || void 0 === u || null === (s = u.headers) || void 0 === s ? void 0 : s.host) || (null == M || null === (c = M.location) || void 0 === c ? void 0 : c.hostname), z = Z ? null : (0, At.hP)(e.req), U = z && !Z ? function(e) {
                                             if (!e) return 0;
                                             var t = function(e) {
                                                     try {
@@ -3637,7 +3644,7 @@ function _ts_generator(e, t) {
                                                 }(e),
                                                 n = null == t ? void 0 : t.sub;
                                             return n ? Number(n) : 0
-                                        }(z) : null, U = Ot ? e.req.headers["user-agent"] : null == A ? void 0 : A.navigator.userAgent, W = o()(U), B = Date.now(), F = (null === (d = e.req) || void 0 === d ? void 0 : d.headers["x-forwarded-for"]) || (null === (p = e.req) || void 0 === p ? void 0 : p.socket.remoteAddress), G = null === (_ = e.req) || void 0 === _ || null === (f = _.app) || void 0 === f || null === (v = f.get("redisDB")) || void 0 === v ? void 0 : v.DB2;
+                                        }(z) : null, V = Ot ? e.req.headers["user-agent"] : null == M ? void 0 : M.navigator.userAgent, W = o()(V), B = Date.now(), F = (null === (d = e.req) || void 0 === d ? void 0 : d.headers["x-forwarded-for"]) || (null === (v = e.req) || void 0 === v ? void 0 : v.socket.remoteAddress), G = null === (_ = e.req) || void 0 === _ || null === (f = _.app) || void 0 === f || null === (p = f.get("redisDB")) || void 0 === p ? void 0 : p.DB2;
                                         try {
                                             Q = (null === (C = e.req) || void 0 === C ? void 0 : C.headers["x-client-info"]) || "{}", Y = (null === (k = JSON.parse(Q)) || void 0 === k ? void 0 : k.version) || null, (0, X.nZ)().setContext("Webview", {
                                                 enabled: O,
@@ -3670,12 +3677,12 @@ function _ts_generator(e, t) {
                                                 isWebview: O
                                             })
                                         }, {
-                                            cacheTime: At.nW
+                                            cacheTime: Mt.nW
                                         })] : [3, 2];
                                     case 1:
-                                        return ie = pe.sent(), [3, 3];
+                                        return ie = ve.sent(), [3, 3];
                                     case 2:
-                                        ie = {}, pe.label = 3;
+                                        ie = {}, ve.label = 3;
                                     case 3:
                                         return J = null == (K = ie) || null === (j = K.sticky_banner) || void 0 === j ? void 0 : j.defaultValue, $ = !qt.X.has(e.pathname) && (null == J ? void 0 : J.show) && function(e) {
                                             if (!(null == e ? void 0 : e.end_time) || !(null == e ? void 0 : e.start_time)) return !1;
@@ -3692,10 +3699,10 @@ function _ts_generator(e, t) {
                                                     switch (s.label) {
                                                         case 0:
                                                             return s.trys.push([0, 2, , 3]), te = Date.now(), [4, n(_object_spread_props(_object_spread({}, e), {
-                                                                userId: V,
+                                                                userId: U,
                                                                 deviceId: q,
                                                                 isWebview: O,
-                                                                userAgent: U,
+                                                                userAgent: V,
                                                                 gbFeatures: K,
                                                                 queryClient: r,
                                                                 isCachedPage: Z,
@@ -3718,9 +3725,9 @@ function _ts_generator(e, t) {
                                                         case 0:
                                                             return a.trys.push([0, 2, , 3]), N = Date.now(), [4, W.isCrawler ? (0, Lt.uS)(r, G) : (0, Lt.ks)(r, G)];
                                                         case 1:
-                                                            return n = a.sent(), M = Date.now(), e(n), [3, 3];
+                                                            return n = a.sent(), A = Date.now(), e(n), [3, 3];
                                                         case 2:
-                                                            return o = a.sent(), M = Date.now(), t(o), [3, 3];
+                                                            return o = a.sent(), A = Date.now(), t(o), [3, 3];
                                                         case 3:
                                                             return [2]
                                                     }
@@ -3728,7 +3735,7 @@ function _ts_generator(e, t) {
                                             })()
                                         }), ae.push(ue)), [4, Promise.all(ae)];
                                     case 4:
-                                        return ce = _sliced_to_array.apply(void 0, [pe.sent(), 1]), le = ce[0], de = Date.now(), [2, (le.userId = V, le.authMode = H, le.deviceId = q, le.hostname = R, le.isWebview = O, le.userAgent = U, le.gbFeatures = K, le.isCachedPage = Z, le.isServerRendered = Ot, le.serverRouteUrl = null == e || null === (I = e.req) || void 0 === I ? void 0 : I.url, le.parsedUserAgent = W, le.isIosApp = (0, Nt.isIosApp)({
+                                        return ce = _sliced_to_array.apply(void 0, [ve.sent(), 1]), le = ce[0], de = Date.now(), [2, (le.userId = U, le.authMode = H, le.deviceId = q, le.hostname = R, le.isWebview = O, le.userAgent = V, le.gbFeatures = K, le.isCachedPage = Z, le.isServerRendered = Ot, le.serverRouteUrl = null == e || null === (I = e.req) || void 0 === I ? void 0 : I.url, le.parsedUserAgent = W, le.isIosApp = (0, Nt.isIosApp)({
                                             req: e.req,
                                             res: e.res
                                         }), le.shouldReserveTopBannerSpace = $, le.webVitalData = _object_spread_props(_object_spread({}, le.webVitalData), {
@@ -3738,7 +3745,7 @@ function _ts_generator(e, t) {
                                             initialData: ee - B,
                                             pageProps: ne - te,
                                             hasVideo: !!(null == le || null === (x = le.product) || void 0 === x || null === (S = x.video) || void 0 === S ? void 0 : S.url),
-                                            categoriesData: M - N
+                                            categoriesData: A - N
                                         }), le)]
                                 }
                             })
