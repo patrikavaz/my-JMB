@@ -1399,7 +1399,7 @@ function _ts_generator(e, t) {
                                                 salesCount: a,
                                                 invoice: c,
                                                 typeOfUser: _
-                                            }), [2, ((null == (l = (0, j.Cw)()) ? void 0 : l.version) === j.gO.MOSTLY_WEBVIEW ? null == l || null === (r = l.updateBasketSize) || void 0 === r || r.call(l, c.itemCount || -1) : null == l || null === (o = l.updateBasketSize) || void 0 === o || o.call(l), c)]
+                                            }), x && ((null == (l = (0, j.Cw)()) ? void 0 : l.version) === j.gO.MOSTLY_WEBVIEW ? null == l || null === (r = l.updateBasketSize) || void 0 === r || r.call(l, c.itemCount || -1) : null == l || null === (o = l.updateBasketSize) || void 0 === o || o.call(l)), [2, c]
                                     }
                                 })
                             })().then(r).catch(function(t) {
@@ -1450,7 +1450,7 @@ function _ts_generator(e, t) {
                                             variationId: s
                                         })];
                                     case 2:
-                                        return p = m.sent(), c ? N.setData(p) : (T.setQueryData(["cart", P], p), N.update()), [2, ((null == (v = (0, j.Cw)()) ? void 0 : v.version) === j.gO.MOSTLY_WEBVIEW ? null == v || null === (l = v.updateBasketSize) || void 0 === l || l.call(v, p.itemCount || -1) : null == v || null === (d = v.updateBasketSize) || void 0 === d || d.call(v), p)];
+                                        return l = m.sent(), c ? N.setData(l) : (T.setQueryData(["cart", P], l), N.update()), x && ((null == (v = (0, j.Cw)()) ? void 0 : v.version) === j.gO.MOSTLY_WEBVIEW ? null == v || null === (d = v.updateBasketSize) || void 0 === d || d.call(v, l.itemCount || -1) : null == v || null === (p = v.updateBasketSize) || void 0 === p || p.call(v)), [2, l];
                                     case 3:
                                         throw f = m.sent(), (0, i.S_)(f), f;
                                     case 4:
@@ -1504,7 +1504,7 @@ function _ts_generator(e, t) {
                                             quantity: null == d ? void 0 : d.quantity,
                                             vendorId: null == d || null === (s = d.vendor) || void 0 === s ? void 0 : s.id,
                                             inventory: null == d || null === (u = d.product) || void 0 === u ? void 0 : u.stock
-                                        }), [2, ((null == (v = (0, j.Cw)()) ? void 0 : v.version) === j.gO.MOSTLY_WEBVIEW ? null == v || null === (c = v.updateBasketSize) || void 0 === c || c.call(v, p.itemCount || -1) : null == v || null === (l = v.updateBasketSize) || void 0 === l || l.call(v), p)];
+                                        }), x && ((null == (v = (0, j.Cw)()) ? void 0 : v.version) === j.gO.MOSTLY_WEBVIEW ? null == v || null === (c = v.updateBasketSize) || void 0 === c || c.call(v, p.itemCount || -1) : null == v || null === (l = v.updateBasketSize) || void 0 === l || l.call(v)), [2, p];
                                     case 5:
                                         throw f = m.sent(), (0, i.S_)(f), f;
                                     case 6:
@@ -1613,7 +1613,6 @@ function _ts_generator(e, t) {
                     switch (e) {
                         case "productDetail":
                             return void
-
                             function(e) {
                                 for (var t, n, a, i, s, u = {
                                         category: [],
@@ -2105,7 +2104,7 @@ function _ts_generator(e, t) {
                 k = (("function" == typeof b() ? b()() : {}) || {}).publicRuntimeConfig,
                 E = void 0 === k ? {} : k,
                 P = (0, u.lazy)(function() {
-                    return Promise.all([n.e(246), n.e(8293), n.e(3620), n.e(5382), n.e(3098), n.e(7314), n.e(8990), n.e(2746), n.e(4287), n.e(3941), n.e(4168), n.e(2308), n.e(928), n.e(5437), n.e(4491), n.e(1305), n.e(1896)]).then(n.bind(n, 30797)).then(function(e) {
+                    return Promise.all([n.e(246), n.e(8293), n.e(3620), n.e(5382), n.e(3098), n.e(7314), n.e(8990), n.e(2746), n.e(4287), n.e(5228), n.e(3941), n.e(6023), n.e(4208), n.e(928), n.e(5437), n.e(4491), n.e(1305), n.e(1896)]).then(n.bind(n, 30797)).then(function(e) {
                         return {
                             default: e.ReviewSuggestion
                         }
@@ -2523,11 +2522,11 @@ function _ts_generator(e, t) {
                         r = (0, K.Kp)(["webviewActiveTab"]).webviewActiveTab,
                         o = (0, $.B)().auth.setWebviewActiveTab,
                         i = (0, u.useCallback)(function() {
-                            if ("visible" === document.visibilityState && window.WebviewInterfaceVersion === C.gO.MOSTLY_WEBVIEW) {
-                                var n, o, a, i = (0, C.Cw)();
-                                e.current === r ? "navigation" === t.query.from && ee.w.includes(t.pathname) ? null === (n = i.setBottomNavigationVisibility) || void 0 === n || n.call(i, !0) : null === (o = i.setBottomNavigationVisibility) || void 0 === o || o.call(i, !1) : "native" === e.current && (null === (a = i.setBottomNavigationVisibility) || void 0 === a || a.call(i, !1))
+                            if (n && "visible" === document.visibilityState && window.WebviewInterfaceVersion === C.gO.MOSTLY_WEBVIEW) {
+                                var o, a, i, s = (0, C.Cw)();
+                                e.current === r ? "navigation" === t.query.from && ee.w.includes(t.pathname) ? null === (o = s.setBottomNavigationVisibility) || void 0 === o || o.call(s, !0) : null === (a = s.setBottomNavigationVisibility) || void 0 === a || a.call(s, !1) : "native" === e.current && (null === (i = s.setBottomNavigationVisibility) || void 0 === i || i.call(s, !1))
                             }
-                        }, [t.asPath, r]),
+                        }, [t.asPath, r, n]),
                         s = (0, u.useCallback)(function() {
                             if (!(0, l.isDevelopment)()) try {
                                 "function" == typeof X.nZ && window.WebviewInterfaceVersionName && (0, X.nZ)().setContext("Webview", {
