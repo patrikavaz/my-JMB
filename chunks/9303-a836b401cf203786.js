@@ -940,9 +940,9 @@ function _ts_generator(e, t) {
                     O = e.stepperProps,
                     R = void 0 === O ? {} : O,
                     z = e.variationId,
-                    V = void 0 === z ? null : z,
-                    U = e.hasStepper,
-                    W = void 0 !== U && U,
+                    U = void 0 === z ? null : z,
+                    V = e.hasStepper,
+                    W = void 0 !== V && V,
                     B = e.quantityInCart,
                     F = void 0 === B ? 0 : B,
                     G = e.hasVariation,
@@ -1007,7 +1007,7 @@ function _ts_generator(e, t) {
                                     switch (r.label) {
                                         case 0:
                                             return r.trys.push([0, 2, 3, 4]), "" === e ? (de(F), [2]) : (ue(!0), t = e - F, [4, J.changeQuantity({
-                                                variationId: V,
+                                                variationId: U,
                                                 quantity: t,
                                                 productId: I.id
                                             })]);
@@ -1049,7 +1049,7 @@ function _ts_generator(e, t) {
                                         }, a.label = 2;
                                     case 2:
                                         return a.trys.push([2, 4, 5, 6]), [4, J.addToCart({
-                                            variationId: V,
+                                            variationId: U,
                                             product: t,
                                             autoHandleVariation: !1,
                                             salesCount: L
@@ -1057,7 +1057,7 @@ function _ts_generator(e, t) {
                                     case 3:
                                         return n = a.sent(), (0, s.b)("productAddToCart", t), null == p || p(), de(1), "function" == typeof N && N(t, n), te || K ? $("به سبد خریدت اضافه شد.") : ee || J.showModal({
                                             product: t,
-                                            variationId: V,
+                                            variationId: U,
                                             mode: "result"
                                         }), [3, 6];
                                     case 4:
@@ -1349,7 +1349,7 @@ function _ts_generator(e, t) {
                             })
                         })
                     }, []),
-                    V = function(e) {
+                    U = function(e) {
                         var t = e.product,
                             n = "/cart" !== M.pathname;
                         L(function(e) {
@@ -1360,7 +1360,7 @@ function _ts_generator(e, t) {
                             })
                         })
                     },
-                    U = (0, p.useCallback)(function() {
+                    V = (0, p.useCallback)(function() {
                         var e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : {},
                             t = e.product,
                             n = e.variationId,
@@ -1519,7 +1519,7 @@ function _ts_generator(e, t) {
                             return _ts_generator(this, function(n) {
                                 switch (n.label) {
                                     case 0:
-                                        return n.trys.push([0, 2, , 3]), [4, U({
+                                        return n.trys.push([0, 2, , 3]), [4, V({
                                             product: e,
                                             autoHandleVariation: !1
                                         })];
@@ -1538,7 +1538,7 @@ function _ts_generator(e, t) {
                                 }
                             })
                         })()
-                    }, [U, R]);
+                    }, [V, R]);
                 ! function(e) {
                     var t = (0, v.useEmitter)().subEvent,
                         n = (0, s.E)(),
@@ -1578,7 +1578,7 @@ function _ts_generator(e, t) {
                 });
                 var Q = (0, p.useMemo)(function() {
                     return {
-                        addToCart: U,
+                        addToCart: V,
                         showModal: R,
                         closeModal: O,
                         changeQuantity: W,
@@ -1586,9 +1586,9 @@ function _ts_generator(e, t) {
                         quickAddToCart: G,
                         switchModalMode: z,
                         modal: q,
-                        showResultModalIfNeeded: V
+                        showResultModalIfNeeded: U
                     }
-                }, [U, q, W, F, G, R, z, O]);
+                }, [V, q, W, F, G, R, z, O]);
                 return (0, r.jsx)(S.Provider, {
                     value: Q,
                     children: t
@@ -1613,7 +1613,6 @@ function _ts_generator(e, t) {
                     switch (e) {
                         case "productDetail":
                             return void
-
                             function(e) {
                                 for (var t, n, a, i, s, u = {
                                         category: [],
@@ -2146,13 +2145,13 @@ function _ts_generator(e, t) {
                     z = (0, u.useMemo)(function() {
                         return "/" === t.asPath || (0, h.isPdpPage)(t.asPath)
                     }, [t.asPath]),
-                    V = (0, u.useMemo)(function() {
+                    U = (0, u.useMemo)(function() {
                         var e = n("ai-agent-touchpoints");
                         return (null == e ? void 0 : e.home) ? null == e ? void 0 : e.home : (null == e ? void 0 : e.pdp) ? null == e ? void 0 : e.pdp : null
                     }, [n]),
-                    U = (0, u.useMemo)(function() {
-                        return z && !!V && !!(null == E ? void 0 : E.aiAgentUrl)
-                    }, [z, V]),
+                    V = (0, u.useMemo)(function() {
+                        return z && !!U && !!(null == E ? void 0 : E.aiAgentUrl)
+                    }, [z, U]),
                     W = (0, u.useCallback)(function(e) {
                         var n = ["/cart", "/live", "/games", "/invite", "/account", "/landings", "/vendor-guides"],
                             r = !(null == L ? void 0 : L.business),
@@ -2169,13 +2168,13 @@ function _ts_generator(e, t) {
                                         var c = _to_consumable_array(n).concat(_to_consumable_array((null === (s = e.metaData) || void 0 === s ? void 0 : s.links) || []));
                                         return !new RegExp("^(".concat(c.join("|"), ")")).test(t.asPath) && !(0, h.isPdpPage)(t.asPath) && r && (!i || "/" === t.asPath.split("?")[0]);
                                     case "ai_assistant_fab_button":
-                                        return U;
+                                        return V;
                                     default:
                                         return !1
                                 }
                             });
                         return a
-                    }, [null == L ? void 0 : L.business, s, t.asPath, i, U]),
+                    }, [null == L ? void 0 : L.business, s, t.asPath, i, V]),
                     B = (0, u.useMemo)(function() {
                         return p && O && (!(i && (0, l.isClientSide)()) || window.WebviewInterfaceVersion === C.gO.MOSTLY_WEBVIEW) && _
                     }, [p, _, O, i]),
@@ -2255,12 +2254,12 @@ function _ts_generator(e, t) {
                         }), O && (null == ee || null === (r = ee.items) || void 0 === r ? void 0 : r.length) && (e = o).push.apply(e, _to_consumable_array(ee.items)), O && !(0, h.isPdpPage)(t.asPath) && (null == K ? void 0 : K.id) && o.push({
                             ui: "review_suggestion",
                             review: K
-                        }), U && o.push({
+                        }), V && o.push({
                             ui: "ai_assistant_fab_button",
                             href: null == E ? void 0 : E.aiAgentUrl
                         }), v(!1), l.bsLocalStorage.setItem(M, o, 86400), Z(W(o))
                     }
-                }, [p, oe, O, re, G, ee, K, t, V, W, U]), ie && (0, a.jsx)(ie, {
+                }, [p, oe, O, re, G, ee, K, t, U, W, V]), ie && (0, a.jsx)(ie, {
                     items: k[0],
                     clearItem: function() {
                         var e;
@@ -2309,7 +2308,7 @@ function _ts_generator(e, t) {
                     },
                     ssr: !1
                 }),
-                V = s()(function() {
+                U = s()(function() {
                     return Promise.all([n.e(1305), n.e(3904)]).then(n.bind(n, 91305))
                 }, {
                     loadableGenerated: {
@@ -2319,7 +2318,7 @@ function _ts_generator(e, t) {
                     },
                     ssr: !1
                 }),
-                U = s()(function() {
+                V = s()(function() {
                     return n.e(4969).then(n.bind(n, 64969))
                 }, {
                     loadableGenerated: {
@@ -2489,7 +2488,7 @@ function _ts_generator(e, t) {
                             children: [!n && (0, a.jsx)(W, {}), S && (0, a.jsx)(O, {
                                 data: S,
                                 onClose: re
-                            }), !n && (0, a.jsx)(R, {}), m && (0, a.jsx)(Z, {}), k && (0, a.jsx)(V, {
+                            }), !n && (0, a.jsx)(R, {}), m && (0, a.jsx)(Z, {}), k && (0, a.jsx)(U, {
                                 data: k,
                                 onClose: oe
                             }), D && (0, a.jsx)(B, {
@@ -2501,7 +2500,7 @@ function _ts_generator(e, t) {
                             }), g && (0, a.jsx)(Q, {
                                 data: g,
                                 onClose: se
-                            }), H && (0, a.jsx)(U, {
+                            }), H && (0, a.jsx)(V, {
                                 data: H,
                                 onClose: ue
                             }), !r.isPc && !n && (0, a.jsx)(G, {}), (0, a.jsx)(_(), {
@@ -2523,9 +2522,9 @@ function _ts_generator(e, t) {
                         r = (0, K.Kp)(["webviewActiveTab"]).webviewActiveTab,
                         o = (0, $.B)().auth.setWebviewActiveTab,
                         i = (0, u.useCallback)(function() {
-                            if (n && "visible" === document.visibilityState && window.WebviewInterfaceVersion === C.gO.MOSTLY_WEBVIEW) {
+                            if ("visible" === document.visibilityState && n) {
                                 var o, a, i, s = (0, C.Cw)();
-                                e.current === r ? "navigation" === t.query.from && ee.w.includes(t.pathname) ? null === (o = s.setBottomNavigationVisibility) || void 0 === o || o.call(s, !0) : null === (a = s.setBottomNavigationVisibility) || void 0 === a || a.call(s, !1) : "native" === e.current && (null === (i = s.setBottomNavigationVisibility) || void 0 === i || i.call(s, !1))
+                                if (s.version === C.gO.MOSTLY_WEBVIEW) e.current === r ? "navigation" === t.query.from && ee.w.includes(t.pathname) ? null === (o = s.setBottomNavigationVisibility) || void 0 === o || o.call(s, !0) : null === (a = s.setBottomNavigationVisibility) || void 0 === a || a.call(s, !1) : "native" === e.current && (null === (i = s.setBottomNavigationVisibility) || void 0 === i || i.call(s, !1))
                             }
                         }, [t.asPath, r, n]),
                         s = (0, u.useCallback)(function() {
@@ -3196,8 +3195,8 @@ function _ts_generator(e, t) {
                 Oe = n(40877),
                 Re = n(29962),
                 ze = n.n(Re),
-                Ve = n(92034),
-                Ue = n.n(Ve),
+                Ue = n(92034),
+                Ve = n.n(Ue),
                 We = n(43085),
                 Be = n.n(We),
                 Fe = n(13838),
@@ -3417,7 +3416,7 @@ function _ts_generator(e, t) {
                 wt = function() {
                     var e, t, n = (0, Le.t)(),
                         r = "result" === (null == n || null === (e = n.modal) || void 0 === e ? void 0 : e.mode);
-                    return (0, a.jsx)(Ue(), {
+                    return (0, a.jsx)(Ve(), {
                         size: "sm",
                         title: r ? "به سبد خریدت اضافه شد." : "انتخاب تنوع",
                         show: null == n || null === (t = n.modal) || void 0 === t ? void 0 : t.isShown,
@@ -3614,15 +3613,21 @@ function _ts_generator(e, t) {
                     };
                     return e.getInitialProps = (0, g._U)(function(e, r) {
                         return _async_to_generator(function() {
-                            var a, i, s, u, c, d, p, v, f, _, m, b, h, g, w, y, j, I, S, x, C, k, E, P, D, T, N, M, A, Z, q, O, R, z, V, U, W, B, F, G, Q, Y, H, K, J, $, ee, te, ne, oe, ae, ie, ue, ce, le, de;
-                            return _ts_generator(this, function(pe) {
-                                switch (pe.label) {
+                            var a, i, s, u, c, d, p, v, f, _, m, b, h, g, w, y, j, I, S, x, C, k, E, P, D, T, N, M, A, Z, q, O, R, z, U, V, W, B, F, G, Q, Y, H, K, J, $, ee, te, ne, oe, ae, ie, ue, ce, le, de, pe;
+                            return _ts_generator(this, function(ve) {
+                                switch (ve.label) {
                                     case 0:
-                                        A = window, Z = Ot && !!(null == e || null === (a = e.req) || void 0 === a ? void 0 : a.isCachedPage), q = Z ? null : (0, re.Z)(e.req, e.res), O = se()({
+                                        return A = window, Z = Ot && !!(null == e || null === (a = e.req) || void 0 === a ? void 0 : a.isCachedPage), q = Z ? null : (0, re.Z)(e.req, e.res), O = se()({
                                             query: e.query,
                                             pathname: e.pathname,
                                             headers: null === (i = e.req) || void 0 === i ? void 0 : i.headers
-                                        }), R = (null == e || null === (u = e.req) || void 0 === u || null === (s = u.headers) || void 0 === s ? void 0 : s.host) || (null == A || null === (c = A.location) || void 0 === c ? void 0 : c.hostname), z = Z ? null : (0, Mt.hP)(e.req), V = z && !Z ? function(e) {
+                                        }), R = (null == e || null === (u = e.req) || void 0 === u || null === (s = u.headers) || void 0 === s ? void 0 : s.host) || (null == A || null === (c = A.location) || void 0 === c ? void 0 : c.hostname), Z ? (Q = null, [3, 3]) : [3, 1];
+                                    case 1:
+                                        return [4, (0, Mt.hP)(e.req)];
+                                    case 2:
+                                        Q = ve.sent(), ve.label = 3;
+                                    case 3:
+                                        U = (z = Q) && !Z ? function(e) {
                                             if (!e) return 0;
                                             var t = function(e) {
                                                     try {
@@ -3637,16 +3642,16 @@ function _ts_generator(e, t) {
                                                 }(e),
                                                 n = null == t ? void 0 : t.sub;
                                             return n ? Number(n) : 0
-                                        }(z) : null, U = Ot ? e.req.headers["user-agent"] : null == A ? void 0 : A.navigator.userAgent, W = o()(U), B = Date.now(), F = (null === (d = e.req) || void 0 === d ? void 0 : d.headers["x-forwarded-for"]) || (null === (p = e.req) || void 0 === p ? void 0 : p.socket.remoteAddress), G = null === (_ = e.req) || void 0 === _ || null === (f = _.app) || void 0 === f || null === (v = f.get("redisDB")) || void 0 === v ? void 0 : v.DB2;
+                                        }(z) : null, V = Ot ? e.req.headers["user-agent"] : null == A ? void 0 : A.navigator.userAgent, W = o()(V), B = Date.now(), F = (null === (d = e.req) || void 0 === d ? void 0 : d.headers["x-forwarded-for"]) || (null === (p = e.req) || void 0 === p ? void 0 : p.socket.remoteAddress), G = null === (_ = e.req) || void 0 === _ || null === (f = _.app) || void 0 === f || null === (v = f.get("redisDB")) || void 0 === v ? void 0 : v.DB2;
                                         try {
-                                            Q = (null === (C = e.req) || void 0 === C ? void 0 : C.headers["x-client-info"]) || "{}", Y = (null === (k = JSON.parse(Q)) || void 0 === k ? void 0 : k.version) || null, (0, X.nZ)().setContext("Webview", {
+                                            Y = (null === (C = e.req) || void 0 === C ? void 0 : C.headers["x-client-info"]) || "{}", H = (null === (k = JSON.parse(Y)) || void 0 === k ? void 0 : k.version) || null, (0, X.nZ)().setContext("Webview", {
                                                 enabled: O,
-                                                version: O ? Y : null
+                                                version: O ? H : null
                                             })
                                         } catch (e) {
                                             console.error("Error setting webview context", e)
                                         }
-                                        return H = (0, l.isDevelopment)() || (0, l.isStaging)(R) ? "BASIC" : "HTTP_ONLY", "sibche" === (null === (b = e.req) || void 0 === b || null === (m = b.headers) || void 0 === m ? void 0 : m["x-ios-store"]) && (0, ge.setCookie)("isIosApp", "true", {
+                                        return K = (0, l.isDevelopment)() || (0, l.isStaging)(R) ? "BASIC" : "HTTP_ONLY", "sibche" === (null === (b = e.req) || void 0 === b || null === (m = b.headers) || void 0 === m ? void 0 : m["x-ios-store"]) && (0, ge.setCookie)("isIosApp", "true", {
                                             path: "/",
                                             req: e.req,
                                             res: e.res,
@@ -3671,13 +3676,13 @@ function _ts_generator(e, t) {
                                             })
                                         }, {
                                             cacheTime: At.nW
-                                        })] : [3, 2];
-                                    case 1:
-                                        return ie = pe.sent(), [3, 3];
-                                    case 2:
-                                        ie = {}, pe.label = 3;
-                                    case 3:
-                                        return J = null == (K = ie) || null === (j = K.sticky_banner) || void 0 === j ? void 0 : j.defaultValue, $ = !qt.X.has(e.pathname) && (null == J ? void 0 : J.show) && function(e) {
+                                        })] : [3, 5];
+                                    case 4:
+                                        return ue = ve.sent(), [3, 6];
+                                    case 5:
+                                        ue = {}, ve.label = 6;
+                                    case 6:
+                                        return $ = null == (J = ue) || null === (j = J.sticky_banner) || void 0 === j ? void 0 : j.defaultValue, ee = !qt.X.has(e.pathname) && (null == $ ? void 0 : $.show) && function(e) {
                                             if (!(null == e ? void 0 : e.end_time) || !(null == e ? void 0 : e.start_time)) return !1;
                                             try {
                                                 var t = (0, l.gregoryDate)().isBefore((0, l.gregoryDate)(e.end_time));
@@ -3685,24 +3690,24 @@ function _ts_generator(e, t) {
                                             } catch (e) {
                                                 return !1
                                             }
-                                        }(J), ee = Date.now(), te = Date.now(), ne = Date.now(), oe = new Promise(function(t, o) {
+                                        }($), te = Date.now(), ne = Date.now(), oe = Date.now(), ae = new Promise(function(t, o) {
                                             return _async_to_generator(function() {
                                                 var a, i;
                                                 return _ts_generator(this, function(s) {
                                                     switch (s.label) {
                                                         case 0:
-                                                            return s.trys.push([0, 2, , 3]), te = Date.now(), [4, n(_object_spread_props(_object_spread({}, e), {
-                                                                userId: V,
+                                                            return s.trys.push([0, 2, , 3]), ne = Date.now(), [4, n(_object_spread_props(_object_spread({}, e), {
+                                                                userId: U,
                                                                 deviceId: q,
                                                                 isWebview: O,
-                                                                userAgent: U,
-                                                                gbFeatures: K,
+                                                                userAgent: V,
+                                                                gbFeatures: J,
                                                                 queryClient: r,
                                                                 isCachedPage: Z,
                                                                 parsedUserAgent: W
                                                             }))];
                                                         case 1:
-                                                            return a = s.sent(), ne = Date.now(), t(a), [3, 3];
+                                                            return a = s.sent(), oe = Date.now(), t(a), [3, 3];
                                                         case 2:
                                                             return i = s.sent(), o(i), [3, 3];
                                                         case 3:
@@ -3710,7 +3715,7 @@ function _ts_generator(e, t) {
                                                     }
                                                 })
                                             })()
-                                        }), ae = [oe], Ot && !W.isMobile && (ue = new Promise(function(e, t) {
+                                        }), ie = [ae], Ot && !W.isMobile && (ce = new Promise(function(e, t) {
                                             return _async_to_generator(function() {
                                                 var n, o;
                                                 return _ts_generator(this, function(a) {
@@ -3726,20 +3731,20 @@ function _ts_generator(e, t) {
                                                     }
                                                 })
                                             })()
-                                        }), ae.push(ue)), [4, Promise.all(ae)];
-                                    case 4:
-                                        return ce = _sliced_to_array.apply(void 0, [pe.sent(), 1]), le = ce[0], de = Date.now(), [2, (le.userId = V, le.authMode = H, le.deviceId = q, le.hostname = R, le.isWebview = O, le.userAgent = U, le.gbFeatures = K, le.isCachedPage = Z, le.isServerRendered = Ot, le.serverRouteUrl = null == e || null === (I = e.req) || void 0 === I ? void 0 : I.url, le.parsedUserAgent = W, le.isIosApp = (0, Nt.isIosApp)({
+                                        }), ie.push(ce)), [4, Promise.all(ie)];
+                                    case 7:
+                                        return le = _sliced_to_array.apply(void 0, [ve.sent(), 1]), de = le[0], pe = Date.now(), [2, (de.userId = U, de.authMode = K, de.deviceId = q, de.hostname = R, de.isWebview = O, de.userAgent = V, de.gbFeatures = J, de.isCachedPage = Z, de.isServerRendered = Ot, de.serverRouteUrl = null == e || null === (I = e.req) || void 0 === I ? void 0 : I.url, de.parsedUserAgent = W, de.isIosApp = (0, Nt.isIosApp)({
                                             req: e.req,
                                             res: e.res
-                                        }), le.shouldReserveTopBannerSpace = $, le.webVitalData = _object_spread_props(_object_spread({}, le.webVitalData), {
+                                        }), de.shouldReserveTopBannerSpace = ee, de.webVitalData = _object_spread_props(_object_spread({}, de.webVitalData), {
                                             ip: F,
                                             srt: B,
-                                            pageData: de - B,
-                                            initialData: ee - B,
-                                            pageProps: ne - te,
-                                            hasVideo: !!(null == le || null === (x = le.product) || void 0 === x || null === (S = x.video) || void 0 === S ? void 0 : S.url),
+                                            pageData: pe - B,
+                                            initialData: te - B,
+                                            pageProps: oe - ne,
+                                            hasVideo: !!(null == de || null === (x = de.product) || void 0 === x || null === (S = x.video) || void 0 === S ? void 0 : S.url),
                                             categoriesData: M - N
-                                        }), le)]
+                                        }), de)]
                                 }
                             })
                         })()
