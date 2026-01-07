@@ -948,8 +948,8 @@ function _ts_generator(e, t) {
                     G = e.hasVariation,
                     Q = void 0 !== G && G,
                     Y = e.variationErrorHandler,
-                    H = (e.checkShippingLimit, e.isShowSuccessToast),
-                    K = void 0 !== H && H,
+                    K = (e.checkShippingLimit, e.isShowSuccessToast),
+                    H = void 0 !== K && K,
                     J = (0, m.t)(),
                     X = (0, u.Z)(),
                     $ = (0, a.useSnackbar)().showSuccessSnackbar,
@@ -1055,7 +1055,7 @@ function _ts_generator(e, t) {
                                             salesCount: L
                                         })];
                                     case 3:
-                                        return n = a.sent(), (0, s.b)("productAddToCart", t), null == p || p(), de(1), "function" == typeof N && N(t, n), te || K ? $("به سبد خریدت اضافه شد.") : ee || J.showModal({
+                                        return n = a.sent(), (0, s.b)("productAddToCart", t), null == p || p(), de(1), "function" == typeof N && N(t, n), te || H ? $("به سبد خریدت اضافه شد.") : ee || J.showModal({
                                             product: t,
                                             variationId: U,
                                             mode: "result"
@@ -1613,7 +1613,6 @@ function _ts_generator(e, t) {
                     switch (e) {
                         case "productDetail":
                             return void
-
                             function(e) {
                                 for (var t, n, a, i, s, u = {
                                         category: [],
@@ -1774,29 +1773,21 @@ function _ts_generator(e, t) {
         },
         44492: function(e, t, n) {
             "use strict";
-            n.d(t, {
-                X: function() {
-                    return f
-                }
-            });
             var r = n(32930),
                 o = n(40877),
-                a = n(50874),
-                i = n.n(a),
-                s = n(27434),
-                u = n(48863),
+                a = n(27434),
+                i = n(48863),
+                s = n.n(i),
+                u = n(67557),
                 c = n.n(u),
-                l = n(67557),
-                d = n.n(l),
-                p = n(45835);
-
-            function v(e) {
+                l = n(45835);
+            t.Z = (0, a.memo)(function(e) {
                 var t = e.className,
                     n = e.properties,
-                    a = e.isHorizontal,
-                    i = e.valueClassName,
-                    u = (0, o.Z)(t, c()["variation-list"], a ? c()["variation-list--horizontal"] : ""),
-                    l = (0, p.b)().ua.isPc,
+                    i = e.isHorizontal,
+                    u = e.valueClassName,
+                    d = (0, o.Z)(t, s()["variation-list"], i ? s()["variation-list--horizontal"] : ""),
+                    p = (0, l.b)().ua.isPc,
                     v = n.reduce(function(e, t) {
                         var n = t.property,
                             r = t.value,
@@ -1810,55 +1801,37 @@ function _ts_generator(e, t) {
                             return e.id === r.id
                         }) || a.values.push(r) : e.push(o), e
                     }, []),
-                    f = (0, s.useMemo)(function() {
+                    f = (0, a.useMemo)(function() {
                         return !!v.some(function(e) {
                             var t;
                             return (null == e || null === (t = e.values) || void 0 === t ? void 0 : t.length) > 1
                         })
                     }, [v]);
                 return 0 === v.length ? null : (0, r.jsxs)("div", {
-                    className: u,
+                    className: d,
                     children: [v.map(function(e) {
                         var t;
                         return (0, r.jsx)("span", {
-                            className: c()["variation-list__item"],
+                            className: s()["variation-list__item"],
                             children: (0, r.jsxs)("div", {
-                                className: c()["variation-list__item-container"],
+                                className: s()["variation-list__item-container"],
                                 children: [(0, r.jsxs)("span", {
-                                    className: c()["variation-list__title"],
+                                    className: s()["variation-list__title"],
                                     children: [e.title, ":"]
                                 }), (0, r.jsx)("div", {
-                                    className: (0, o.Z)(i, c()["variation-list__value-name"]),
+                                    className: (0, o.Z)(u, s()["variation-list__value-name"]),
                                     children: null == e || null === (t = e.values[0]) || void 0 === t ? void 0 : t.title
                                 })]
                             })
                         }, "p__".concat(e.id))
-                    }), f && (0, r.jsx)(d(), {
+                    }), f && (0, r.jsx)(c(), {
                         tag: "span",
-                        variant: l ? "caption-lg" : "caption-sm",
-                        className: c()["variation-list__more-variation"],
+                        variant: p ? "caption-lg" : "caption-sm",
+                        className: s()["variation-list__more-variation"],
                         children: "و چند تنوع دیگه"
                     })]
                 })
-            }
-            var f = i().arrayOf(i().shape({
-                value: i().shape({
-                    id: i().number,
-                    title: i().string,
-                    value: i().string
-                }),
-                property: i().shape({
-                    id: i().number,
-                    type: i().string,
-                    title: i().string
-                })
-            }));
-            v.propTypes = {
-                className: i().string,
-                isHorizontal: i().bool,
-                valueClassName: i().string,
-                properties: f
-            }, t.Z = (0, s.memo)(v)
+            })
         },
         42349: function(e, t, n) {
             "use strict";
@@ -2105,7 +2078,7 @@ function _ts_generator(e, t) {
                 k = (("function" == typeof b() ? b()() : {}) || {}).publicRuntimeConfig,
                 E = void 0 === k ? {} : k,
                 P = (0, u.lazy)(function() {
-                    return Promise.all([n.e(246), n.e(8293), n.e(3620), n.e(5382), n.e(3098), n.e(7314), n.e(8990), n.e(2746), n.e(4287), n.e(5228), n.e(3941), n.e(6023), n.e(4208), n.e(928), n.e(5437), n.e(4491), n.e(1305), n.e(1896)]).then(n.bind(n, 30797)).then(function(e) {
+                    return Promise.all([n.e(246), n.e(8293), n.e(3620), n.e(5382), n.e(3098), n.e(7314), n.e(8990), n.e(2746), n.e(4287), n.e(5228), n.e(6023), n.e(4208), n.e(928), n.e(5437), n.e(4491), n.e(1305), n.e(1896)]).then(n.bind(n, 30797)).then(function(e) {
                         return {
                             default: e.ReviewSuggestion
                         }
@@ -2191,12 +2164,12 @@ function _ts_generator(e, t) {
                     G = F.data,
                     Q = F.isLoading,
                     Y = F.isFetched,
-                    H = (0, g.aM)(["review-suggestion"], I.xN, {
+                    K = (0, g.aM)(["review-suggestion"], I.xN, {
                         enabled: B
                     }),
-                    K = H.data,
-                    J = H.isLoading,
-                    X = H.isFetched,
+                    H = K.data,
+                    J = K.isLoading,
+                    X = K.isFetched,
                     $ = (0, g.aM)(["exploreModalPromotion", R], function() {
                         return (0, y.Z2)({
                             userId: R || 0,
@@ -2252,15 +2225,15 @@ function _ts_generator(e, t) {
                         O && (null == G || null === (n = G.data) || void 0 === n ? void 0 : n.length) && o.push({
                             ui: "order_tracking",
                             orders: G.data
-                        }), O && (null == ee || null === (r = ee.items) || void 0 === r ? void 0 : r.length) && (e = o).push.apply(e, _to_consumable_array(ee.items)), O && !(0, h.isPdpPage)(t.asPath) && (null == K ? void 0 : K.id) && o.push({
+                        }), O && (null == ee || null === (r = ee.items) || void 0 === r ? void 0 : r.length) && (e = o).push.apply(e, _to_consumable_array(ee.items)), O && !(0, h.isPdpPage)(t.asPath) && (null == H ? void 0 : H.id) && o.push({
                             ui: "review_suggestion",
-                            review: K
+                            review: H
                         }), V && o.push({
                             ui: "ai_assistant_fab_button",
                             href: null == E ? void 0 : E.aiAgentUrl
                         }), v(!1), l.bsLocalStorage.setItem(M, o, 86400), Z(W(o))
                     }
-                }, [p, oe, O, re, G, ee, K, t, U, W, V]), ie && (0, a.jsx)(ie, {
+                }, [p, oe, O, re, G, ee, H, t, U, W, V]), ie && (0, a.jsx)(ie, {
                     items: k[0],
                     clearItem: function() {
                         var e;
@@ -2407,8 +2380,8 @@ function _ts_generator(e, t) {
                         M = N[0],
                         A = N[1],
                         Y = _sliced_to_array((0, u.useState)(null), 2),
-                        H = Y[0],
-                        K = Y[1],
+                        K = Y[0],
+                        H = Y[1],
                         J = (0, u.useCallback)(function() {
                             return x(!0)
                         }, []),
@@ -2425,7 +2398,7 @@ function _ts_generator(e, t) {
                             return A(e)
                         }, []),
                         ne = (0, u.useCallback)(function(e) {
-                            return K(e)
+                            return H(e)
                         }, []),
                         re = (0, u.useCallback)(function() {
                             return (0, u.startTransition)(function() {
@@ -2456,7 +2429,7 @@ function _ts_generator(e, t) {
                         }, [g]),
                         ue = (0, u.useCallback)(function() {
                             return (0, u.startTransition)(function() {
-                                return K(null)
+                                return H(null)
                             })
                         }, []);
                     return (0, u.useEffect)(function() {
@@ -2501,8 +2474,8 @@ function _ts_generator(e, t) {
                             }), g && (0, a.jsx)(Q, {
                                 data: g,
                                 onClose: se
-                            }), H && (0, a.jsx)(V, {
-                                data: H,
+                            }), K && (0, a.jsx)(V, {
+                                data: K,
                                 onClose: ue
                             }), !r.isPc && !n && (0, a.jsx)(G, {}), (0, a.jsx)(_(), {
                                 position: r.isPc ? "top-right" : "top-center"
@@ -2510,8 +2483,8 @@ function _ts_generator(e, t) {
                         })
                     })
                 }),
-                H = n(64191),
-                K = n(29723),
+                K = n(64191),
+                H = n(29723),
                 J = n(43828),
                 X = n(67101),
                 $ = n(61262),
@@ -2520,7 +2493,7 @@ function _ts_generator(e, t) {
                     var e = (0, u.useRef)(""),
                         t = (0, J.useRouter)(),
                         n = (0, j.b)().isWebview,
-                        r = (0, K.Kp)(["webviewActiveTab"]).webviewActiveTab,
+                        r = (0, H.Kp)(["webviewActiveTab"]).webviewActiveTab,
                         o = (0, $.B)().auth.setWebviewActiveTab,
                         i = (0, u.useCallback)(function() {
                             if ("visible" === document.visibilityState && n) {
@@ -3204,15 +3177,15 @@ function _ts_generator(e, t) {
                 Ge = n(60610),
                 Qe = n.n(Ge),
                 Ye = n(76303),
-                He = n.n(Ye),
-                Ke = n(43221),
+                Ke = n.n(Ye),
+                He = n(43221),
                 Je = function(e) {
                     var t = e.price,
                         n = e.primaryPrice,
                         r = void 0 === n ? 0 : n,
                         o = (0, l.getDiscountPercent)(r, t),
-                        i = (0, Ke.currencyFormat)(t),
-                        s = (0, Ke.currencyFormat)(r);
+                        i = (0, He.currencyFormat)(t),
+                        s = (0, He.currencyFormat)(r);
                     return (0, a.jsxs)("div", {
                         className: Qe()["cart-price"],
                         children: [!!r && r > t && (0, a.jsx)("span", {
@@ -3221,7 +3194,7 @@ function _ts_generator(e, t) {
                         }), (0, a.jsx)("span", {
                             className: Qe()["cart-price__value"],
                             children: i
-                        }), (0, a.jsx)(He(), {
+                        }), (0, a.jsx)(Ke(), {
                             name: "bi-toman",
                             size: "24",
                             color: "var(--gray-600)"
@@ -3496,7 +3469,7 @@ function _ts_generator(e, t) {
 
             function kt() {
                 var e = (0, c.Z)(),
-                    t = (0, H.Qq)();
+                    t = (0, K.Qq)();
                 return (0, u.useEffect)(function() {
                     t({
                         endType: "MOUNT"
@@ -3554,7 +3527,7 @@ function _ts_generator(e, t) {
                 }, [i]);
                 var S = "loadedInCsrMode" in window,
                     k = l ? u.Fragment : Pt;
-                return (0, a.jsx)(K.g3, {
+                return (0, a.jsx)(H.g3, {
                     initialState: {
                         userId: t,
                         deviceId: r,
@@ -3583,7 +3556,7 @@ function _ts_generator(e, t) {
                             authMode: o
                         }), (0, a.jsxs)(x.K, {
                             isCachedPage: v,
-                            children: [(0, a.jsx)(H.ZP, {}), (0, a.jsx)(jt, {
+                            children: [(0, a.jsx)(K.ZP, {}), (0, a.jsx)(jt, {
                                 children: (0, a.jsxs)(k, {
                                     children: [(!m || g) && (0, a.jsx)(Et, {}), (0, a.jsx)("main", {
                                         className: "mainTag",
@@ -3614,7 +3587,7 @@ function _ts_generator(e, t) {
                     };
                     return e.getInitialProps = (0, g._U)(function(e, r) {
                         return _async_to_generator(function() {
-                            var a, i, s, u, c, d, p, v, f, _, m, b, h, g, w, y, j, I, S, x, C, k, E, P, D, T, N, M, A, Z, q, O, R, z, U, V, W, B, F, G, Q, Y, H, K, J, $, ee, te, ne, oe, ae, ie, ue, ce, le, de, pe;
+                            var a, i, s, u, c, d, p, v, f, _, m, b, h, g, w, y, j, I, S, x, C, k, E, P, D, T, N, M, A, Z, q, O, R, z, U, V, W, B, F, G, Q, Y, K, H, J, $, ee, te, ne, oe, ae, ie, ue, ce, le, de, pe;
                             return _ts_generator(this, function(ve) {
                                 switch (ve.label) {
                                     case 0:
@@ -3645,14 +3618,14 @@ function _ts_generator(e, t) {
                                             return n ? Number(n) : 0
                                         }(z) : null, V = Ot ? e.req.headers["user-agent"] : null == A ? void 0 : A.navigator.userAgent, W = o()(V), B = Date.now(), F = (null === (d = e.req) || void 0 === d ? void 0 : d.headers["x-forwarded-for"]) || (null === (p = e.req) || void 0 === p ? void 0 : p.socket.remoteAddress), G = null === (_ = e.req) || void 0 === _ || null === (f = _.app) || void 0 === f || null === (v = f.get("redisDB")) || void 0 === v ? void 0 : v.DB2;
                                         try {
-                                            Y = (null === (C = e.req) || void 0 === C ? void 0 : C.headers["x-client-info"]) || "{}", H = (null === (k = JSON.parse(Y)) || void 0 === k ? void 0 : k.version) || null, (0, X.nZ)().setContext("Webview", {
+                                            Y = (null === (C = e.req) || void 0 === C ? void 0 : C.headers["x-client-info"]) || "{}", K = (null === (k = JSON.parse(Y)) || void 0 === k ? void 0 : k.version) || null, (0, X.nZ)().setContext("Webview", {
                                                 enabled: O,
-                                                version: O ? H : null
+                                                version: O ? K : null
                                             })
                                         } catch (e) {
                                             console.error("Error setting webview context", e)
                                         }
-                                        return K = (0, l.isDevelopment)() || (0, l.isStaging)(R) ? "BASIC" : "HTTP_ONLY", "sibche" === (null === (b = e.req) || void 0 === b || null === (m = b.headers) || void 0 === m ? void 0 : m["x-ios-store"]) && (0, ge.setCookie)("isIosApp", "true", {
+                                        return H = (0, l.isDevelopment)() || (0, l.isStaging)(R) ? "BASIC" : "HTTP_ONLY", "sibche" === (null === (b = e.req) || void 0 === b || null === (m = b.headers) || void 0 === m ? void 0 : m["x-ios-store"]) && (0, ge.setCookie)("isIosApp", "true", {
                                             path: "/",
                                             req: e.req,
                                             res: e.res,
@@ -3734,7 +3707,7 @@ function _ts_generator(e, t) {
                                             })()
                                         }), ie.push(ce)), [4, Promise.all(ie)];
                                     case 7:
-                                        return le = _sliced_to_array.apply(void 0, [ve.sent(), 1]), de = le[0], pe = Date.now(), [2, (de.userId = U, de.authMode = K, de.deviceId = q, de.hostname = R, de.isWebview = O, de.userAgent = V, de.gbFeatures = J, de.isCachedPage = Z, de.isServerRendered = Ot, de.serverRouteUrl = null == e || null === (I = e.req) || void 0 === I ? void 0 : I.url, de.parsedUserAgent = W, de.isIosApp = (0, Nt.isIosApp)({
+                                        return le = _sliced_to_array.apply(void 0, [ve.sent(), 1]), de = le[0], pe = Date.now(), [2, (de.userId = U, de.authMode = H, de.deviceId = q, de.hostname = R, de.isWebview = O, de.userAgent = V, de.gbFeatures = J, de.isCachedPage = Z, de.isServerRendered = Ot, de.serverRouteUrl = null == e || null === (I = e.req) || void 0 === I ? void 0 : I.url, de.parsedUserAgent = W, de.isIosApp = (0, Nt.isIosApp)({
                                             req: e.req,
                                             res: e.res
                                         }), de.shouldReserveTopBannerSpace = ee, de.webVitalData = _object_spread_props(_object_spread({}, de.webVitalData), {
