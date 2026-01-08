@@ -1613,6 +1613,7 @@ function _ts_generator(e, t) {
                     switch (e) {
                         case "productDetail":
                             return void
+
                             function(e) {
                                 for (var t, n, a, i, s, u = {
                                         category: [],
